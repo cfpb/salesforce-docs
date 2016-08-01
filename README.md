@@ -5,17 +5,18 @@ This project describes guidelines for how applications in Salesforce should be b
 
 
 #### What this **is**:
- - Best practices for development
+ - Best practices for developing applications on the Salesforce platform
  - Coding standards
  - Automated testing standards
  - Security best practices
  - Deployment pipelines practices (continuous integration)
 
 
-#### What this is **not*:
+#### What this is **not**:
  - Specific to the CFPB's operating environment
  - Operational instructions for how to get support; e.g., how to set up a developer sandbox; how to reset your password
- - 
+ - How to integrate with third-party systemt
+ - A list of CFPB applications or products
 
 
 Other things to include:
