@@ -1,10 +1,10 @@
 
-<div style="text-align:center">
+<div align="center">
 <img alt="CFPB Salesforce Development Standards" src ="https://raw.githubusercontent.com/virtix/salesforce-docs/master/screenshot.png" />
 </div>
 
 
-**This project describes guidelines for how applications in Salesforce should be built and deployed.  [INCLUDE OUTLINE] The intended audience are Salesfroce developers, administrators, and release managers.**
+**This project describes guidelines for how applications in Salesforce should be built and deployed. The intended audience are Salesfroce developers, administrators, and release managers.**
 
 
 
