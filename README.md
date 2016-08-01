@@ -28,7 +28,7 @@ Other things to include:
 
 
 
-![](https://raw.githubusercontent.com/cfpb/open-source-project-template/master/screenshot.png)
+![](https://raw.githubusercontent.com/virtix/salesforce-docs/master/screenshot.png)
 
 
 ## Dependencies
