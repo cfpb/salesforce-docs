@@ -141,15 +141,13 @@ Since you can’t throw built-in Apex exceptions, but can only catch them, you c
 To create your custom exception class, extend the built-in Exception class and make sure your class name ends with the word "Exception".
 
 ```java
-    Public class OrderException extends Exception
+    public class OrderException extends Exception
 
     {
 
     }
 
- 
-
-    Public with sharing class OrderController
+    public with sharing class OrderController
 
     {
 

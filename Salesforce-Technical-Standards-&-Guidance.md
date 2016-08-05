@@ -26,14 +26,14 @@
   - [Triggers](Triggers.md)
   - [Visualsource Pages](Visualsource-Pages.md)
 - [Exception Handling](Exception-Handling.md)
-- [Testing & Debugging]
+- [Testing & Debugging](Testing-&-Debugging.md)
   - [Writing good tests](Writing-good-tests.md)
   - [Unit testing](Unit-testing.md)
   - Browser Testing (sauce)
   - Security Testing (checkmarx)
   - 508/wcag - 
   - [Top 10 Best Practices](Top-10-Best-Practices.md)
-- [Logging & Troubleshooting]
+- [Logging & Troubleshooting](Logging-&-Troubleshooting.md)
 - [Appendices](Appendices.md)
   - [Salesforce Naming Conventions](Salesforce-Naming-Conventions.md)
   - [FISMA and NIST References](FISMA-and-NIST-references.md)
