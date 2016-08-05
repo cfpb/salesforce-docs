@@ -1,3 +1,5 @@
+###Record Level Sharing
+
 Salesforce sharing controls what records users have access to view and edit. Keep in mind that since the profile and permission sets control object level access, if a user doesn’t have access to a particular object, then even if sharing allows them to view or edit records within that object, they will not have access to those records since they don’t have access to the entire object through profiles or permission sets. 
  
 When working with Salesforce sharing it is always best to use the most global sharing mechanisms first, then move to the more granular controls. As you move to the more granular sharing controls you need to be more aware of performance considerations. 
