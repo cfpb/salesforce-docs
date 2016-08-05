@@ -37,7 +37,7 @@ Note that technical design and implementation is reviewed by the [SwAG - Softwar
 
 * [CFPB Salesforce Development & Technical Standards - Original Google Doc] (https://docs.google.com/document/d/162CX0Wre7tXSyy7qCNLaQ3me2OoRRlzdHkyImP1A1mU) 
   * **NOTE**: This is being replaced by the following:
-* **[[CFPB Salesforce Dev/Standards - Current Markdown version| Salesforce-Technical-Standards-&-Guidance]]**
+* **[Salesforce-Technical-Standards-&-Guidance]**
 * [Data Modeling Guidance ] (https://github.cfpb.gov/Salesforce/salesforce-docs/issues/2)
 * [Report and Dashboard Guidance](https://github.cfpb.gov/Salesforce/salesforce-docs/issues/1)
 * [Technical Standards Google Doc Working Folder](https://drive.google.com/drive/u/1/folders/0B4d0xP3buN8qaFN2Mk5sNExrQnM)
