@@ -1,39 +1,39 @@
 
 ## Table of Contents
-- [[FAQs]]
-- [T&I Org Structure](Org Chart)
-- [[Architectural View]]
+- [FAQs](FAQs.md)
+- [T&I Org Structure](Org-Chart.md)
+- [Architectural View](.md)
   - Environments 
   - Common and Mastered Objects
-  - [[Deployment Pipeline]]
-  - [[Source Code and Configuration Management]]
-  - [[Tooling]]
+  - [Deployment Pipeline](.md)
+  - [Source Code and Configuration Management](.md)
+  - [Tooling](Tooling.md)
   - Bigger integrations: MED, Box, ICAM
-- [[Security Model (Permission Sets, Profiles)]]
-- [[Record Level Sharing]]
-- [[Software, Architecture, Data, and Visual Design Standards References]]
-- [[Technical Approach]]
+- [Security Model (Permission Sets, Profiles)](Security-Model-(Permission-Sets,-Profiles).md)
+- [Record Level Sharing](Record-Level-Sharing.md)
+- [Software, Architecture, Data, and Visual Design Standards References](.md)
+- [Technical Approach](.md)
   - Guiding Principles
   - Configuration over code
   - Loosely bound APIs
-  - APIs use and generation in general
-- [[Agile Methodology]]
-- [[CoE and SwAG (Governance)]]
-- [[Salesforce Best Practices]]
+  - [APIs use and generation in general](.md)
+- [Agile Methodology](.md)
+- [CoE and SwAG (Governance)](CoE-and-SwAG-(Governance).md)
+- [Salesforce Best Practices](Salesforce-Best-Practices.md)
   - Secure coding practices
-  - [[Querying Datasets and SOQL]]
-  - [[Bulkify Code]]
-  - [[Triggers]]
-  - [[Visualsource Pages]]
-- [[Exception Handling]]
-- [[Testing & Debugging]]
-  - [[Writing good tests]]
-  - [[Unit testing]]
+  - [Querying Datasets and SOQL](Querying-Datasets-and-SOQL.md)
+  - [Bulkify Code](Bulkify-Code.md)
+  - [Triggers](Triggers.md)
+  - [Visualsource Pages](Visualsource-Pages.md)
+- [Exception Handling](Exception-Handling.md)
+- [Testing & Debugging](Testing-&-Debugging.md)
+  - [Writing good tests](Writing-good-tests.md)
+  - [Unit testing](Unit-testing.md)
   - Browser Testing (sauce)
   - Security Testing (checkmarx)
   - 508/wcag - 
-  - [[Top 10 Best Practices]]
-- [[Logging & Troubleshooting]]
-- [[Appendices]]
-  - [[Salesforce Naming Conventions]]
-  - [[FISMA and NIST References]]
+  - [Top 10 Best Practices](Top-10-Best-Practices.md)
+- [Logging & Troubleshooting](Logging-&-Troubleshooting.md)
+- [Appendices](Apendices.md)
+  - [Salesforce Naming Conventions](Salesforce-Naming-Conventions.md)
+  - [FISMA and NIST References](FISMA-and-NIST-References.md)
