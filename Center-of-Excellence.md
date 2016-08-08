@@ -28,34 +28,34 @@ The COE is responsible for making project-level tactical decisions for applicati
 The COE shall be responsible for the following activities, organized by primary function:
 
 - Strategic Platform Roadmap and Standards:
-Define scope and permitted uses of enterprise application platforms at CFPB
-Define strategy for use of CFPB’s enterprise platforms
-Define technology and process standards for EP, the Platform Software Advisory Group (“SwAG” ) or COE 
-Render decisions in a timely manner
-Maintain records of decisions
-Perform due diligence
-Communicate decisions to appropriate parties
-Ensure adherence to approved processes
-Share business and technology best practices across the organization
-Escalate issues as needed to the CIO, Business Executive Sponsors, and higher level governance bodies
+    - Define scope and permitted uses of enterprise application platforms at CFPB
+    - Define strategy for use of CFPB’s enterprise platforms
+    - Define technology and process standards for EP, the Platform Software Advisory Group (“SwAG” ) or COE 
+    - Render decisions in a timely manner
+    - Maintain records of decisions
+    - Perform due diligence
+    - Communicate decisions to appropriate parties
+    - Ensure adherence to approved processes
+    - Share business and technology best practices across the organization
+    - Escalate issues as needed to the CIO, Business Executive Sponsors, and higher level governance bodies
 
-New Solution Review:
-Review and approve every application concept and initiative considered for an enterprise platform within CFPB (e.g., Salesforce, Box, etc.), prior to T&I Project Gate 0
-Authorize, categorize and prioritize development initiatives which use EP resources or will be hosted on an EP-controlled technology
-Act as governance liaison to the Technology Committee and the CIO for all EP-related activities 
-Ensure alignment of priorities with enterprise initiatives, Enterprise Architecture (EA) and direction from higher level governance
+- New Solution Review:
+    - Review and approve every application concept and initiative considered for an enterprise platform within CFPB (e.g., Salesforce, Box, etc.), prior to T&I Project Gate 0
+    - Authorize, categorize and prioritize development initiatives which use EP resources or will be hosted on an EP-controlled technology
+    - Act as governance liaison to the Technology Committee and the CIO for all EP-related activities 
+    - Ensure alignment of priorities with enterprise initiatives, Enterprise Architecture (EA) and direction from higher level governance
 
-Design Review:
-Review design artifacts and “approve” or “disapprove” initial system / solution designs.  This review is conducted by the SwAG and a final recommendation for approval or disapproval will be presentd to the COE by the Principal Platform Architect. 
-Determine level and extent of resources within EP purview to commit to detailed analysis of approved initiatives 
+- Design Review:
+    - Review design artifacts and “approve” or “disapprove” initial system / solution designs.  This review is conducted by the SwAG and a final recommendation for approval or disapproval will be presentd to the COE by the Principal Platform Architect. 
+    - Determine level and extent of resources within EP purview to commit to detailed analysis of approved initiatives 
 
-Go Live Review:
-Validate that necessary activities prescribed by the EP COE process have been completed
-Grant authority to move a system to Production (“Go-Live”) on one of the Bureau’s entprise platforms (will still require T&I Project Gate 2 review and approval prior to release)
+- Go Live Review:
+    - Validate that necessary activities prescribed by the EP COE process have been completed
+    - Grant authority to move a system to Production (“Go-Live”) on one of the Bureau’s entprise platforms (will still require T&I Project Gate 2 review and approval prior to release)
 
-Change Request (CR) Review: 
-Authorize, categorize and prioritize configuration changes to T&I EP-controlled configuration items, which may include software or cloud environments, processes, approved plans, and other configuration items as defined by the EP COE
-Support enterprise CR review and reporting for T&I’s Enterprise Change Control Board (CCB) based on T&I PMO’s published CCB criteria and thresholds 
+- Change Request (CR) Review: 
+    - Authorize, categorize and prioritize configuration changes to T&I EP-controlled configuration items, which may include software or cloud environments, processes, approved plans, and other configuration items as defined by the EP COE
+    - Support enterprise CR review and reporting for T&I’s Enterprise Change Control Board (CCB) based on T&I PMO’s published CCB criteria and thresholds 
 
 Roles
 Membership of the COE consists of the following voting and non-voting member roles. 
