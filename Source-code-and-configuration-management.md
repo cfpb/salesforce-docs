@@ -157,7 +157,9 @@ In this step the project team now has enough code and configuration completed th
 **Lead Developer**
 
 1. Verifies package, and updates readme.md in fork, {Team}/{Project Name}-deploy, and captures the manual pre-deploy and post deploy steps.
+
 1. Performs pre-deploy manual steps in Team Build/QA.
+
 1. Executes Jenkins job {Project Name} - Deploy to QA. 
 
      **Jenkins / ANT**
