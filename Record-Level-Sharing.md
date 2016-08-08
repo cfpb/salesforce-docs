@@ -2,31 +2,17 @@
 
 There are many different mechanisms in which access to Salesforce is controlled. It is easiest to think of security in Salesforce broken up into the following 3 different categories: 
 
-1. **Object Level Access – **Object level access controls the access various Salesforce standard and custom objects such as Account, Contact, Opportunity, or custom objects you create. Object level access defines if a user has access to Read, Create, Update, or delete records within that object. Additionally object level access also controls which fields users are allowed to view or update on those objects. All object level access within Salesforce is controlled by Profiles and Permission Sets. 
+1. **Object Level Access** – Object level access controls the access various Salesforce standard and custom objects such as Account, Contact, Opportunity, or custom objects you create. Object level access defines if a user has access to Read, Create, Update, or delete records within that object. Additionally object level access also controls which fields users are allowed to view or update on those objects. All object level access within Salesforce is controlled by Profiles and Permission Sets. 
 
- 
+1. **Record Level Access** – Once a user has access to a specific object, users can then be limited to view or edit only specific records within that object. This is what we refer to as "Record Level" sharing within Salesforce. Sharing of records is controlled by Salesforce Organization-wide defaults, Criteria Based Sharing, Roles, and manual sharing.  
 
-1. **Record Level Access – **Once a user has access to a specific object, users can then be limited to view or edit only specific records within that object. This is what we refer to as "Record Level" sharing within Salesforce. Sharing of records is controlled by Salesforce Organization-wide defaults, Criteria Based Sharing, Roles, and manual sharing.  
+1. **System & Application Level Access** – System and application level access is access users are granted to perform specific actions across the Salesforce application. There are many different actions a user can perform that can be controlled such as user creation, ability to export data, ability to modify setup objects, etc. These permissions are controlled by Profiles and Permission Sets. 
 
-   
-
-1. **System & Application Level Access – **System and application level access is access users are granted to perform specific actions across the Salesforce application. There are many different actions a user can perform that can be controlled such as user creation, ability to export data, ability to modify setup objects, etc. These permissions are controlled by Profiles and Permission Sets. 
-
- 
-
-1. ** Profiles & Permission Sets **
+###Profiles & Permission Sets
 
 As mentioned above Profiles & Permission Sets control the object level access and System & Application level access for users. You can pretty much do the same thing with Profiles and Permission Sets except for that a user can only have one profile where you can assign multiple permission sets to a user or profile.  
 
- 
-
-It is recommended to use profiles to create a base set of permissions for users of specific groups. Then create permission sets for each application that users will need access to for each type of role in that application. 
-
- 
-
-For example: 
-
- 
+It is recommended to use profiles to create a base set of permissions for users of specific groups. Then create permission sets for each application that users will need access to for each type of role in that application. For example:   
 
 **Profiles** 
 
@@ -38,7 +24,6 @@ Legal User
 
 Marketing User  
 
- 
 
 **Permission Sets** 
 
@@ -48,7 +33,9 @@ Order Management Application Admin
 
 The permission sets would be assigned on a user-by-user basis based on the applications that the users need access to. This allows you to easily add or remove access to users for specific applications instead of having to create profiles of various different combinations to handle the same use cases. Think of permission sets as similar to Access Control Lists (ACL). 
 
-###Record Level Sharing
+
+
+###Salesforce Sharing
 
 Salesforce sharing controls what records users have access to view and edit. Keep in mind that since the profile and permission sets control object level access, if a user doesn’t have access to a particular object, then even if sharing allows them to view or edit records within that object, they will not have access to those records since they don’t have access to the entire object through profiles or permission sets. 
  
