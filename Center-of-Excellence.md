@@ -238,7 +238,7 @@ BA   - Business Analyst<br>
 CCB  - Change Control Board (or Configuration Control Board)<br>
 COE  - Center of Excellence <br>
 CR   - Change Request<br>
-SwAG - Software Advisory Group - The SwAG is composed of a diversified team of architects (technical, solution, product-specific) with expertise in techonologies the Bureau supports 	<br>	
+SwAG - Software Advisory Group - The SwAG is composed of a diversified team of architects (technical, solution, product-specific) with expertise in techonologies the Bureau supports 		
 T&I  - Technology & Innovation
 
 ###Appendix B
