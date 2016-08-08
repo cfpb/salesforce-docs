@@ -184,57 +184,55 @@ Membership of the COE consists of the following voting and non-voting member rol
 </table>
 
 *Note: Only government employees may be voting members.  In the event that a role above is being filled by a contractor, the voting check mark in the table above is instead a recommendation for those roles which are considered to have especially appropriate input to the type of vote indicated.
-COE Administration
-Normal COE meetings will be held on a weekly basis. If there are no items for review, COE meetings will be cancelled at the discretion of the COE Chair.  Additional meetings may also be scheduled at the Chair’s discretion to handle a high volume of agenda items.
+
+###COE Administration
+
+Normal COE meetings will be held on a weekly basis. If there are no items for review, COE meetings will be cancelled at the discretion of the COE Chair.  Additional meetings may also be scheduled at the Chair’s discretion to handle a high volume of agenda items.  
 
 The COE Facilitator is responsible for maintaining calendar invites, reserving rooms, setting up WebEx or conference bridges, taking requests for agenda time, recording meeting attendance, and documenting / posting meeting minutes.  The COE Facilitator will prepare an agenda for each COE meeting.  Items to be considered for a COE meeting must be submitted to the Facilitator no later than one hour prior to the meeting.  See request agenda request form here.  
 
 Links to the COE agendas and meeting minutes can be accessed through the T&I Enterprise Platforms team Google Documents collection.
-Decisions
 
-New Solution Review
-New solution concepts will be introduced at COE meetings by Platform Business Analysts (BA) who will be expected to present high-level requirements and the analysis conducted (Project Detail, Fit Gap Analysis) to make a platform decision to the COE. After each new solution concept is discussed, a vote will be taken to approve, defer, or disapprove the proposed item.  The EP Program team will work with the business line(s) involved and T&I PMO to review scheduling, resources, and budget for the new solution request. 
+###Decisions
 
-Design Review
-In order for an application or set of requirements to proceed to a development sprint or development contract, they must first go through a design review with the Platform Software Advisory Group (SwAG).  The COE may decide to approve or disapprove design based on recommendation from the SwAG and Principal Platform Architect. 
+- **New Solution Review** 
+    New solution concepts will be introduced at COE meetings by Platform Business Analysts (BA) who will be expected to present high-level requirements and the analysis conducted (Project Detail, Fit Gap Analysis) to make a platform decision to the COE. After each new solution concept is discussed, a vote will be taken to **approve, defer, or disapprove** the proposed item.  The EP Program team will work with the business line(s) involved and T&I PMO to review scheduling, resources, and budget for the new solution request. 
 
-Go Live Review
-Prior to a new or updated platform release being approved for deployment to a production environment it must undergo a Go Live Review.  The Go Live Review is driven by a Go Live checklist for the project / iteration and will happen prior to the T&I PMO Gate 2 review.  The COE will vote to approve go live, disapprove go live as is, or approve go live contingent upon an ensuing task.  For the latter decision, the approval will be considered to take effect once the contingent action is fulfilled.  
+- **Design Review** 
+    In order for an application or set of requirements to proceed to a development sprint or development contract, they must first go through a design review with the Platform Software Advisory Group (SwAG).  The COE may decide to **approve or disapprove design** based on recommendation from the SwAG and Principal Platform Architect. 
 
-Change Requests (CRs)
-CRs will be introduced to the COE by the product project teams or support and operations groups (e.g., centralized O&M team or app-specific groups). The COE will review the business justification for the CR submitted. At the conclusion of the CR review, the COE will approve, disapprove, or defer the CR.  The COE Facilitator will notify the product manager and business owner and the T&I CCB (if required by threshold criteria). 
+- **Go Live Review** 
+    Prior to a new or updated platform release being approved for deployment to a production environment it must undergo a Go Live Review.  The Go Live Review is driven by a Go Live checklist for the project / iteration and will happen prior to the T&I PMO Gate 2 review.  The COE will vote to **approve go live, disapprove go live** as is, or **approve go live contingent** upon an ensuing task.  For the latter decision, the approval will be considered to take effect once the contingent action is fulfilled.
 
-Emergency Requests
+- **Change Requests (CRs)**
+    CRs will be introduced to the COE by the product project teams or support and operations groups (e.g., centralized O&M team or app-specific groups). The COE will review the business justification for the CR submitted. At the conclusion of the CR review, the COE will **approve, disapprove, or defer** the CR.  The COE Facilitator will notify the product manager and business owner and the T&I CCB (if required by threshold criteria). 
 
-A virtual COE vote will be held for only emergency requests.  The virtual voting process will follow the normal COE process except that no actual meeting will be held and voting will be conducted through email.  
+- **Emergency Requests**
+    A virtual COE vote will be held for **only** emergency requests.  The virtual voting process will follow the normal COE process except that no actual meeting will be held and voting will be conducted through email.  
 
-The COE will be responsible for:
+    The COE will be responsible for:
 
-Validating that the request is an actual emergency 
-Ensuring that no action is taken in the event that a quorum is not reached
-Recording the decision
-Ensuring that each emergency request is processed in a timely manner
+    - Validating that the request is an actual emergency 
+    - Ensuring that no action is taken in the event that a quorum is not reached
+    - Recording the decision
+    - Ensuring that each emergency request is processed in a timely manner
 
-Quorum Requirement
+- **Quorum Requirement**
+    COE members are expected to participate in each meeting.  In order for the outcome of a COE vote to be official there must be a minimum of three voting members present (in person or remotely via WebEx or conference call), including a COE Chair or Alternate COE Chair.  In the event that neither the official COE Chair or Alternate Chair may be present, they may each designate in writing a secondary alternate who may fulfill the quorum requirement in their absence.  Note that only government employees may be voting members or COE Chairs. 
 
-COE members are expected to participate in each meeting.  In order for the outcome of a COE vote to be official there must be a minimum of three voting members present (in person or remotely via WebEx or conference call), including a COE Chair or Alternate COE Chair.  In the event that neither the official COE Chair or Alternate Chair may be present, they may each designate in writing a secondary alternate who may fulfill the quorum requirement in their absence.  Note that only government employees may be voting members or COE Chairs. 
+    When a quorum is present, COE decisions will be based on a majority vote of the present voting COE members. In the event of a tie, the COE Chair will exercise executive decision making authority to approve, defer, or disapprove the decision.
 
-When a quorum is present, COE decisions will be based on a majority vote of the present voting COE members. In the event of a tie, the COE Chair will exercise executive decision making authority to approve, defer, or disapprove the decision.
+    The COE Chair has the authority to veto all decisions, though in cases where a veto goes against the majority the rationale for the veto must be documented.   All change requests, excluding Emergency Change Requests, will be voted on during the weekly COE Meetings. If a quorum is not present, voting will be deferred until the next COE meeting. 
 
-The COE Chair has the authority to veto all decisions, though in cases where a veto goes against the majority the rationale for the veto must be documented.   All change requests, excluding Emergency Change Requests, will be voted on during the weekly COE Meetings. If a quorum is not present, voting will be deferred until the next COE meeting. 
+- **Supporting Tool(s)**
+    Change Requests will be tracked in the Remedyforce application and any changes that elevate to the level of a CCB review will also be tracked in the Bureau’s Redmine Tool.  
 
-Supporting Tool(s)
-
-Change Requests will be tracked in the Remedyforce application and any changes that elevate to the level of a CCB review will also be tracked in the Bureau’s Redmine Tool.  
-
-Changes to the Charter
+###Changes to the Charter
 Any proposed changes to this COE Charter may be reviewed and approved as a standard CR.  This charter will be reviewed annually or as required.  Any necessary revisions will be made and tracked via the charter revision history.
 
+###Appendix A
 
-
-
-Appendix A
-Acronym List
+**Acronym List**
 
 BA	Business Analyst
 CCB	Change Control Board (or Configuration Control Board)
@@ -243,58 +241,87 @@ CR	Change Request
 SwAG Software Advisory Group - The SwAG is composed of a diversified team of architects (technical, solution, product-specific) with expertise in techonologies the Bureau supports 			
 T&I	Technology & Innovation
 
-Appendix B
-COE Membership
+###Appendix B
 
-Name
-COE Role
-Govt or Ctr
-Katherine Kravchonok
-Chair
-Govt
-Dave Cassidy
-Alternate Chair / Platform Program Manager
-Govt
-Bill Shelton
-Principal Platform Architect 
-Govt
-Adebimpe Abanishe 
-Platform Project Gov Lead
-Govt
-Miklane Chang
-Enterprise Platform Developer 
-Govt
-Tim Ryan
-Enterprise Architecture Rep
-Govt
-TBD
-Data Team Rep
-Govt
-Paul Pick-Aluas
-COE Solution Architect 
-Ctr
-Matt Meyers, Joe Grefenstette
-COE Technical Architect
-Ctr
-Dwayne McDonald
-Cybersecurity Rep
-Govt
-Amit Patel
-COE Facilitator 
-Ctr
+**COE Membership**
 
-
-Platform Business Analyst
-
-
-
-
-Project Management Office Representative
-
-
-
-
-Business Line Representatives
+<table>
+<tr>
+    <td>Name</td>
+    <td>COE Role</td>
+    <td>Govt or Ctr</td>
+</tr>
+<tr>
+    <td>Katherine Kravchonok</td>
+    <td>Chair</td>
+    <td>Govt</td>
+</tr>
+<tr>
+    <td>Dave Cassidy</td>
+    <td>Alternate Chair / Platform Program Manager</td>
+    <td>Govt</td>
+</tr>
+<tr>
+    <td>Bill Shelton</td>
+    <td>Principal Platform Architect</td>
+    <td>Govt</td>
+</tr>
+<tr>
+    <td>Adebimpe Abanishe</td>
+    <td>Platform Project Gov Lead</td>
+    <td>Govt</td>
+</tr>
+<tr>
+    <td>Miklane Chang</td>
+    <td>Enterprise Platform Developer</td>
+    <td>Govt</td>
+</tr>
+<tr>
+    <td>Tim Ryan</td>
+    <td>Enterprise Architecture Rep</td>
+    <td>Govt</td>
+</tr>
+<tr>
+    <td>TBD</td>
+    <td>Data Team Rep</td>
+    <td>Govt</td>
+</tr>
+<tr>
+    <td>Paul Pick-Aluas</td>
+    <td>COE Solution Architect</td>
+    <td>Ctr</td>
+</tr>
+<tr>
+    <td>Matt Meyers, Joe Grefenstette</td>
+    <td>COE Technical Architect</td>
+    <td>Ctr</td>
+</tr>
+<tr>
+    <td>Dwayne McDonald</td>
+    <td>Cybersecurity Rep</td>
+    <td>Govt</td>
+</tr>
+<tr>
+    <td>Vanessa Pierce</td>
+    <td>COE Facilitator</td>
+    <td>Ctr</td>
+</tr>
+<tr>
+    <td></td>
+    <td>Platform Business Analyst</td>
+    <td></td>
+</tr>
+<tr>
+    <td></td>
+    <td>Project Management Office Representative</td>
+    <td></td>
+</tr>
+<tr>
+    <td></td>
+    <td>Business Line Representatives</td>
+    <td></td>
+ </tr>
+ </table>
 
 
 
