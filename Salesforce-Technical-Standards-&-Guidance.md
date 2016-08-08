@@ -18,7 +18,8 @@
   - Loosely bound APIs
   - [APIs use and generation in general](APIs-use-and-generation-in-general.md)
 - [Agile Methodology]
-- [CoE and SwAG (Governance)]
+- [Center of Excellence (COE)](Center-of-Excellence.md)
+- Software Advisory Group (SwAG)
 - [Salesforce Best Practices]
   - Secure coding practices
   - [Querying Datasets and SOQL](Querying-Datasets-and-SOQL.md)
