@@ -18,7 +18,7 @@ The really nice thing about packaging is that once it is deployed to a target en
 
 This is the basis of the deployment process outlined in this document. Below you will find a sample of what a package in Salesforce looks like.
 
-![Package](img/Package.png)
+![Package](img/package.png)
 
 ####Deploying between Salesforce Environments 
 
