@@ -3,7 +3,7 @@
 - [FAQs](FAQs.md)
 - [T&I Org Structure](Org-Chart.md)
 - [Architectural View]
-  - Environments 
+  - [Environments](Salesforce-Diagrams-v05.png)
   - Common and Mastered Objects
   - [Deployment Pipeline]
   - [Source Code and Configuration Management]
