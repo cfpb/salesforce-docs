@@ -48,4 +48,4 @@ In order to deploy a release to production, the project team must first deploy t
 
 Below you will find a diagram of the environments described above depicting the flow a deployment must go through in order to be deployed to production.
 
-![Deployment](img\Deployment-Pipeline.png)
+![Deployment](Deployment-Pipeline.png)
