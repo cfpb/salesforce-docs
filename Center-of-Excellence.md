@@ -77,6 +77,7 @@ Membership of the COE consists of the following voting and non-voting member rol
     <td>☑</td>
     <td>☑</td>
 </tr>
+</table>
 Alternate COE Chair
 Govt
 ☑
