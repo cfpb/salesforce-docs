@@ -10,7 +10,7 @@
   - [Tooling](Tooling.md)
   - Bigger integrations: MED, Box, ICAM
 - [Security Model (Permission Sets, Profiles)](Security-Model-(Permission-Sets,-Profiles).md)
-- [Record Level Sharing](Record-Level-Sharing.md)
+- [Sharing & Security](Record-Level-Sharing.md)
 - [Software, Architecture, Data, and Visual Design Standards References]
 - [Technical Approach]
   - Guiding Principles
