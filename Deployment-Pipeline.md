@@ -16,7 +16,7 @@ There are two different models that a project team can use while developing thei
 ####Salesforce Environments
 The salesforce environments used for Salesforce releases are broken up into categories:
 
-- **Project Environments** - Project environments are Salesforce sandbox environments that are dedicated to a single project team. The project team has full access to the environments and does not share the environments with any other project team. The project team members manage all releases among all of their environments and choose the level of access each member has to each of their environments.
+**Project Environments** - Project environments are Salesforce sandbox environments that are dedicated to a single project team. The project team has full access to the environments and does not share the environments with any other project team. The project team members manage all releases among all of their environments and choose the level of access each member has to each of their environments.
 
 Project team environments consist of the the following environments:
 
@@ -28,7 +28,7 @@ Project team environments consist of the the following environments:
         
 **NOTE:** Individual developer environments can also be used in either model for proof of concepts. Project teams should avoid creating proof of concepts in their Project Dev org if at all possible.
 
-- **Platform Environments** - Platform environments are Salesforce sandbox environments that are shared across all project teams. Access to these environments is limited for the project team members. The platform release manager is the owner of the platform environments and manages all releases among the different environments including production.
+**Platform Environments** - Platform environments are Salesforce sandbox environments that are shared across all project teams. Access to these environments is limited for the project team members. The platform release manager is the owner of the platform environments and manages all releases among the different environments including production.
 
 Platform environments consist of the the following environments:
 
