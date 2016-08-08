@@ -77,100 +77,111 @@ Membership of the COE consists of the following voting and non-voting member rol
     <td>☑</td>
     <td>☑</td>
 </tr>
+<tr>
+    <td>Alternate COE Chair</td>
+    <td>Govt</td>
+    <td>☑</td>
+    <td>☑</td>
+    <td>☑</td>
+    <td>☑</td>
+</tr>
+<tr>
+    <td>Platform Program Manager</td>
+    <td>Govt</td>
+    <td>☑</td>
+    <td>☑</td>
+    <td>☑</td>
+    <td>☑</td>
+</tr>
+<tr>
+    <td>Principal Platform Architect</td>
+    <td>Govt</td>
+    <td>☑</td>
+    <td>☑</td>
+    <td>☑</td>
+    <td>☑</td>
+</tr>
+<tr>
+    <td>Platform Project Gov Lead</td>
+    <td>Govt</td>
+    <td>☑</td>
+    <td>☑</td>
+    <td>☑</td>
+    <td>☑</td>
+</tr>
+<tr>
+    <td>Enterprise Architecture Rep</td>
+    <td>Govt</td>
+    <td>☑</td>
+    <td>☑</td>
+    <td>☑</td>
+    <td>☑</td>
+</tr>
+<tr>
+    <td>Data Team Rep</td>
+    <td>Govt</td>
+    <td></td>
+    <td>☑</td>
+    <td>☑</td>
+    <td>☑</td>
+</tr>
+<tr>
+    <td>COE Solution Architect</td>
+    <td>Govt or Ctr</td>
+    <td>☑</td>
+    <td>☑</td>
+    <td>☑</td>
+    <td>☑</td>
+</tr>
+<tr>
+    <td>COE Technical Architect</td>
+    <td>Govt or Ctr</td>
+    <td></td>
+    <td>☑</td>
+    <td>☑</td>
+    <td>☑</td>
+</tr>
+<tr>
+    <td>Cybersecurity Rep</td>
+    <td>Govt or Ctr</td>
+    <td></td>
+    <td>☑</td>
+    <td>☑</td>
+    <td>☑</td>
+</tr>
+<tr>
+    <td>COE Facilitator</td>
+    <td>Govt or Ctr</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>Platform Business Analyst</td>
+    <td>Govt or Ctr</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>Project Management Office Representative</td>
+    <td>Govt or Ctr</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>Business Line Representatives</td>
+    <td>Govt</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
 </table>
-Alternate COE Chair
-Govt
-☑
-☑
-☑
-☑
-Platform Program Manager
-Govt
-☑
-☑
-☑
-☑
-Principal Platform Architect 
-Govt 
-☑
-☑
-☑
-☑
-Platform Project Gov Lead
-Govt
-☑
-☑
-☑
-☑
-Enterprise Architecture Rep
-Govt 
-☑
-☑
-☑
-☑
-Data Team Rep
-Govt 
-
-
-☑
-☑
-☑
-COE Solution Architect 
-Govt or Ctr
-☑
-☑
-☑ 
-☑
-COE Technical Architect
-Govt or Ctr
-
-
-☑
-☑ 
-☑
-Cybersecurity Rep
-Govt or Ctr
-
-
-☑
-☑
-☑ 
-COE Facilitator 
-Govt or Ctr
-
-
-
-
- 
- 
-Platform Business Analyst
-Govt or Ctr
-
-
-
-
-
-
-
-
-Project Management Office Representative
-Govt or Ctr
-
-
-
-
- 
- 
-Business Line Representatives
-Govt
-
-
-
-
-
-
-
-
 
 *Note: Only government employees may be voting members.  In the event that a role above is being filled by a contractor, the voting check mark in the table above is instead a recommendation for those roles which are considered to have especially appropriate input to the type of vote indicated.
 COE Administration
