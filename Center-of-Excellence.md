@@ -61,14 +61,14 @@ The COE shall be responsible for the following activities, organized by primary 
 
 Membership of the COE consists of the following voting and non-voting member roles. 
 <table>
-<th>
+<tr>
     <td>Roles</td>
     <td>Govt / Ctr*</td>
     <td>New Sol Vote</td>
     <td>DESIGN Vote</td>
     <td>GO LIVE Vote</td>
     <td>CR Vote</td>
-</th>
+</tr>
 <tr>
     <td>COE Chair</td>
     <td>Govt</td>
