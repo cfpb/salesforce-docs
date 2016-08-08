@@ -46,7 +46,7 @@ Next, I’m going to write a test that will exercise my code in the most basic w
     }  
 
 If you run this test right now, your code is going to fail:
-THIS IS WRONG IMAGE
+
 ![Failed Test](failed_test.png)
 
 So, now that we know what we need to implement, we’re going to write the code needed to pass the first unit test:  
@@ -77,8 +77,8 @@ So, now that we know what we need to implement, we’re going to write the code 
     }  
 
 Now if we run the unit test again, the code passes the test:
-THIS IS WRONG IMAGE
-![Enterprise Platforms - CoE](ep_team.png)  
+
+![Passed Test](passed_test.png)  
 
 In fact, you can see that we have 100% code coverage. We could stop here, but we really want to be confident in the code, so there are a few more conditions that we’re going to test. We haven’t yet verified that the Stack implementation handles multiple values, and that it can pop() them in the correct order, so the next test is going to verify those things:  
 
