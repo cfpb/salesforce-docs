@@ -234,12 +234,12 @@ Any proposed changes to this COE Charter may be reviewed and approved as a stand
 
 **Acronym List**
 
-BA - Business Analyst<br>
-CCB - Change Control Board (or Configuration Control Board)<br>
-COE - Center of Excellence <br>
-CR - Change Request<br>
+BA   - Business Analyst<br>
+CCB  - Change Control Board (or Configuration Control Board)<br>
+COE  - Center of Excellence <br>
+CR   - Change Request<br>
 SwAG - Software Advisory Group - The SwAG is composed of a diversified team of architects (technical, solution, product-specific) with expertise in techonologies the Bureau supports 	<br>		
-T&I - Technology & Innovation
+T&I  - Technology & Innovation
 
 ###Appendix B
 
