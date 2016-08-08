@@ -57,20 +57,26 @@ The COE shall be responsible for the following activities, organized by primary 
     - Authorize, categorize and prioritize configuration changes to T&I EP-controlled configuration items, which may include software or cloud environments, processes, approved plans, and other configuration items as defined by the EP COE
     - Support enterprise CR review and reporting for T&I’s Enterprise Change Control Board (CCB) based on T&I PMO’s published CCB criteria and thresholds 
 
-Roles
+**Roles**
+
 Membership of the COE consists of the following voting and non-voting member roles. 
- Roles
-Govt / Ctr*
-New Sol Vote
-DESIGN Vote
-GO LIVE Vote
-CR Vote
-COE Chair
-Govt
-☑
-☑
-☑
-☑
+<table>
+<th>
+    <td>Roles</td>
+    <td>Govt / Ctr*</td>
+    <td>New Sol Vote</td>
+    <td>DESIGN Vote</td>
+    <td>GO LIVE Vote</td>
+    <td>CR Vote</td>
+</th>
+<tr>
+    <td>COE Chair</td>
+    <td>Govt</td>
+    <td>☑</td>
+    <td>☑</td>
+    <td>☑</td>
+    <td>☑</td>
+</tr>
 Alternate COE Chair
 Govt
 ☑
