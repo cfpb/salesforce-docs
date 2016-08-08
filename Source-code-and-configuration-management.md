@@ -73,6 +73,7 @@ A new Salesforce project has just been established. The project has team members
 1. Once submitted the RemedyForce ticket must go through the appropriate approvals. Once approved the ticket is then routed to the release manager.
 
 **Release Manager**
+
 1. Receives notification of the RemedyForce ticket to setup a new Salesforce project.
 1. Creates Project Team Dev and Project Team Build/UAT sandboxes and grants the project lead access to the sandboxes.
 1. Creates additional individual developer sandboxes as requested in the ticket. 
@@ -89,10 +90,12 @@ A new Salesforce project has just been established. The project has team members
 1. Updates settings in the Jenkins jobs for the project specific settings such as git repos, package name, usernames, and passwords.
 
 **Lead Developer**
+
 1. Forks the Project Master Repository ( {Project Name}-deploy ) to {Team}/{Project Name}-deploy
 1. Creates a new empty package in their Project Dev sandbox.
 
 **Developers (for each individual developer sandbox)**
+
 1. Creates a fork for their individual specific sandbox. e.g., {developer name}/{Project Name}-deploy. This is the double forked repository we mentioned earlier.
 1. Create new empty package in their respective individual developer sandbox.
 
@@ -101,16 +104,19 @@ A new Salesforce project has just been established. The project has team members
 Now that all of the initial project initiation steps have been completed, the project team can now begin development. 
 
 **Developer 1**
+
 1. Creates a new apex class in Eclipse IDE and saves to the Platform Dev sandbox.
 1. Creates a new visualforce page in the Salesforce UI.
 1. Creates a new custom object in the Salesforce UI. 
 1. Adds the new apex class, visualforce page, and custom object to the package.
 
 **Configurator 1 (working on same org as developer)**
+
 1. Creates a new page layout, record type, custom field, etc in the Salesforce UI.
 1. Adds the new page layouts, record types, workflow rules, etc to the package.
 
 **Jenkins/Ant {Project Name}-Retrieve and Commit job**
+
 1. Syncs package with git repo hourly and pushes to fork, {Team}/{Project Name}-deploy. All components not currently in the repository that are in the package are added to the repository. Any existing components in the package that also in the repository are updated in the repository. 
 
 **Note:** Only code and components that are in the package are committed to the repository. 
@@ -119,23 +125,28 @@ Now that all of the initial project initiation steps have been completed, the pr
 This step represents every day after the first day of development. 
 
 **Developer 1**
+
 1. Refreshes the Eclipse IDE from the Project Dev.
 1. Updates an existing apex class.
 
 **Developer 2**
+
 1. Creates a new apex class in the Eclipse IDE.
 1. Adds a new apex class to the package. 
 
 **Configurator 1**
-Creates a new report in the Salesforce UI.
-Creates an approval process in the salesforce UI.
-Adds the report and approval process to the package.
+
+1. Creates a new report in the Salesforce UI.
+1. Creates an approval process in the salesforce UI.
+1. Adds the report and approval process to the package.
 
 **Configurator 2**
+
 1. Updates an existing page layout in the Salesforce UI.
 1. Updates an existing workflow rule in the Salesforce UI.
 
 **Jenkins/Ant {Project Name}-Retrieve and Commit job**
+
 1. Syncs package with git repo hourly and pushes to fork, {Team}/{Project Name}-deploy. All components not currently in the repository that are in the package are added to the repository. Any existing components in the package that also in the repository are updated in the repository. 
 
 **Note:** Only code and components that are in the package are committed to the repository. 
@@ -144,6 +155,7 @@ Adds the report and approval process to the package.
 In this step the project team now has enough code and configuration completed that they are ready to start testing their application and demoing it to end users. In order to QA and demo to end using they need to deploy their application to their project team’s build / QA sandbox.
 
 **Lead Developer**
+
 1. Verifies package, and updates readme.md in fork, {Team}/{Project Name}-deploy, and captures the manual pre-deploy and post deploy steps.
 1. Performs pre-deploy manual steps in Team Build/QA.
 1. Executes Jenkins job {Project Name} - Deploy to QA. 
@@ -158,6 +170,7 @@ In this step the project team now has enough code and configuration completed th
 In this step the project team has completed the current version of their application and is ready to start the deployment process to production. The first step in that process is deploying their application to the platform integration sandbox.
 
 **Lead Developer**
+
 1. Verifies that the package is tested and ready to deploy to integration. 
 Creates a pull request from fork {Team}/{Project Name}-deploy to {Salesforce}/{Project Name}-deploy. 
 1. Adds label/version in pull request. e.g., v2.5.09 … v2.5.10.
@@ -182,10 +195,12 @@ Creates a pull request from fork {Team}/{Project Name}-deploy to {Salesforce}/{P
 In this step the project team has successfully completed all system testing in the platform integration sandbox and has verified that there are no functional issues with their application and that their application hasn’t impacted any other applications in the integration sandbox.
 
 **Lead Developer**
+
 1. Creates a ticket in RemedyForce requesting to deploy to UAT. Includes link to the pull request in the ticket.
 1. Creates a comment in the pull request asking to deploy from {Project Name}-Deploy repository to UAT and includes the RemedyForce ticket number in the comment. 
 
 **Release Manager**
+
 1. Reviews pull request and RemedyForce ticket. Verifies that the appropriate approvals have been given in the ticket. 
 1. Performs any pre-deployment steps as outlined in the readme.md file. 
 1. Executes jenkins job “{Project Name}-Deploy to UAT” to deploy the package from repository {Project Name}-Deploy to the UAT sandbox.
@@ -200,12 +215,14 @@ Tests to make sure everything is functioning as expected in the UAT sandbox.
 This is an optional step that can be used if the project team wishes to deploy their application to another sandbox now listed in this scenario. 
 
 **Lead Developer**
+
 1. Creates a ticket in RemedyForce requesting to deploy to “X Platform Sandbox”. Includes link to pull request in the ticket. 
 1. Creates comment in pull request asking to deploy from {Project Name}-Deploy repository to “X Platform Sandbox” and includes RemedyForce ticket number in the comment. 
 
 **Note:** If the project team needs to deploy to another sandbox at the project level and not the platform level they can have the release manager clone a Jenkins job that they can run to deploy to their other sandboxes without requiring a pull request or RemedyForce ticket. 
 
 **Release Manager**
+
 1. Reviews the pull request and RemedyForce ticket. Verifies that the appropriate approval have been given in the ticket. 
 1. Performs any pre-deployment steps as outlined in the readme.md file. 
 1. Executes jenkins job “{Project Name}-Deploy to X Platform Sandbox” to deploy package from repo {Project Name}-Deploy to “X Platform Sandbox”.
@@ -217,10 +234,12 @@ Comments on the pull request that the deployment is complete or failed according
 Once all testing has been completed in UAT and signed off, the release manager will then perform a practice deployment to staging just as if a deployment to production was occurring. This step is entirely for the release manager to make sure that he has all of the deployment steps correct before deploying to production. 
 
 **Lead Developer**
+
 1. Provides comment in pull request asking to deploy from {Project Name}-Deploy repo to production. 
 1. Creates a ticket in RemedyForce requesting to deploy to production. Includes link to pull request in the ticket. 
 
 **Release Manager**
+
 1. Approves request for deployment to production and schedules deployment to production.
 1. Performs any pre-deployment steps as outlined in the readme.md file. 
 1. Executes Jenkins job “{Project Name}-Deploy to Staging”. 
@@ -228,6 +247,7 @@ Once all testing has been completed in UAT and signed off, the release manager w
 If the deployment failed, removes the deployment from the schedule and closes the ticket in RemedyForce. As with previous steps the project team must fix any issues in code and configuration. Once fix they the issues they can open a ticket in RemedyForce to deploy to integration again. 
 
 **Project Team / Release**
+
 1. Performs final smoke tests to make sure everything is working as expected in the staging sandbox.
 
 **Note:** Only project team members who are authorized to access production data will be granted access to test in the staging sandbox.
@@ -236,6 +256,7 @@ If the deployment failed, removes the deployment from the schedule and closes th
 This is the final step in the release management process. 
 
 **Release Manager**
+
 1. The day before the scheduled deployment date, uses jenkins to perform a full backup of the production environment and commits into the Salesforce master repository with a new version/label for the backup.
 1. On the scheduled deployment date performs any pre-deployment steps as outlined in the readme.md.
 1. Executes Jenkins job “{Project Name}-Deploy to Production”. 
@@ -246,6 +267,7 @@ This is the final step in the release management process.
 1. Closes the pull request.
 
 **Project Team**
+
 1. Performs testing in production to validate everything is working as expected.
 
 ####Next Release Initiation
@@ -255,17 +277,22 @@ It is recommended that at the beginning of each release, the existing sandboxes 
 The longer a project team goes without refreshing their sandboxes, the higher the risk that there will be problems when they attempt to deploy to the platform sandbox environments and production. 
 
 **Release Manager**
+
 1. Refreshes the platform, UAT, and staging sandboxes as needed. It is recommended that this is done once a month after a release to ensure that all platform sandboxes match production to reduce deployment issues. 
 
 **Project Team**
+
 1. Creates RemedyForce ticket to create environments for the next release.
 
 **Release Manager**
+
 1. Creates a new sandbox for the project team dev for the next release. 
 1. Creates and/or refreshes any developer specific sandboxes (as requested).
 
 **Project Team**
+
 1. Creates RemedyForce ticket to retire the previous version sandboxes when no longer needed. 
 
 **Release Manager**
+
 1. Deletes previous version project sandboxes.
