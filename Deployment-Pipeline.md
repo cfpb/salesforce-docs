@@ -32,9 +32,7 @@ Project team environments consist of the the following environments:
 
 Platform environments consist of the the following environments:
 
-1. **Integration** - The integration environment is the first environment where all project teams deploy to the same environment. The purpose of the integration environment is to verify that each project’s applications will deploy and not adversely affect another project team’s application. 
-
-Once a project team’s application is deployed to the integration environment successfully, the project team would then perform system level testing to verify that the application works as expected. Also at this time the project team will also test any integrations to other external systems.
+1. **Integration** - The integration environment is the first environment where all project teams deploy to the same environment. The purpose of the integration environment is to verify that each project’s applications will deploy and not adversely affect another project team’s application. Once a project team’s application is deployed to the integration environment successfully, the project team would then perform system level testing to verify that the application works as expected. Also at this time the project team will also test any integrations to other external systems.
 
 1. **UAT** - The UAT environment is where all of the user acceptance testing is performed for each project’s applications that will be deployed to production. The UAT environment is a full sandbox allowing for a complete end to end testing to occur with a complete data set. Because this environment contains production data, only users that have been cleared to interact with production data are granted access to this environment. Typically access in this environment will mirror the access levels granted in production.
 
