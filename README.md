@@ -35,8 +35,6 @@ and the various Product Teams doing application development on Salesforce.
 
 Note that technical design and implementation is reviewed by the [SwAG - Software Advisory Group] (https://github.cfpb.gov/SoftwareDevelopment/Software-Advisory-Group) and signed off by the Principal Architect and the CoE.
 
-* [CFPB Salesforce Development & Technical Standards - Original Google Doc] (https://docs.google.com/document/d/162CX0Wre7tXSyy7qCNLaQ3me2OoRRlzdHkyImP1A1mU) 
-  * **NOTE**: This is being replaced by the following:
 * **[Salesforce-Technical-Standards-&-Guidance](Salesforce-Technical-Standards-&-Guidance.md)**
 * [Data Modeling Guidance ] (https://github.cfpb.gov/Salesforce/salesforce-docs/issues/2)
 * [Report and Dashboard Guidance](https://github.cfpb.gov/Salesforce/salesforce-docs/issues/1)
@@ -46,7 +44,7 @@ Note that technical design and implementation is reviewed by the [SwAG - Softwar
 
 
 ###### Environment Management
- * [Sandbox Setup and Deployment Strategy](https://docs.google.com/a/cfpb.gov/document/d/1WrOf1gED8oaZ-9RUUFAZ2nuUwQcPpA0-5X6GXPW3a_c/edit?usp=sharing) 
+ * [Sandbox Setup and Deployment Strategy](How-to_set-up-a-dev-sandbox.md) 
  - Requesting Access (placeholder)
  - Requesting Dev Orgs (placeholder)
 
@@ -67,7 +65,7 @@ Note that technical design and implementation is reviewed by the [SwAG - Softwar
 - [ ] [[Delivery Pipeline]]
 - [ ] [[Tooling]]
 - [ ] [[Processes]]
-- [ ] [[Continuous Delivery]]
+- [x] [[Continuous Delivery]]
 - [ ] [[Environment Strategy]]
 - [ ] [[Technology Governance]]
 - [x] [The SWAG](https://github.cfpb.gov/SoftwareDevelopment/Software-Advisory-Group)
