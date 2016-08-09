@@ -19,21 +19,23 @@ Macbooks are available for Developers or Designers only. Project managers cannot
             1. Editors
                 1. SublimeText 3 
                 1. Mavensmate for SublimeText 3
+                1. Sublime Text 2
+                1. Eclipse
+                    1. Go to Self Service on the Mac
+                    1. Developers -> Java Development Kit 8 Update 73 
+                    1. Developers -> Eclipse-Java-4.6
+                    1. [Force.com IDE](https://developer.salesforce.com/page/Force.com_IDE_Installation)
+                    1. [eGit](http://www.eclipse.org/egit/download/)
             1. Homebrew
             1. Sequel Pro
             1. Firefox (for QA only)
             1. Data Loader
             1. Flash Player Plugin
             1. Ant
-            1. Google Drive
             1. OmniGraffle
-            1. Eclipse
-                1. Go to Self Service on the Mac
-                1. Developers -> Java Development Kit 8 Update 73 
-                1. Developers -> Eclipse-Java-4.6
-                1. [Force.com IDE](https://developer.salesforce.com/page/Force.com_IDE_Installation)
-                1. [eGit](http://www.eclipse.org/egit/download/)
-            1. Sublime Text 2
+            1. Google Drive
+            1. GitHub
+            2. Viscosity - how do we get an account?
 1. Other Tools
     1. [JIRA](https://jira.demo.cfpb.gov)
     1. [Jenkins](http://zusa.demo.cfpb.gov/)
