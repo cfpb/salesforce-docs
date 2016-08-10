@@ -78,24 +78,24 @@ In addition to exposing APIs to external systems, Salesforce also has a few mech
 
 1. **HTTP call-outs using Apex**
 
-If you need to make a call out to an external web service, using apex you can use the HTTPRequest and HTTPResponse objects to make and receive HTTP calls to external systems. This is ideal for communicating with simple services that require simple HTTP messages to be passed like a REST API. 
+    If you need to make a call out to an external web service, using apex you can use the HTTPRequest and HTTPResponse objects to make and receive HTTP calls to external systems. This is ideal for communicating with simple services that require simple HTTP messages to be passed like a REST API. 
 
 2. **Call-Outs to SOAP APIs**
 
-Salesforce also supports making more complex call-outs to SOAP APIs as well. In order to communicate with an external SOAP service you will need to import the WSDL under Develop->Classes. Once the WSDL has been imported a façade class is generated for each of the methods in the SOAP service. You then can use apex to execute those methods to make a call-out to the SOAP service. 
+    Salesforce also supports making more complex call-outs to SOAP APIs as well. In order to communicate with an external SOAP service you will need to import the WSDL under Develop->Classes. Once the WSDL has been imported a façade class is generated for each of the methods in the SOAP service. You then can use apex to execute those methods to make a call-out to the SOAP service. 
 
-Occasionally the WSDL will not import because the Salesforce WSDL parser does not understand the WSDL. In this case you will manually need to recreate the façade by hand. This procedure is out of scope of this document. 
+    Occasionally the WSDL will not import because the Salesforce WSDL parser does not understand the WSDL. In this case you will manually need to recreate the façade by hand. This procedure is out of scope of this document. 
 
 3. **Outbound Messaging**
 
-Using the WSDL importer and the HttpRequest or HTTPResponse apex objects are fine to use when you need to make point-to-point calls. The only drawback is if you are unable to connect to the external service and/or failures occur there is not retry mechanism. 
+    Using the WSDL importer and the HttpRequest or HTTPResponse apex objects are fine to use when you need to make point-to-point calls. The only drawback is if you are unable to connect to the external service and/or failures occur there is not retry mechanism. 
 
-When you need more complex handling with retry mechanisms built-in in, you may want to consider using Salesforce Outbound Messaging services. Outbound Messaging is part of the Salesforce workflow and approvals system. An outbound message can be automatically executed when a record has been inserted or updated. The real power behind Outbound Messaging is that if an error occurs while communicating with the external service, the outbound message will retry later. The Outbound Messaging system will retry to send the message for up to 24 hours. 
+    When you need more complex handling with retry mechanisms built-in in, you may want to consider using Salesforce Outbound Messaging services. Outbound Messaging is part of the Salesforce workflow and approvals system. An outbound message can be automatically executed when a record has been inserted or updated. The real power behind Outbound Messaging is that if an error occurs while communicating with the external service, the outbound message will retry later. The Outbound Messaging system will retry to send the message for up to 24 hours. 
 
-There are a couple drawbacks to using Outbound Messaging. Multiple messages can be sent at the same time if multiple updates occur to a specific record. Don’t use outbound messaging if sequence of events is important, such as with logging. 
+    There are a couple drawbacks to using Outbound Messaging. Multiple messages can be sent at the same time if multiple updates occur to a specific record. Don’t use outbound messaging if sequence of events is important, such as with logging. 
 
-Additionally in order to use outbound messaging you must export a WSDL and implement the service on the other end. Many times the time required to implement this service is less time that it would take to implement the retry mechanisms already built into the Outbound Messaging capability.
+    Additionally in order to use outbound messaging you must export a WSDL and implement the service on the other end. Many times the time required to implement this service is less time that it would take to implement the retry mechanisms already built into the Outbound Messaging capability.
 
-For more information on how Outbound Messaging works visit the page below.
+    For more information on how Outbound Messaging works visit the page below.
 
-[https://developer.salesforce.com/docs/atlas.en-us.api.meta/api/sforce_api_om_outboundmessaging_understanding.htm](https://developer.salesforce.com/docs/atlas.en-us.api.meta/api/sforce_api_om_outboundmessaging_understanding.htm) 
+    [https://developer.salesforce.com/docs/atlas.en-us.api.meta/api/sforce_api_om_outboundmessaging_understanding.htm](https://developer.salesforce.com/docs/atlas.en-us.api.meta/api/sforce_api_om_outboundmessaging_understanding.htm) 
