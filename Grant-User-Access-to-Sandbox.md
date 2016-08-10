@@ -1,6 +1,6 @@
 
 ####Salesforce Admin Steps to Grant User Access to Sandbox
-1. Go to Salesforce Setup
+1. Go to Salesforce production Setup
 2. Search for 'Sandbox' - Find sandbox name and click 'Login'
 3. Change URL to be 'https://cfpb--<sanbox name>.cs##.my.salesforce.com'
 4. Go to Setup - Maintain Users on that sandbox
