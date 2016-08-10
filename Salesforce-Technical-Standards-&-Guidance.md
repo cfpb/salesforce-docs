@@ -13,7 +13,7 @@
 - [Sharing & Security](Record-Level-Sharing.md)
 - [Software, Architecture, Data, and Visual Design Standards References]
 - [Technical Approach]
-  - Guiding Principles
+  - [Guiding Principles](Guiding-Principles.md)
   - Configuration over code
   - Loosely bound APIs
   - [APIs use and generation in general](APIs-use-and-generation-in-general.md)
