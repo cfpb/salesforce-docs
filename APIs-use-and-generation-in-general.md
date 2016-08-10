@@ -16,15 +16,15 @@ The SOAP API supports database operations such as query, insert, update, delete,
 
 - **Enterprise API**
 
-The only difference between the enterprise and partner API is that the enterprise API is strongly typed to a specific Salesforce environment. The API exposes every Salesforce object standard and custom as data structures within the API. This makes it much quicker for one to develop, as there is no need to spend time creating data structures for each object you wish to work with within the org. 
+    The only difference between the enterprise and partner API is that the enterprise API is strongly typed to a specific Salesforce environment. The API exposes every Salesforce object standard and custom as data structures within the API. This makes it much quicker for one to develop, as there is no need to spend time creating data structures for each object you wish to work with within the org. 
 
-The downside of the SOAP API is that every time you add a new field or object, or delete a field or object, you must reimport the WSDL that represents the new data structure. Deleting objects and fields is especially dangerous, as that will break your current integrations if you do not update the WSDL.
+    The downside of the SOAP API is that every time you add a new field or object, or delete a field or object, you must reimport the WSDL that represents the new data structure. Deleting objects and fields is especially dangerous, as that will break your current integrations if you do not update the WSDL.
 
 - **Partner API**
 
-The partner API on the other hand is not strongly typed for any one particular environment. It was originally designed for Salesforce partners to use where the data model could be different for each customer using their integration. Many customers also use this API because it reduces the risk of something breaking because a field was deleted, and in the long term reduces the overall maintenance cost since a new WSDL does not need to be imported every time the data model changes and you wish to access the new fields and/or objects in the data structure. 
+    The partner API on the other hand is not strongly typed for any one particular environment. It was originally designed for Salesforce partners to use where the data model could be different for each customer using their integration. Many customers also use this API because it reduces the risk of something breaking because a field was deleted, and in the long term reduces the overall maintenance cost since a new WSDL does not need to be imported every time the data model changes and you wish to access the new fields and/or objects in the data structure. 
 
-The downside of the Partner API is that there is a substantial amount of additional coding and work required for the initial implementation because you must generate your own xml within your code to bind to each object and field. Once the initial setup is complete, the ongoing maintenance is the same, if not less than that of the Enterprise API. 
+    The downside of the Partner API is that there is a substantial amount of additional coding and work required for the initial implementation because you must generate your own xml within your code to bind to each object and field. Once the initial setup is complete, the ongoing maintenance is the same, if not less than that of the Enterprise API. 
 
 **REST API**
 
