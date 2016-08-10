@@ -26,9 +26,9 @@ and the various Product Teams doing application development on Salesforce.
 ## Governance
 
 ### 1. Charter, Roles, and Operations (TBD Links)
-- Roles & Responsibilities
-- Salesforce Platform Charter
-- Operations
+- [Roles & Responsibilities](roles-&-responsibilities.md)
+- [Salesforce Platform Charter](mission-vision.md)
+- [Operations](operations.md)
 
 
 ### 2. Standards
