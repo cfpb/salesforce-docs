@@ -6,4 +6,4 @@ Decisions associated with business applications and the platform should be gover
 
 ![operations](img/operations.png)
 
-![Meeting Cadence](meeting-cadence.png)
+![Meeting Cadence](img/meeting-cadence.png)
