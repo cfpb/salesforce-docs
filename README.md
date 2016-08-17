@@ -71,7 +71,7 @@ Note that technical design and implementation is reviewed by the [SwAG - Softwar
 - [Technical Approach](/_pages/Technical-Approach.md)
 - [Agile Methodology](/_pages/Agile-Methodology.md)
 - [Center of Excellence (COE)](/_pages/Center-of-Excellence.md)
-- [Software Advisory Group (SwAG)](/_pages/SoftWare-Advisory-Group.md)
+- [Software Advisory Group (SwAG)](/_pages/software-advisory-group.md)
 - [Salesforce Best Practices](/_pages/Salesforce-Best-Practices.md)
 - [Exception Handling](/_pages/Exception-Handling.md)
 - [Testing & Debugging](/_pages/Testing-&-Debugging.md)
@@ -82,7 +82,7 @@ Note that technical design and implementation is reviewed by the [SwAG - Softwar
 
 Any feedback and contributions are welcome! 
 
-Please familiarize yourself with the [CONTRIBUTING](CONTRIBUTING.md). Then, make suggestions for edits, report issues, etc., in the [issues section](/salesforce-docs/issues) of this repository.
+Please familiarize yourself with the [CONTRIBUTING](CONTRIBUTING.md). Then, make suggestions for edits, report issues, etc., in the [issues section](salesforce-docs/issues) of this repository.
 
 ----
 
