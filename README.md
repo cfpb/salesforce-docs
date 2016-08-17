@@ -69,7 +69,7 @@ Note that technical design and implementation is reviewed by the [SwAG - Softwar
 - [Sharing & Security](/_pages/Record-Level-Sharing.md)
 - [Software, Architecture, Data, and Visual Design Standards References]
 - [Technical Approach](/_pages/Technical-Approach.md)
-- [Agile Methodology] (chuck warner, stephanie osan, martiki reed)
+- [Agile Methodology](/_pages/Agile-Methodology.md)
 - [Center of Excellence (COE)](Center-of-Excellence.md)
 - [Software Advisory Group (SwAG)](https://github.cfpb.gov/SoftwareDevelopment/Software-Advisory-Group/blob/master/README.md)
 - [Salesforce Best Practices](/_pages/Salesforce-Best-Practices.md)
