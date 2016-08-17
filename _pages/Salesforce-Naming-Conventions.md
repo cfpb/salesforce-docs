@@ -240,9 +240,10 @@ Step 1 | This is not descriptive enough as it will be displayed in the approval 
 Complex Approval – Step 1 | More descriptive but does not provide users with a clear enough picture of what was evaluated 
 
 The following are examples of the naming convention that will be used:
+
 Approval Process Step Name | Reason 
 ---------------------------|:-------
-Auto Approved – Value within personal limit | The approval step becomes self documenting showing the administrator and user the result of the approval step 
+Auto Approved – Value within personal limit | The approval step becomes self documenting showing the administrator and user the result of the approval step
 Auto Rejected – Value exceeds company policy | The approval step becomes self documenting showing the administrator and user the result of the approval step
 Approval – Sent to Manager | The approval step becomes self documenting showing the administrator and user the result of the approval step 
 Approval – Sent to Legal | The approval step becomes self documenting showing the administrator and user the result of the approval step
