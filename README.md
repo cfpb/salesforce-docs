@@ -88,7 +88,7 @@ Please familiarize yourself with the [CONTRIBUTING](CONTRIBUTING.md). Then, make
 
 ### Open source licensing info
 1. [TERMS](TERMS.md)
-2. [LICENSE](LICENSE)
+2. [LICENSE](LICENSE.md)
 3. [CFPB Source Code Policy](https://github.com/cfpb/source-code-policy/)
 
 

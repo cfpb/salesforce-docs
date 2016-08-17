@@ -4,6 +4,6 @@
 
 Decisions associated with business applications and the platform should be governed by the appropriate governing body with sufficient T&I and/or business line representation.
 
-![operations](img/operations.png)
+![operations](/img/operations.png)
 
-![Meeting Cadence](img/meeting-cadence.png)
+![Meeting Cadence](/img/meeting-cadence.png)
