@@ -70,7 +70,7 @@ Note that technical design and implementation is reviewed by the [SwAG - Softwar
 - [Software, Architecture, Data, and Visual Design Standards References]
 - [Technical Approach](/_pages/Technical-Approach.md)
 - [Agile Methodology](/_pages/Agile-Methodology.md)
-- [Center of Excellence (COE)](Center-of-Excellence.md)
+- [Center of Excellence (COE)](/_pages/Center-of-Excellence.md)
 - [Software Advisory Group (SwAG)](https://github.cfpb.gov/SoftwareDevelopment/Software-Advisory-Group/blob/master/README.md)
 - [Salesforce Best Practices](/_pages/Salesforce-Best-Practices.md)
 - [Exception Handling](/_pages/Exception-Handling.md)
