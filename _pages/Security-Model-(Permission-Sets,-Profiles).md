@@ -11,7 +11,7 @@ CFPB requires a profile and permission set approach that is optimized based on t
 * Permissions Model
 
 The selected approach is as follows (for example in SES):
-![Profile Model](img/profile_model.png)
+![Profile Model](/img/profile_model.png)
 
 This is an example of roles with two (2) example permissions sets (SES Examiner, SES Super User); the actual diagram may vary from project to project.
 

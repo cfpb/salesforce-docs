@@ -100,14 +100,11 @@ Additionally you can also choose is the users granted access to the accounts are
  
 For more information about territory management see 
  
-Territory Management Decision Guide 
-https://developer.salesforce.com/page/Territory_Management_Decision_Guide 
+[Territory Management Decision Guide](https://developer.salesforce.com/page/Territory_Management_Decision_Guide)
  
-Territory Management Data Model 
-https://developer.salesforce.com/docs/atlas.en-us.api.meta/api/sforce_api_erd_territory2.htm 
+[Territory Management Data Model](https://developer.salesforce.com/docs/atlas.en-us.api.meta/api/sforce_api_erd_territory2.htm 
  
-Territory Management Developers Guide 
-https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/Territory2.htm  
+[Territory Management Developers Guide](https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/Territory2.htm)  
  
  
  
