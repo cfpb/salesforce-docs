@@ -75,7 +75,7 @@ Note that technical design and implementation is reviewed by the [SwAG - Softwar
 - [Salesforce Best Practices](/_pages/Salesforce-Best-Practices.md)
 - [Exception Handling](/_pages/Exception-Handling.md)
 - [Testing & Debugging](/_pages/Testing-&-Debugging.md)
-- [Logging & Troubleshooting](/_pages/Logging-&-Troubleshooting.md)
+- [Logging & Troubleshooting](/_pages/Logging-&-Debugging.md)
 - [Appendices](/_pages/Appendices.md)
 
 ### Get involved
