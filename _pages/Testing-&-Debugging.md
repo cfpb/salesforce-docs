@@ -5,7 +5,7 @@
 - Browser Testing (sauce) - More to come
 - Security Testing (checkmarx) - More to come
 - 508/WCAG - More to come
-- [Top 10 Best Practices](_pages/Top-10-Best-Practices.md)
+- [Top 10 Best Practices](/_pages/Top-10-Best-Practices.md)
 
 ####Testing
 
