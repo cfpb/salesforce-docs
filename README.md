@@ -65,18 +65,18 @@ Note that technical design and implementation is reviewed by the [SwAG - Softwar
 - [FAQs](/_pages/FAQs.md)
 - [T&I Org Structure](/_pages/Org-Chart.md)
 - [Architectural View](/_pages/architecture-view.md)
-- [Security Model (Permission Sets, Profiles)](/_pages/Security-Model-Permission-Sets,-Profiles).md)
-- [Sharing & Security](_pages/Record-Level-Sharing.md)
+- [Security Model (Permission Sets, Profiles)](/_pages/Security-Model-(Permission-Sets,-Profiles).md)
+- [Sharing & Security](/_pages/Record-Level-Sharing.md)
 - [Software, Architecture, Data, and Visual Design Standards References]
-- [Technical Approach](_pages/Technical-Approach.md)
+- [Technical Approach](/_pages/Technical-Approach.md)
 - [Agile Methodology] (chuck warner, stephanie osan, martiki reed)
 - [Center of Excellence (COE)](Center-of-Excellence.md)
 - [Software Advisory Group (SwAG)](https://github.cfpb.gov/SoftwareDevelopment/Software-Advisory-Group/blob/master/README.md)
-- [Salesforce Best Practices](_pages/Salesforce-Best-Practices.md)
-- [Exception Handling](_pages/Exception-Handling.md)
-- [Testing & Debugging](_pages/Testing-&-Debugging.md)
-- [Logging & Troubleshooting](_pages/Logging-&-Troubleshooting.md)
-- [Appendices](_pages/Appendices.md)
+- [Salesforce Best Practices](/_pages/Salesforce-Best-Practices.md)
+- [Exception Handling](/_pages/Exception-Handling.md)
+- [Testing & Debugging](/_pages/Testing-&-Debugging.md)
+- [Logging & Troubleshooting](/_pages/Logging-&-Troubleshooting.md)
+- [Appendices](/_pages/Appendices.md)
 
 ### Get involved
 
