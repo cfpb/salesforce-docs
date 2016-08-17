@@ -43,6 +43,7 @@ There are a number of sandboxes in the deployment path from the team sandboxes t
 ####Salesforce Admin Steps to Create a Dev Sandbox
 1. Create sandbox
 2. Log in to sandbox as the admin
+    3. Change URL to be 'https://cfpb--<sanbox name>.cs##.my.salesforce.com'
 3. Go to Setup > Quick Find > Users 
 4. Navigate to user, click on user's name
 5. Make user an admin

@@ -1,4 +1,11 @@
 ###Effective Testing and Debugging
+  - [Writing good tests](_pages/Writing-good-tests.md)
+  - [Unit testing](_pages/Unit-testing.md)
+  - Browser Testing (sauce)
+  - Security Testing (checkmarx)
+  - 508/wcag - 
+  - [Top 10 Best Practices](_pages/Top-10-Best-Practices.md)
+
 
 ####Testing
 

@@ -1,2 +1,0 @@
-- [Salesforce Naming Conventions](Salesforce-Naming-Conventions.md)
-- [FISMA-and-NIST-references](FISMA-and-NIST-references.md)

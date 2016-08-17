@@ -17,7 +17,7 @@
   - Configuration over code
   - Loosely bound APIs
   - [APIs use and generation in general](APIs-use-and-generation-in-general.md)
-- [Agile Methodology]
+- [Agile Methodology] (chuck warner, stephanie osan, martiki reed)
 - [Center of Excellence (COE)](Center-of-Excellence.md)
 - [Software Advisory Group (SwAG)](https://github.cfpb.gov/SoftwareDevelopment/Software-Advisory-Group/blob/master/README.md)
 - [Salesforce Best Practices]

@@ -1,4 +1,31 @@
-## Welcome to the Salesforce Technology Portal
+
+<div align="center">
+<img alt="CFPB Salesforce Development Standards" src ="https://raw.githubusercontent.com/virtix/salesforce-docs/master/screenshot.png" />
+</div>
+
+
+**This project describes guidelines for how applications in Salesforce should be built and deployed. The intended audience are Salesfroce developers, administrators, and release managers.**
+
+
+
+#### What this **is**:
+ - Best practices for developing applications on the Salesforce platform
+ - Coding standards
+ - Automated testing standards
+ - Security best practices
+ - Deployment pipelines practices (continuous integration)
+
+
+#### What this is **not**:
+ - Specific to the CFPB's operating environment
+ - Operational instructions for how to get support; e.g., how to set up a developer sandbox; how to reset your password
+ - How to integrate with third-party systemt
+ - A list of CFPB applications or products
+
+**Status**:  Live "production" version 1.6.0  
+  - [CHANGELOG](CHANGELOG.md).
+
+### Welcome to the Salesforce Technology Portal
 
 As a user of these docs, please take initiative to edit and add content
 
@@ -23,50 +50,54 @@ and the various Product Teams doing application development on Salesforce.
 1. Minimize operational burden for the Salesforce Platform Admin Team and the CFPB at large
 
 
-## Governance
+### Governance
 
-### 1. Charter, Roles, and Operations
-- [Roles & Responsibilities](roles-&-responsibilities.md)
-- [Salesforce Platform Charter](mission-vision.md)
-- [Operations](operations.md)
+#### 1. Charter, Roles, and Operations
+- [Roles & Responsibilities](_pages/roles-&-responsibilities.md)
+- [Salesforce Platform Charter](_pages/mission-vision.md)
+- [Operations](_pages/operations.md)
 
 
-### 2. Standards
+#### 2. Standards
 
 Note that technical design and implementation is reviewed by the [SwAG - Software Advisory Group] (https://github.cfpb.gov/SoftwareDevelopment/Software-Advisory-Group) and signed off by the Principal Architect and the CoE.
 
-* **[Salesforce-Technical-Standards-&-Guidance](Salesforce-Technical-Standards-&-Guidance.md)**
-* [Data Modeling Guidance ] (https://github.cfpb.gov/Salesforce/salesforce-docs/issues/2)
-* [Report and Dashboard Guidance](https://github.cfpb.gov/Salesforce/salesforce-docs/issues/1)
-* [Technical Standards Google Doc Working Folder](https://drive.google.com/drive/u/1/folders/0B4d0xP3buN8qaFN2Mk5sNExrQnM)
-* [D&D Developer Manual](https://github.cfpb.gov/pages/CFPB/dev-manual/index.html)
-* [Lightning VS. Visualforce? (Lightning Overview)](https://github.cfpb.gov/Salesforce/salesforce-docs/wiki/Lightning-VS.-Visualforce-(Lightning-Overview))
+- [FAQs](_pages/FAQs.md)
+- [T&I Org Structure](_pages/Org-Chart.md)
+- [Architectural View](_pages/architecture-view.md)
+- [Security Model (Permission Sets, Profiles)](_pages/Security-Model-Permission-Sets,-Profiles).md)
+- [Sharing & Security](_pages/Record-Level-Sharing.md)
+- [Software, Architecture, Data, and Visual Design Standards References]
+- [Technical Approach](_pages/Technical-Approach.md)
+- [Agile Methodology] (chuck warner, stephanie osan, martiki reed)
+- [Center of Excellence (COE)](Center-of-Excellence.md)
+- [Software Advisory Group (SwAG)](https://github.cfpb.gov/SoftwareDevelopment/Software-Advisory-Group/blob/master/README.md)
+- [Salesforce Best Practices](_pages/Salesforce-Best-Practices.md)
+- [Exception Handling](_pages/Exception-Handling.md)
+- [Testing & Debugging](_pages/Testing-&-Debugging.md)
+- [Logging & Troubleshooting](_pages/Logging-&-Troubleshooting.md)
+- [Appendices](_pages/Appendices.md)
+
+### Get involved
+
+Any feedback and contributions are welcome! 
+
+Please familiarize yourself with the [CONTRIBUTING](CONTRIBUTING.md). Then, make suggestions for edits, report issues, etc., in the [issues section](salesforce-docs/issues) of this repository.
+
+----
+
+### Open source licensing info
+1. [TERMS](TERMS.md)
+2. [LICENSE](LICENSE)
+3. [CFPB Source Code Policy](https://github.com/cfpb/source-code-policy/)
 
 
-###### Environment Management
- * [Sandbox Setup and Deployment Strategy](How-to-set-up-a-dev-sandbox.md) 
- * [Requesting Access](Grant-User-Access-to-Sandbox.md)
- - Requesting Dev Orgs (placeholder)
+----
+
+## Credits and references
+
+1. TODO
+
+----
 
 
-###### Deployment Checklist 
-- TBD
-
-###### [SwAG - Software Advisory Group] (https://github.cfpb.gov/SoftwareDevelopment/Software-Advisory-Group)
-
-## Todo
-
-*Link to existing documents on Google Drive or create/copy content in wiki pages*
-
-*Index of Documents*
-
-- [ ] [[Charter]]
-- [x] [Technical Standards](https://docs.google.com/document/d/162CX0Wre7tXSyy7qCNLaQ3me2OoRRlzdHkyImP1A1mU/edit)
-- [ ] [[Delivery Pipeline]]
-- [ ] [[Tooling]]
-- [ ] [[Processes]]
-- [x] [[Continuous Delivery]]
-- [ ] [[Environment Strategy]]
-- [ ] [[Technology Governance]]
-- [x] [The SWAG](https://github.cfpb.gov/SoftwareDevelopment/Software-Advisory-Group)
-- [ ] [[On-Boarding Info (Accounts to Jira, Google, GitHub)]]
