@@ -1,7 +1,3 @@
-**How to get a Mac and Salesforce Development Tools:**
-https://docs.google.com/document/d/10evU18m-LEoZWPZQ8lOnCYyE5L6JsiIafHRVAdH7zRM/edit
-
-
 ## Development Tools
 
 ### Macbook Requests  

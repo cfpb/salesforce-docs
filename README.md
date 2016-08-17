@@ -53,19 +53,19 @@ and the various Product Teams doing application development on Salesforce.
 ### Governance
 
 #### 1. Charter, Roles, and Operations
-- [Roles & Responsibilities](_pages/roles-&-responsibilities.md)
-- [Salesforce Platform Charter](_pages/mission-vision.md)
-- [Operations](_pages/operations.md)
+- [Roles & Responsibilities](/_pages/roles-&-responsibilities.md)
+- [Salesforce Platform Charter](/_pages/mission-vision.md)
+- [Operations](/_pages/operations.md)
 
 
 #### 2. Standards
 
 Note that technical design and implementation is reviewed by the [SwAG - Software Advisory Group] (https://github.cfpb.gov/SoftwareDevelopment/Software-Advisory-Group) and signed off by the Principal Architect and the CoE.
 
-- [FAQs](_pages/FAQs.md)
-- [T&I Org Structure](_pages/Org-Chart.md)
-- [Architectural View](_pages/architecture-view.md)
-- [Security Model (Permission Sets, Profiles)](_pages/Security-Model-Permission-Sets,-Profiles).md)
+- [FAQs](/_pages/FAQs.md)
+- [T&I Org Structure](/_pages/Org-Chart.md)
+- [Architectural View](/_pages/architecture-view.md)
+- [Security Model (Permission Sets, Profiles)](/_pages/Security-Model-Permission-Sets,-Profiles).md)
 - [Sharing & Security](_pages/Record-Level-Sharing.md)
 - [Software, Architecture, Data, and Visual Design Standards References]
 - [Technical Approach](_pages/Technical-Approach.md)
