@@ -47,7 +47,7 @@ Next, I’m going to write a test that will exercise my code in the most basic w
 
 If you run this test right now, your code is going to fail:
 
-![Failed Test](img/failed_test.png)
+![Failed Test](/img/failed_test.png)
 
 So, now that we know what we need to implement, we’re going to write the code needed to pass the first unit test:  
 
@@ -78,7 +78,7 @@ So, now that we know what we need to implement, we’re going to write the code 
 
 Now if we run the unit test again, the code passes the test:
 
-![Passed Test](img/passed_test.png)  
+![Passed Test](/img/passed_test.png)  
 
 In fact, you can see that we have 100% code coverage. We could stop here, but we really want to be confident in the code, so there are a few more conditions that we’re going to test. We haven’t yet verified that the Stack implementation handles multiple values, and that it can pop() them in the correct order, so the next test is going to verify those things:  
 
@@ -243,7 +243,7 @@ And finally, I’ll make the following change so that my code passes this new un
         if (this.isEmpty()) { throw new StackUnderflowException(); }
         return stack.get( lastItemIndex );
     }
-
+
 # Making use of Test.isRunningTest() method
 
 There are some situations, when you will just not be able to test some code in a normal matter - eg. you are using objects that cannot be inserted in tests, or doing some http requests. In such case, if you think there is no other option, consider using Test.isRunningTest(). This static method allows you to discover whether the code was run from test method. Therefore, for example you might:  
@@ -261,7 +261,7 @@ In addition to verifying that your code executes properly in normal scenarios, t
 | [Verifying Large DataSets](https://developer.salesforce.com/page/Best_Practice:_Ensure_Test_Methods_Verify_Large_Datasets) |
 | [Testing with RunAs](https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_testing_tools_runas.htm) |
 
-
+
 # Properties of Well-Written Unit Tests
 Well-written unit tests are thorough, repeatable, and independent. Let’s examine each of these properties in turn.
 ## Thorough
