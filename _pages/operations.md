@@ -1,4 +1,4 @@
-![Integrated T&I Project Reviews](img/PMO-ConOps.png)
+![Integrated T&I Project Reviews](/img/PMO-ConOps.png)
 
 ###Business Application vs. Platform Governance
 
