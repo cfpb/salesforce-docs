@@ -33,7 +33,7 @@ Striving to be the Bureau’s leader in business enablement, innovation and deli
 
 
 #### CoE - Center of Excellence structure
-![Enterprise Platforms - CoE](img/ep_team.png)
+![Enterprise Platforms - CoE](/img/ep_team.png)
 
 
  
