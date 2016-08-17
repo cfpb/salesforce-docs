@@ -292,6 +292,7 @@ Widely used and commonly understood acronyms and abbreviations can be used inste
 
 The following are examples of Apex class naming that should not be used :
 
+
 Class Name | Reason 
 -----------|:------
 FHACustomer | Using acronyms should be avoided as they are not mnemonic
