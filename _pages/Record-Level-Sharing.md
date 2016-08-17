@@ -98,7 +98,7 @@ Territory Management is a larger functionality in Salesforce that allows for cre
  
 Additionally you can also choose is the users granted access to the accounts are granted access to related opportunities and/or cases to those accounts. 
  
-For more information about territory management see 
+For more information about territory management see: 
  
 [Territory Management Decision Guide](https://developer.salesforce.com/page/Territory_Management_Decision_Guide)
  
