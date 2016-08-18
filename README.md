@@ -82,7 +82,7 @@ Note that technical design and implementation is reviewed by the [SwAG - Softwar
 
 Any feedback and contributions are welcome! 
 
-Please familiarize yourself with the [CONTRIBUTING](CONTRIBUTING.md). Then, make suggestions for edits, report issues, etc., in the [issues section](salesforce-docs/issues) of this repository.
+Please familiarize yourself with the [CONTRIBUTING](CONTRIBUTING.md). Then, make suggestions for edits, report issues, etc., in the [issues section](/issues) of this repository.
 
 ----
 
