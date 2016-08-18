@@ -1,6 +1,6 @@
 
 <div align="center">
-<img alt="CFPB Salesforce Development Standards" src ="https://raw.githubusercontent.com/virtix/salesforce-docs/master/screenshot.png" />
+<img alt="CFPB Salesforce Development Standards" src ="img/screenshot.png" />
 </div>
 
 
