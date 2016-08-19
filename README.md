@@ -3,9 +3,13 @@
 <img alt="CFPB Salesforce Development Standards" src ="img/screenshot.png" />
 </div>
 
+### Purpose and Scope
 
-**This project describes guidelines for how applications in Salesforce should be built and deployed. The intended audience are Salesfroce developers, administrators, and release managers.**
+**This documentation describes guidelines for how applications in Salesforce should be built and deployed at the CFPB. The intended audience are Salesfroce developers, administrators, and release managers.**
 
+It establishes the standards, controls, and guidance
+that enforce technical quality of the platform and product work that goes into CFPB’s Salesforce platform. It also describes the primary interfaces between the Enterprise Platforms Team (aka the CoE - Center of Excellence)
+and the various Product Teams building application solutions on the Salesforce platform.
 
 
 #### What this **is**:
@@ -25,25 +29,12 @@
 **Status**:  Live "production" version 2.0.0  
   - [CHANGELOG](CHANGELOG.md).
 
-#### Contribute
+#### Contribute!
 As a user of this guide, please take initiative to add and edit content or
-provide feedback.  See
-the [CONTRIBUTING guidelines](CONTRIBUTING.md) for details.
+provide feedback.  See the [CONTRIBUTING guidelines](CONTRIBUTING.md) for details.
 
-### Purpose and Scope
 
-The CFPB has made a strategic decision and investments in Salesforce,
-an enterprise platform for developing business solutions.
-The cost and associated risks of this investment,
-coupled with T&I’s obligations to business units to support, deliver, and maintain mission-critical solutions,
-require that effective and efficient governance be put in place.
-
-This documentation establishes the standards, controls, and guidance
-that enforce technical quality of the platform and product work that goes into CFPB’s Salesforce platform.
-It also describes the primary interfaces between the Enterprise Platforms Team (aka the CoE - Center of Excellence)
-and the various Product Teams doing application development on Salesforce.
-
-##### Goals
+### Goals
 
 1. Provide a canonical reference for technical standards and guidelines
 1. Assure only high quality software is built and deployed to CFPB’s Salesforce platforms
@@ -81,13 +72,16 @@ and signed off by the Principal Architect and the CoE.
 - [Logging & Troubleshooting](/_pages/Logging-&-Debugging.md)
 - [Appendices](/_pages/Appendices.md)
 
+
+----
+
 ### Get involved
 
 Any feedback and contributions are welcome! 
 
 Please familiarize yourself with the [CONTRIBUTING](CONTRIBUTING.md). Then, make suggestions for edits, report issues, etc., in the [issues section](/issues) of this repository.
 
-----
+
 
 ### Open source licensing info
 1. [TERMS](TERMS.md)
