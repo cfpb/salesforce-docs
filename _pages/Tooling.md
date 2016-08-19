@@ -32,6 +32,3 @@ Macbooks are available for Developers or Designers only. Project managers cannot
             1. Google Drive
             1. GitHub
             2. Viscosity - how do we get an account?
-1. Other Tools
-    1. [JIRA](https://jira.demo.cfpb.gov)
-    1. [Jenkins](http://zusa.demo.cfpb.gov/)
