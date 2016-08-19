@@ -3,6 +3,9 @@
 <img alt="CFPB Salesforce Development Standards" src ="img/screenshot.png" />
 </div>
 
+**Status**:  Live "production" version 2.0.0  
+  - [CHANGELOG](CHANGELOG.md).
+
 ### Purpose and Scope
 
 **This documentation describes guidelines for how applications in Salesforce should be built and deployed at the CFPB. The intended audience are Salesfroce developers, administrators, and release managers.**
@@ -25,13 +28,6 @@ and the various Product Teams building application solutions on the Salesforce p
  - Operational instructions for how to get support; e.g., how to set up a developer sandbox; how to reset your password
  - How to integrate with third-party systems
  - A list of CFPB applications or products
-
-**Status**:  Live "production" version 2.0.0  
-  - [CHANGELOG](CHANGELOG.md).
-
-#### Contribute!
-As a user of this guide, please take initiative to add and edit content or
-provide feedback.  See the [CONTRIBUTING guidelines](CONTRIBUTING.md) for details.
 
 
 ### Goals
