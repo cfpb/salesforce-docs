@@ -60,9 +60,10 @@ and the various Product Teams doing application development on Salesforce.
 - [Operations](/_pages/operations.md)
 
 
-#### 2. Standards
+#### Standards
 
-Note that technical design and implementation is reviewed by the [SwAG - Software Advisory Group] (https://github.cfpb.gov/SoftwareDevelopment/Software-Advisory-Group) and signed off by the Principal Architect and the CoE.
+Note that technical design and implementation is reviewed by the Software Advisory Group (SwAG) 
+and signed off by the Principal Architect and the CoE.
 
 - [FAQs](/_pages/FAQs.md)
 - [T&I Org Structure](/_pages/Org-Chart.md)
@@ -73,7 +74,7 @@ Note that technical design and implementation is reviewed by the [SwAG - Softwar
 - [Technical Approach](/_pages/Technical-Approach.md)
 - [Agile Methodology](/_pages/Agile-Methodology.md)
 - [Center of Excellence (COE)](/_pages/Center-of-Excellence.md)
-- [Software Advisory Group (SwAG)](/_pages/software-advisory-group.md)
+- [Software Advisory Group (SwAG)](/_pages/SoftWare-Advisory-Group.md)
 - [Salesforce Best Practices](/_pages/Salesforce-Best-Practices.md)
 - [Exception Handling](/_pages/Exception-Handling.md)
 - [Testing & Debugging](/_pages/Testing-&-Debugging.md)

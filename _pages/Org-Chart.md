@@ -1,11 +1,5 @@
 ## Technology & Innovation Overview
 
-**Design and Development**
-   - Custom application development for consumerfinance.gov and other platforms
-
-**Infrastructure**
-   - Responsible for server and operating environments such as Amazon
-   - Also responsible for end-user support, laptops, Blackberries, etc
 
 **Chief Data Officer**
    - Data policy and engineering
@@ -13,12 +7,21 @@
 **Cyber Security**
    - Information security policy, engineering, and monitoring
 
-**Project Management Office (PMO)**
-   - Coordinates all T&I projects, including intake, and prioritization 
+**Design and Development**
+   - Custom application development for consumerfinance.gov and other platforms
 
 **_Enterprise Platforms Teams_**
    - Programs: Manage customer and business engagement, manage contracts
    - Operations: Manage technical implementation of platform, including deployments, change management, and support requests
+
+**Infrastructure**
+   - Responsible for data centers and operating environments
+   - Also responsible for end-user support, laptops, Blackberries, etc
+
+**Project Management Office (PMO)**
+   - Coordinates all T&I projects, including intake, and prioritization 
+
+
 
 ____
 
