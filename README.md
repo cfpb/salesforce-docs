@@ -19,17 +19,18 @@
 #### What this is **not**:
  - Specific to the CFPB's operating environment
  - Operational instructions for how to get support; e.g., how to set up a developer sandbox; how to reset your password
- - How to integrate with third-party systemt
+ - How to integrate with third-party systems
  - A list of CFPB applications or products
 
-**Status**:  Live "production" version 1.6.0  
+**Status**:  Live "production" version 2.0.0  
   - [CHANGELOG](CHANGELOG.md).
 
-### Welcome to the Salesforce Technology Portal
+#### Contribute
+As a user of this guide, please take initiative to add and edit content or
+provide feedback.  See
+the [CONTRIBUTING guidelines](CONTRIBUTING.md) for details.
 
-As a user of these docs, please take initiative to edit and add content
-
-##### Purpose and Scope
+### Purpose and Scope
 
 The CFPB has made a strategic decision and investments in Salesforce,
 an enterprise platform for developing business solutions.
@@ -38,19 +39,20 @@ coupled with T&I’s obligations to business units to support, deliver, and main
 require that effective and efficient governance be put in place.
 
 This documentation establishes the standards, controls, and guidance
-that enforce technical quality of the platform and product work that goes into CFPB’s Salesforce Organization.
+that enforce technical quality of the platform and product work that goes into CFPB’s Salesforce platform.
 It also describes the primary interfaces between the Enterprise Platforms Team (aka the CoE - Center of Excellence)
 and the various Product Teams doing application development on Salesforce.
 
 ##### Goals
 
+1. Provide a canonical reference for technical standards and guidelines
 1. Assure only high quality software is built and deployed to CFPB’s Salesforce platforms
 1. Maintain confidence in the deployment process and a high degree of availability for the CFPB salesforce org
 1. Establish efficient developer workflows and share knowledge and practices across product development teams
 1. Minimize operational burden for the Salesforce Platform Admin Team and the CFPB at large
 
 
-### Governance
+### Salesforce Governance
 
 #### 1. Charter, Roles, and Operations
 - [Roles & Responsibilities](/_pages/roles-&-responsibilities.md)
