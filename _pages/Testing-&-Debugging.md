@@ -2,8 +2,8 @@
 
 - [Writing good tests](/_pages/Writing-good-tests.md)
 - [Unit testing](/_pages/Unit-testing.md)
-- Browser Testing (sauce) - More to come
-- Security Testing (checkmarx) - More to come
+- Browser Testing (SauceLabs) - More to come
+- Security Testing (Checkmarx) - More to come
 - 508/WCAG - More to come
 - [Top 10 Best Practices](/_pages/Top-10-Best-Practices.md)
 
@@ -27,9 +27,9 @@ The following principles apply to unit testing Apex code
 
 5. Always handle all exceptions that are caught, instead of merely catching the exceptions.
 
-6. Use System.assert* methods to prove that code behaves as expected. 
+6. Use ```System.assert``` methods to prove that code behaves as expected. 
 
-7. Use the runAs method to test your application in different user contexts.
+7. Use the ```runAs``` method to test your application in different user contexts.
 
 8. Use the isTest annotation. Classes defined with the isTest annotation do not count against your organization limit of 1 MB for all Apex scripts.
 

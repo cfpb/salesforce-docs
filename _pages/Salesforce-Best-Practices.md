@@ -1,4 +1,4 @@
-- Secure coding practices
+- Secure coding practices  [Contribute!](../CONTRIBUTING.md)
 - [Querying Datasets and SOQL](/_pages/Querying-Datasets-and-SOQL.md)
 - [Bulkify Code](/_pages/Bulkify-Code.md)
 - [Triggers](/_pages/Triggers.md)

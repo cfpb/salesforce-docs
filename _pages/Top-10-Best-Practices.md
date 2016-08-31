@@ -13,7 +13,7 @@ Ensure unit tests are written to cover as many logical test cases as possible, c
 
 **Test Code Structure**  
 
-For some time now I’ve adopted a Test Suite, Test Helper pattern. A suite class groups tests related to a functional area. A test helper class creates test data for a primary object such as Account (i.e. AccountTestHelper.cls), secondary objects such as price book entry would be created within the product test helper class. The suite concept provides a logical and predictable structure, the helper concept emphasizes that test data creation should be centralized.
+For some time now I’ve adopted a Test Suite, Test Helper pattern. A suite class groups tests related to a functional area. A test helper class creates test data for a primary object such as Account (i.e. ```AccountTestHelper.cls```), secondary objects such as price book entry would be created within the product test helper class. The suite concept provides a logical and predictable structure, the helper concept emphasizes that test data creation should be centralized.
 
 **Test Code Structure (continue)**  
 
