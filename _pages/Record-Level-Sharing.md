@@ -82,7 +82,7 @@ Sales Executives
  
 Then anyone that is a member of the “Sales VP” role will inherit the access from everyone in the “Sales Executives” role. 
  
-***Note:*** In order for access to be granted via role hierarches the setting “Grant Access Via Hierarchies” must be checked for each object that you wish to respect role hierarchy sharing. 
+***Note:*** In order for access to be granted via role hierarchies the setting “Grant Access Via Hierarchies” must be checked for each object that you wish to respect role hierarchy sharing. 
  
  
  

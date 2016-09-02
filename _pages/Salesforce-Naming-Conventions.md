@@ -64,7 +64,7 @@ Validation rule names should be unique, beginning with an uppercase letter. Whol
 
 &lt;FIELD&gt;  &lt;RULE&gt;  &lt;OPTIONAL DEPENDENCY&gt;  
 
-```Postal Code Required (Suburb)``` The above example shows that Postal Code is required dependent on values in the Suburb field. The exact rule definition is in the detail but keeing this format helps keeps the naming as intuitive as possible without being too restrictive.
+```Postal Code Required (Suburb)``` The above example shows that Postal Code is required dependent on values in the Suburb field. The exact rule definition is in the detail but keeping this format helps keeps the naming as intuitive as possible without being too restrictive.
 
 #### Exceptions
 
@@ -308,7 +308,7 @@ The following are examples of the naming convention that will be used:
 Class Name | Reason 
 -----------|:------
 Customer | Full word used to describe the class and starts with uppercase 
-AddressHandler | Multiple words concatenated with subsequent words capitalised
+AddressHandler | Multiple words concatenated with subsequent words capitalized
 MailFaxController | Controller Extension for the Mail_Fax__c object
 CustomerController | Customer controller for the customer object
 
@@ -318,7 +318,7 @@ ____
 
 ### Rules for Naming
 
-Class names should be unique, beginning with an uppercase letter. It should not contain underscores or spaces. The words should be concatenated with Initial uppercase and subsequent internal words capitalised. Whole words should be used and use of acronyms and abbreviations should be limited. Apex classes that are batch classes should be suffixed with _Batch Apex classes that are Scheduleable classes should be suffixed with _Schedule Apex classes that are Queuable classes should be suffixed with _Queueable
+Class names should be unique, beginning with an uppercase letter. It should not contain underscores or spaces. The words should be concatenated with Initial uppercase and subsequent internal words capitalized. Whole words should be used and use of acronyms and abbreviations should be limited. Apex classes that are batch classes should be suffixed with _Batch Apex classes that are Scheduleable classes should be suffixed with _Schedule Apex classes that are Queuable classes should be suffixed with _Queueable
 
 #### Exceptions
 
@@ -331,7 +331,7 @@ Class Name | Reason
 -----------|:------
 GrtBgClass | Whole words should be used in place of shortened versions GreatBigClass and the appropriate suffix should be used. 
 contactbatch | Class does not begin with an uppercase letter and an underscore should always precede the suffix. 
-Address_Update_Batch | Underscores should be avoided other than for the suffix The following are examples of the naming convention that will be used Class Name Reason RoleExpiry_Batch Multiple words concatenated with subsequent words capitalised. Suffixed with _Batch denoting that this is a batch apex class. RoleExpiry_Schedule Multiple words concatenated with subsequent words capitalised. Suffixed with _Schedule denoting that this is a scheduleable apex class. RoleExpiry_Queueable Multiple words concatenated with subsequent words capitalised. Suffixed with _Queueable denoting that this is a queueable apex class.
+Address_Update_Batch | Underscores should be avoided other than for the suffix The following are examples of the naming convention that will be used Class Name Reason RoleExpiry_Batch Multiple words concatenated with subsequent words capitalized. Suffixed with _Batch denoting that this is a batch apex class. RoleExpiry_Schedule Multiple words concatenated with subsequent words capitalized. Suffixed with _Schedule denoting that this is a scheduleable apex class. RoleExpiry_Queueable Multiple words concatenated with subsequent words capitalized. Suffixed with _Queueable denoting that this is a queueable apex class.
 
 ____
 

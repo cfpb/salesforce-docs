@@ -20,7 +20,7 @@ The salesforce environments used for Salesforce releases are broken up into cate
 
 Project team environments consist of the the following environments:
 
-1. **Project Dev**  - The project dev environment is where the master code and configuration will reside for the project’s application.
+1. **Project Dev**  - The project development environment is where the master code and configuration will reside for the project’s application.
 
 1. **Project UAT/Build**  - The project UAT/Build environment is the environment where the project team will deploy their code on a routine basis from the project dev environment to test and demo their application to end users. No development should occur in the Project UAT/Build environment.
 

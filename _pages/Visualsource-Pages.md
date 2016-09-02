@@ -2,12 +2,12 @@
 Just because you can, doesn’t mean you should! Before going down the customization route make sure you properly evaluate the pros and cons of creating custom pages. This is especially true when creating custom pages to override standard functionality.  When overriding standard functionality you lose the advantage gained of new features in future releases.
 If you do go down the customization route you must make sure you optimize the Visualforce pages you create for better performance in order to have a positive user experience. 
 
-* Avoid using the rendered=”false” if possible. Even though the components do not show up on the page, processing still needs to be done that will cause the page to render slower. If a large portion of the components of a visualforce page have rendered=”false”, consider creating a separate page instead of using partial rendering.
-* Use Salesforce remoting or remote objects to perform asynchronous execution of apex using javascript. This will allow the user to perform operations without having to wait for the server to respond. 
+* Avoid using the rendered=”false” if possible. Even though the components do not show up on the page, processing still needs to be done that will cause the page to render slower. If a large portion of the components of a Visualforce page have rendered=”false”, consider creating a separate page instead of using partial rendering.
+* Use Salesforce remote objects to perform asynchronous execution of apex using JavaScript. This will allow the user to perform operations without having to wait for the server to respond. 
 * Cache data in custom settings, custom metadata types, and the org cache to improve the performance of the page. Access to data in these mechanisms is much faster than executing SOQL queries to retrieve the same data. Additionally they do not count against your max queries limit.
 * Avoid the use of iframes whenever possible as these will slow the loading of the page. If you need to create a window into Salesforce from an external system consider using Canvas instead, since it is much more tightly integrated into Salesforce and takes care of the authentication for you. 
-* Use minified javascript and CSS file resources
-* Avoid use of references to external scripts or resources. Instead download them as static resources and reference the static resources. Static resources are cached and provide for better performance. Never reference a Salesforce unsupported javascript or CSS library directly as these could change at any time. Any API that is not versioned is considered an unsupported API.
+* Use minified JavaScript and CSS file resources
+* Avoid use of references to external scripts or resources. Instead download them as static resources and reference the static resources. Static resources are cached and provide for better performance. Never reference a Salesforce unsupported JavaScript or CSS library directly as these could change at any time. Any API that is not versioned is considered an unsupported API.
 * Use only web optimized images and image maps to reduce the need to load multiple images.
 * Use paging techniques when working with large datasets on a page. Avoid displaying more than 20 results per page. Use the SOQL offset or the standardSetController to control paging.
 * Make sure all your SOQL queries are optimized using the query optimizer located in the developer console. 
@@ -27,8 +27,8 @@ There are three 3 main parts to lightning:
 
 1.  **Lightning Experience** – The lightning experience is a completely new look and feel to Salesforce that takes into account modern user interface design practices that is commonly used throughout the web today. This is based on responsive design patterns such that the format of what you can see on the screen is based on screen size that you are viewing the content. Instead create a single web application, each page is made up of various components that can be easily changed out or rearranged.
 1.  **Lightning Design System** – The design system is a new UI framework built off of angular that helps developers easily recreate the same look and feel of the Lightning Experience in their custom applications. This framework can be used in Visualforce, Lightning Components, or even in custom external based web applications. For more information on the design system visit http://www.lightningdesignsystem.com 
-1.  **Lightning Components** – Lightning components is a new development infrastructure that Salesforce has developed to quickly create high performing web applications based on a component model. A lightning component can be a web page or even a piece of a web page. Lightning components turns html, javascript, and CSS into an object-oriented language. Everything is a first class component in this framework. What this means is that instead of having to traverse the DOM you use getters and setters to access various elements of your application. For example the following are “objects” or “components” in the framework: “div”, “form”, “input”, “head”, “body”, “span”, javascript events such as “onclick”, etc. 
-The real power of lightning is that you can pass components between each other to build reusable pieces of an application. You can even pass a javascript event that fires from one component to another! 
+1.  **Lightning Components** – Lightning components is a new development infrastructure that Salesforce has developed to quickly create high performing web applications based on a component model. A lightning component can be a web page or even a piece of a web page. Lightning components turns HTML, JavaScript, and CSS into an object-oriented language. Everything is a first class component in this framework. What this means is that instead of having to traverse the DOM you use getters and setters to access various elements of your application. For example the following are “objects” or “components” in the framework: “div”, “form”, “input”, “head”, “body”, “span”, JavaScript events such as “onclick”, etc. 
+The real power of lightning is that you can pass components between each other to build reusable pieces of an application. You can even pass a JavaScript event that fires from one component to another! 
 
 The Salesforce Lightning Experience is even built using Lightning Components. That means you can develop your own custom components using the same technology that Salesforce uses internally. Combining that with the Lightning Design System you can completely replicate any out of the box component in the Lightning Experience.
 
@@ -61,7 +61,7 @@ The question many people ask is “Will Visualforce be going away?” Think of l
 
 **Lightning Cons**   
 
-* Requires a little bit of a learning curve for seasoned Visualforce developers, as it requires strong javascript skills and is a completely different approach to development on the Salesforce platform.
+* Requires a little bit of a learning curve for seasoned Visualforce developers, as it requires strong JavaScript skills and is a completely different approach to development on the Salesforce platform.
 * Doesn’t support creating applications with the current “Aloha” UI look and feel.  
        
 When deciding to use lightning or Visualforce, carefully consider each of the pros and and cons. Consider the following questions when making your decision?  
@@ -69,4 +69,4 @@ When deciding to use lightning or Visualforce, carefully consider each of the pr
 1.  Will the application be a standalone application, or can it be broken into multiple components?
 1.  Does the application need to be responsive and run on multiple device formats?
 1.  Will the application need to look and feel like the “Aloha” UI or the “Lightning Experience” UI?
-1.  Do our developers have strong javascript and CSS skills? Will there be considerable ramp up time if we choose to use lightning?
+1.  Do our developers have strong JavaScript and CSS skills? Will there be considerable ramp up time if we choose to use lightning?
