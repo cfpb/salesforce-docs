@@ -51,13 +51,13 @@ There are two mechanisms that are used by the release management team to ensure 
 Now that you understand the individual components involved in the release management process, you can walk through a complete release scenario by team member role from start to finish below. 
 
 The simulation below walks through the following:
-1. Initiation of a new project.
-1. What happens on day one of development for the project.
-1. What happens every day after day one during development for the project.
-1. Requesting of a project package to be deployed to the Integration sandbox.
-1. Requesting of a project package to be deployed to the UAT sandbox.
-1. Requesting of a project package to be deployed to production. 
-1. What happens after deployment to production. 
+  1. Initiation of a new project.
+  1. What happens on day one of development for the project.
+  1. What happens every day after day one during development for the project.
+  1. Requesting of a project package to be deployed to the Integration sandbox.
+  1. Requesting of a project package to be deployed to the UAT sandbox.
+  1. Requesting of a project package to be deployed to production. 
+  1. What happens after deployment to production. 
 
 ###Release Management Scenario
 
