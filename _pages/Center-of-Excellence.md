@@ -46,12 +46,12 @@ The COE shall be responsible for the following activities, organized by primary 
     - Ensure alignment of priorities with enterprise initiatives, Enterprise Architecture (EA) and direction from higher level governance
 
 - Design Review:
-    - Review design artifacts and “approve” or “disapprove” initial system / solution designs.  This review is conducted by the SwAG and a final recommendation for approval or disapproval will be presentd to the COE by the Principal Platform Architect. 
+    - Review design artifacts and “approve” or “disapprove” initial system / solution designs.  This review is conducted by the SwAG and a final recommendation for approval or disapproval will be presented to the COE by the Principal Platform Architect. 
     - Determine level and extent of resources within EP purview to commit to detailed analysis of approved initiatives 
 
 - Go Live Review:
     - Validate that necessary activities prescribed by the EP COE process have been completed
-    - Grant authority to move a system to Production (“Go-Live”) on one of the Bureau’s entprise platforms (will still require T&I Project Gate 2 review and approval prior to release)
+    - Grant authority to move a system to Production (“Go-Live”) on one of the Bureau’s enterprise platforms (will still require T&I Project Gate 2 review and approval prior to release)
 
 - Change Request (CR) Review: 
     - Authorize, categorize and prioritize configuration changes to T&I EP-controlled configuration items, which may include software or cloud environments, processes, approved plans, and other configuration items as defined by the EP COE
@@ -142,7 +142,7 @@ Membership of the COE consists of the following voting and non-voting member rol
     <td>☑</td>
 </tr>
 <tr>
-    <td>Cybersecurity Rep</td>
+    <td>Cyber Security Rep</td>
     <td>Govt or Ctr</td>
     <td></td>
     <td>☑</td>
@@ -187,7 +187,7 @@ Membership of the COE consists of the following voting and non-voting member rol
 
 ###COE Administration
 
-Normal COE meetings will be held on a weekly basis. If there are no items for review, COE meetings will be cancelled at the discretion of the COE Chair.  Additional meetings may also be scheduled at the Chair’s discretion to handle a high volume of agenda items.  
+Normal COE meetings will be held on a weekly basis. If there are no items for review, COE meetings will be canceled at the discretion of the COE Chair.  Additional meetings may also be scheduled at the Chair’s discretion to handle a high volume of agenda items.  
 
 The COE Facilitator is responsible for maintaining calendar invites, reserving rooms, setting up WebEx or conference bridges, taking requests for agenda time, recording meeting attendance, and documenting / posting meeting minutes.  The COE Facilitator will prepare an agenda for each COE meeting.  Items to be considered for a COE meeting must be submitted to the Facilitator no later than one hour prior to the meeting.  See request agenda request form here.  
 
@@ -238,7 +238,7 @@ BA   - Business Analyst<br>
 CCB  - Change Control Board (or Configuration Control Board)<br>
 COE  - Center of Excellence <br>
 CR   - Change Request<br>
-SwAG - Software Advisory Group - The SwAG is composed of a diversified team of architects (technical, solution, product-specific) with expertise in techonologies the Bureau supports 		
+SwAG - Software Advisory Group - The SwAG is composed of a diversified team of architects (technical, solution, product-specific) with expertise in technologies the Bureau supports 		
 T&I  - Technology & Innovation
 
 ###Appendix B
@@ -298,7 +298,7 @@ T&I  - Technology & Innovation
 </tr>
 <tr>
     <td>Dwayne McDonald</td>
-    <td>Cybersecurity Rep</td>
+    <td>Cyber Security Rep</td>
     <td>Govt</td>
 </tr>
 <tr>

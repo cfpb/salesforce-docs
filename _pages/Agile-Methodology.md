@@ -20,4 +20,4 @@ CFPB's values - Lead, Serve, Innovate - are strong influences on our Agile pract
 ## __Responding to change over following a plan__
 * While we expect change, we can never fully anticipate what changes may come. Changes can come from new information about consumer or coworker needs, from usability research, or from the ever-changing consumer markets themselves.
 * We value turning each unexpected change into an opportunity to improve our product. What is important is not the change itself, but our response to the change.
-* Innovation requires thoughtful, constructive responses when changes come from outside the team. In this way, innovating creates leadership and service opportunities, where we can both trailblaze new ways to solve problems and new ways to serve consumers and coworkers.
+* Innovation requires thoughtful, constructive responses when changes come from outside the team. In this way, innovating creates leadership and service opportunities, where we can both trail-blaze new ways to solve problems and new ways to serve consumers and coworkers.

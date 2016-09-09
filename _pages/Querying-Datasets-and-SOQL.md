@@ -74,7 +74,7 @@ Here is an example of what NOT to do (*incorrect lines):
             c.Description=c.salutation + ' ' + c.firstName + ' ' + c.lastname;
  	  	   
             //THIS FOLLOWING DML STATEMENT IS INEFFICIENT AND DOESN'T SCALE
-            //Since the UPDATE dml operation is within the FOR loop, if this trigger is 
+            //Since the UPDATE DML (data manipulation language) operation is within the FOR loop, if this trigger is 
             //initiated with more than 150 records, the trigger will exceed the trigger 
             //governor limit of 150 DML Operations maximum.
       	                  	      

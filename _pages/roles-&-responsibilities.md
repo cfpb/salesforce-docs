@@ -8,7 +8,7 @@ To provide  oversight and governance for the Bureau’s standard enterprise plat
 
 - **COE Chair** – Presides over the Platform Center of Excellence
 - **Platform Program Management** – Participants from Enterprise Platforms execution and operational arms support strategic roadmap and prioritization discussions and decisions
-- **Architects** – Principal Platform Arch, Solution Arch, Tech Arch, Salesforce Program Arch  - Advise on strategic, technical, and solution architecture; make decisions on app designs and platform release readiness 
+- **Architects** – Principal Platform Arch, Solution Arch, Tech Arch, Salesforce Program Arch  - Advise on strategic, technical, and solution architecture; make decisions on application designs and platform release readiness 
 - **T&I Teams Representatives** – Participants from other T&I teams, such as Data, engage in the COE to ensure collaboration and streamlined downstream integration
 - **Business Line Representatives** – Participants from various business divisions, such as CR and SEFL, engage in the COE to ensure platform goals are in alignment with CFPB’s business / mission goals; support decisions that impact individual applications 
 - **COE Facilitator** – Facilitates COE and SwAG meetings, maintains technical guidelines documents, and COE Templates 
@@ -20,10 +20,10 @@ To provide  oversight and governance for the Bureau’s standard enterprise plat
 - Ensures viability of platform architectures and security access model
 - Markets and evangelizes the benefits of the Bureau’s enterprise platforms
 - Synchronizes business goals with T&I platform priorities  
-- Collaborates with EA, Data, Cybersecurity, PMO and Design & Development Teams
+- Collaborates with EA, Data, Cyber Security, PMO and Design & Development Teams
 - Drives the Bureau’s Strategic Platform Roadmap 
 - Reviews new concepts for fit and dispositioning on a particular enterprise platform
-- Publishs and manages platform target architectures, incl. common platform objects
+- Publishes and manages platform target architectures, incl. common platform objects
 
 ####Decision Authority
 
@@ -35,7 +35,7 @@ To provide  oversight and governance for the Bureau’s standard enterprise plat
 ####Key Interfaces
 
 - Engages closely with T&I PMO for gate reviews / approvals 
-- Regular representation from EA, Data, and Cybersecurity to support guidance and decisions
+- Regular representation from EA, Data, and Cyber Security to support guidance and decisions
 - Interfaces with the business lines to highlight opportunities for business-level decisions (e.g., standardized exam process, common definition of products, etc.) 
 
 ### Platform Program & Services
@@ -56,7 +56,7 @@ To provide  program oversight and consultative platform services to T&I’s busi
     - **New Solution Review:** Discovery, Project Detail, Fit-Gap Analysis, PMO Project Request Form
     - **Planning:** Scope/LOE Definition, Platform-specific  acquisition support (SOW, IGCE, etc.), 
     - **Execution:**  Project monitoring and oversight for platform projects, reporting to T&I PMO for gate reviews 
-    - **Adoption:**  Develop tailored user onboarding and adoption strategies
+    - **Adoption:**  Develop tailored user on-boarding and adoption strategies
 - Manage relationships with Product Owners and Business Executive Sponsors
 - Manage platform licensing and emerging needs
 - Develop and manage Enterprise Platform Budget and track spending
@@ -98,4 +98,4 @@ To ensure optimal performance and operations of the Bureau’s enterprise platfo
 
 - Engages closely with T&I Change Control Board for change request notifications, reviews, and approvals
 - Work closely with contractor dev teams to plan releases to production 
-- Regular representation from EA, Data, and Cybersecurity to support guidance and decisions 
+- Regular representation from EA, Data, and Cyber Security to support guidance and decisions 

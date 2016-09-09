@@ -7,7 +7,8 @@ In order to allow for making it easy to disable triggers, all triggers must have
 
 The example below shows how to implement the logic to disable a trigger using custom settings.
 
-    Public with sharing class Helper 
+```java 
+   Public with sharing class Helper 
     {
         public static Boolean IsTriggerEnabled()
         {
@@ -31,14 +32,17 @@ The example below shows how to implement the logic to disable a trigger using cu
             }
         }
     }	  
+```
 
-    Public with sharing class Helper AccountInsertUpdateTrigger on Account (before insert, before update)
+```java
+Public with sharing class Helper AccountInsertUpdateTrigger on Account (before insert, before update)
     {
        if( triggerHelper.IsEnabled())
        {
           //DO SOMETHING
        }
     }
+```
 
 ## Trigger Maintainability
 When Salesforce triggers execute there is no guarantee in what order they will execute. This is why you should never have multiple triggers that operate on the same object and operation. Triggers should always be separated by operation for each object. For example: If you created two triggers that both handled the before update operation, there is no guarantee as to which trigger would execute first. This could create confusion when trying to debug the code and unexpected results.  
@@ -49,7 +53,8 @@ Within the trigger you should create a fork for each trigger operation for befor
 
 Take a look at the code sample below that executes a trigger for before insert and update.
 
-    Public with sharing class Helper AccountInsertUpdateTrigger on Account (before insert, before update)
+```java
+Public with sharing class Helper AccountInsertUpdateTrigger on Account (before insert, before update)
     {
         if( triggerHelper.IsEnabled() & trigger.IsBefore() && trigger.IsUpdate())
         {
@@ -60,13 +65,16 @@ Take a look at the code sample below that executes a trigger for before insert a
             AccountTriggerHelper.BeforeInsert();
         }
     }
+```
 
 ## Never Hardcode Ids
 When deploying Apex code between sandbox and production environments, or installing Force.com AppExchange packages, it is essential to avoid hardcoding IDs in the Apex code. By doing so, if the record IDs change between environments, the logic can dynamically identify the proper data to operate against and not fail.  
 
 Here is a sample that hardcodes the record type IDs that are used in an conditional statement. This will work fine in the specific environment in which the code was developed, but if this code were to be installed in a separate org (ie. as part of an AppExchange package), there is no guarantee that the record type identifiers will be the same. 
 
-    for(Account a: Trigger.new){
+
+```java
+ for(Account a: Trigger.new){
         //Error - hardcoded the record type id
         if(a.RecordTypeId=='012500000009WAr'){     	  	
             //do some logic here.....
@@ -74,10 +82,13 @@ Here is a sample that hardcodes the record type IDs that are used in an conditio
             //do some logic here for a different record type...
         }
     }
+```
+
 
 Now, to properly handle the dynamic nature of the record type IDs, the following example queries for the record types in the code, stores the dataset in a map collection for easy retrieval, and ultimately avoids any hardcoding.   
 
-    //Query for the Account record types
+```java
+//Query for the Account record types
     List<RecordType> rtypes = [Select Name, Id From RecordType 
                            where sObjectType='Account' and isActive=true];
      
@@ -97,6 +108,7 @@ Now, to properly handle the dynamic nature of the record type IDs, the following
             //do some logic here for a different record type...
         }
     }   
+```
 
 By ensuring no IDs are stored in the Apex code, you are making the code much more dynamic and flexible - and ensuring that it can be deployed safely to different environments.
 

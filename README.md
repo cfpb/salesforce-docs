@@ -3,12 +3,12 @@
 <img alt="CFPB Salesforce Development Standards" src ="img/screenshot.png" />
 </div>
 
-**Status**:  Live "production" version 2.0.0  
+**Status**:  Live "production" version 2.0.1  
   - [CHANGELOG](CHANGELOG.md).
 
 ### Purpose and Scope
 
-**This documentation describes guidelines for how applications in Salesforce should be built and deployed at the CFPB. The intended audience are Salesfroce developers, administrators, and release managers.**
+**This documentation describes guidelines for how applications in Salesforce should be built and deployed at the CFPB. The intended audience are Salesforce developers, administrators, and release managers.**
 
 It establishes the standards, controls, and guidance
 that enforce technical quality of the platform and product work that goes into CFPB’s Salesforce platform. It also describes the primary interfaces between the Enterprise Platforms Team (aka the CoE - Center of Excellence)
@@ -92,5 +92,4 @@ Please familiarize yourself with the [CONTRIBUTING](CONTRIBUTING.md). Then, make
 1. TODO
 
 ----
-
 

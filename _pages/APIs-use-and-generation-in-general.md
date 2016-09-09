@@ -10,7 +10,7 @@ Salesforce offers two primary types of APIs based on industry standards. The fir
 
 The SOAP API was the very first API that Salesforce offered and as such is the most complete API available today. There are two flavors of this API available based on the type of user you are, and application that you are developing. The first is the enterprise API and the second is the partner API. Don’t be fooled by the names of the APIs. Just because you are not a partner, doesn’t mean that you can’t use the partner API. 
 
-The SOAP API supports database operations such as query, insert, update, delete, as well as support many other metadata related requests related to users or understanding understanding the Salesforce data model. For a complete reference to the functionality of the SOAP API you may view the developers guide at:
+The SOAP API supports database operations such as query, insert, update, delete, as well as support many other meta-data related requests related to users or understanding understanding the Salesforce data model. For a complete reference to the functionality of the SOAP API you may view the developers guide at:
 
 [http://developer.salesforce.com/docs/atlas.en-us.api.meta/api/](http://developer.salesforce.com/docs/atlas.en-us.api.meta/api/) 
 
@@ -18,13 +18,13 @@ The SOAP API supports database operations such as query, insert, update, delete,
 
     The only difference between the enterprise and partner API is that the enterprise API is strongly typed to a specific Salesforce environment. The API exposes every Salesforce object standard and custom as data structures within the API. This makes it much quicker for one to develop, as there is no need to spend time creating data structures for each object you wish to work with within the org. 
 
-    The downside of the SOAP API is that every time you add a new field or object, or delete a field or object, you must reimport the WSDL that represents the new data structure. Deleting objects and fields is especially dangerous, as that will break your current integrations if you do not update the WSDL.
+    The downside of the SOAP API is that every time you add a new field or object, or delete a field or object, you must re-import the WSDL that represents the new data structure. Deleting objects and fields is especially dangerous, as that will break your current integrations if you do not update the WSDL.
 
 - **Partner API**
 
     The partner API on the other hand is not strongly typed for any one particular environment. It was originally designed for Salesforce partners to use where the data model could be different for each customer using their integration. Many customers also use this API because it reduces the risk of something breaking because a field was deleted, and in the long term reduces the overall maintenance cost since a new WSDL does not need to be imported every time the data model changes and you wish to access the new fields and/or objects in the data structure. 
 
-    The downside of the Partner API is that there is a substantial amount of additional coding and work required for the initial implementation because you must generate your own xml within your code to bind to each object and field. Once the initial setup is complete, the ongoing maintenance is the same, if not less than that of the Enterprise API. 
+    The downside of the Partner API is that there is a substantial amount of additional coding and work required for the initial implementation because you must generate your own XML within your code to bind to each object and field. Once the initial setup is complete, the ongoing maintenance is the same, if not less than that of the Enterprise API. 
 
 **REST API**
 
@@ -82,9 +82,9 @@ In addition to exposing APIs to external systems, Salesforce also has a few mech
 
 2. **Call-Outs to SOAP APIs**
 
-    Salesforce also supports making more complex call-outs to SOAP APIs as well. In order to communicate with an external SOAP service you will need to import the WSDL under Develop->Classes. Once the WSDL has been imported a façade class is generated for each of the methods in the SOAP service. You then can use apex to execute those methods to make a call-out to the SOAP service. 
+    Salesforce also supports making more complex call-outs to SOAP APIs as well. In order to communicate with an external SOAP service you will need to import the WSDL under Develop->Classes. Once the WSDL has been imported a facade class is generated for each of the methods in the SOAP service. You then can use apex to execute those methods to make a call-out to the SOAP service. 
 
-    Occasionally the WSDL will not import because the Salesforce WSDL parser does not understand the WSDL. In this case you will manually need to recreate the façade by hand. This procedure is out of scope of this document. 
+    Occasionally the WSDL will not import because the Salesforce WSDL parser does not understand the WSDL. In this case you will manually need to recreate the facade by hand. This procedure is out of scope of this document. 
 
 3. **Outbound Messaging**
 

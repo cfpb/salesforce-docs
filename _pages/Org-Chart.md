@@ -8,7 +8,7 @@
    - Information security policy, engineering, and monitoring
 
 **Design and Development**
-   - Custom application development for consumerfinance.gov and other platforms
+   - Custom application development for http://consumerfinance.gov and other platforms
 
 **_Enterprise Platforms Teams_**
    - Programs: Manage customer and business engagement, manage contracts
