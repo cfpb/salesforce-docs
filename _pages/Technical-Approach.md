@@ -1,0 +1,4 @@
+- [Guiding Principles](/_pages/Guiding-Principles.md)
+  - Configuration over code
+  - Loosely bound APIs
+  - [APIs use and generation in general](/_pages/APIs-use-and-generation-in-general.md)
