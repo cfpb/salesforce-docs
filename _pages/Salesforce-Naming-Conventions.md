@@ -48,6 +48,7 @@ The following are examples of custom field naming that should not be used
 ```Zip_Code``` | Field names should not have underscores. 
 
 The following are examples of the naming convention that will be used 
+
 | Custom Field Name | Reason 
 |-------------------|:--------|
 ```CountryCode``` | A succinct description of the object using whole words. Description is not required since the name is a commonly understood term. 
