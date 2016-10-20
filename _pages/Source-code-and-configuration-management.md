@@ -10,15 +10,15 @@ The second problem is the management of the configuration. You cannot easily edi
 
 If you want to create a more repeatable process to retrieve/deploy Salesforce code and configuration you would use the Salesforce metadata API along with some ANT scripts to automate the deployments. This only gets you halfway there. Even after you create the automated scripts, you still would need to manually create the ```package.xml``` file that lists all of the files that you wish to retrieve or deploy. This is a very tedious and time consuming practice.
 
-####Salesforce Packaging to the Rescue!
+####Salesforce Change Set to the Rescue!
 
-Salesforce offers a feature in the UI that allows you to “package” the components of an application by adding each of the components to a named package. This package then acts as an inventory for all of the components in your application. You can then use ANT and the Salesforce metadata API to create automated scripts that retrieve the components of a package and then commit those components into source control. You can then use the same scripts to take the package in source control and deploy the code and configuration to a target Salesforce environment. 
+Salesforce offers a feature in the UI that allows you to “package” the components of an application by adding each of the components to a Change Set. This Change Set then acts as an inventory for all of the components in your application for a particular release. You can then use ANT and the Salesforce metadata API to create automated scripts that retrieve the components of a Change Set and then commit those components into source control. You can then use the same scripts to take the Change Set in source control and deploy the code and configuration to a target Salesforce environment. 
 
-The really nice thing about packaging is that once it is deployed to a target environment you can go to a package and see exactly all of the salesforce code and configuration that makes up that package or application. 
+The really nice thing about Change Set is that once it is deployed to a target environment you can go to a Change Set and see exactly all of the salesforce code and configuration that makes up that Change Set or application. 
 
-This is the basis of the deployment process outlined in this document. Below you will find a sample of what a package in Salesforce looks like.
+This is the basis of the deployment process outlined in this document. Below you will find a sample of what a Change Set in Salesforce looks like.
 
-![Package](/img/package.png)
+![Package](/img/Outbound_Change_Set.png)
 
 ####Deploying between Salesforce Environments 
 
@@ -26,24 +26,24 @@ An automation engine called “Jenkins” helps you automate deployments by exec
 
 A typical basic release from one environment to another environment would proceed as follows:
 
-1. A developer or configurator creates a new package in a Salesforce org. 
-1. A developer or configurator adds code and components to that package.
+1. A developer or configurator creates a new Change Set in a Salesforce org per Release. 
+1. A developer or configurator adds code and components to that Change Set for a particular release.
 1. An automated Jenkins job runs on an hourly basis committing any new or updated components to GitHub source control. 
 1. A manually initiated Jenkins job is executed by the release manager to deploy the code and configuration from the GitHub source control repository to the target Salesforce environment. 
 
 #### PackageSource Control
-As mentioned above, Salesforce out of the box does not support versioning of the code and configuration. This is why we are using GitHub with individual Git repositories to store and version the code and configuration for each Salesforce package that is created. 
+As mentioned above, Salesforce out of the box does not support versioning of the code and configuration. This is why we are using GitHub with individual Git repositories to store and version the code and configuration for each Salesforce Change Set that is created. 
 
 The following are the different repositories that will be used for releases. 
 
-1. **Project Master Repository** - Every project team will have their own dedicated repository in GitHub. When a new project is established a new GitHub repository for that team will be created. The naming for project master repository is {Project Name} - Deploy. <br><br>This repository is managed by the release manager and is used to deploy packages to the various platform environments such as Integration, UAT, Staging, and Project. <br><br>Project teams will fork this repository to manage their day-to-day versioning of code currently in flight. Once the coding and configuration for a package is complete for a release, a pull request will be made by that project team requesting the release manager to merge the forked repository with the master. 
-1. **Project Master Forked Repository** - This is a repository that has been forked from the “Project Master Repository” or {Project Name} - Deploy repository. This repository will be mapped directly to the “Project Dev” environment. A Jenkins job will be configured that will automatically take any code or components checked into the package in the “Project Dev” environment and will automatically commit those code and components to the forked repository. 
-1. **Individual Developer Forked Repositories** - In the case that a project team is using a distributed development model with one or more individual developer environments in addition to their “Project Dev” environment, one or more developer repositories will be forked from the “Project Master Forked Repository”. These are in essence double forked repositories. Each of these double forked repositories will be mapped directly to an individual developer sandbox similar to how the “Project Master Forked Repository” is mapped to the “Project Dev” environment. <br><br>For each individual developer environment and repository, a Jenkins job will be created that will take any components that are in a package in the individual developer sandbox and will commit them to their dedicated double forked repository on a routine basis automatically.  Once the developer is ready to move their code and configuration to the “Project Dev” environment, the developer will create a pull request requesting that their repository be merged with the “Project Master Forked Repository”. The project lead developer would then accept the pull request and would execute a Jenkins job that would automatically deploy the package within the developer’s double forked repository to the “Project Dev” sandbox.
+1. **Project Master Repository** - Every project team will have their own dedicated repository in GitHub. When a new project is established a new GitHub repository for that team will be created. The naming for project master repository is {Project Name} - Deploy. <br><br>This repository is managed by the release manager and is used to deploy Change Set to the various platform environments such as Integration, UAT, Staging, and Project. <br><br>Project teams will fork this repository to manage their day-to-day versioning of code currently in flight. Once the coding and configuration for a Change Set is complete for a release, a pull request will be made by that project team requesting the release manager to merge the forked repository specfic release branch with the corresponding release branch on master. 
+1. **Project Master Forked Repository** - This is a repository that has been forked from the “Project Master Repository” or {Project Name} - Deploy repository. This repository will be mapped directly to the “Project Dev” environment. A Jenkins job will be configured that will automatically take any code or components checked into the Change Set in the “Project Dev” environment and will automatically commit those code and components to the forked repository. 
+1. **Individual Developer Forked Repositories** - In the case that a project team is using a distributed development model with one or more individual developer environments in addition to their “Project Dev” environment, one or more developer repositories will be forked from the “Project Master Forked Repository”. These are in essence double forked repositories. Each of these double forked repositories will be mapped directly to an individual developer sandbox similar to how the “Project Master Forked Repository” is mapped to the “Project Dev” environment. <br><br>For each individual developer environment and repository, a Jenkins job will be created that will take any components that are in a Change Set in the individual developer sandbox and will commit them to their dedicated double forked repository on a routine basis automatically.  Once the developer is ready to move their code and configuration to the “Project Dev” environment, the developer will create a pull request requesting that their repository be merged with the “Project Master Forked Repository”. The project lead developer would then accept the pull request and would execute a Jenkins job that would automatically deploy the package within the developer’s double forked repository to the “Project Dev” sandbox.
 
 ####Auditing and Tracking of a Release
 There are two mechanisms that are used by the release management team to ensure that appropriate approvals are given for deployments to various environments and to track all communication throughout the process.
 
-1. **Pull Requests** - Pull requests in GitHub are a mechanism to request that code from a forked repository are merged into a parent repository. Within the pull request the requester and release manager can collaborate with each other about the release. The pull request stays open throughout the entire release process from the initial request for deployment to integration to deployment to production. Once the deployment to production is complete the pull request is then closed.
+1. **Pull Requests** - Pull requests in GitHub are a mechanism to request that code from a forked repository release branch are merged into a corresponding parent repository release branch. Within the pull request the requester and release manager can collaborate with each other about the release. Any metadata item that cannot be deployed via Change Set  has to detailed as a pre or post deployment manual step in the deployment document and this has to be attached with the pull request.The pull request stays open till the code reviews are complete for a release. Once the release manager accepts the pull request, the code is ready to be deployed to upstream environments.
 
 1. **RemedyForce Tickets** - RemedyForce tickets are used for audit tracking to ensure that the requester has the authority to request deployment from one environment to another. When a pull request is opened a RemedyForce ticket must also be opened requesting the deployment from one environment to another. Once the deployment has been completed, the RemedyForce ticket is then closed. Multiple RemedyForce tickets will be open throughout the entire release process for each time a deployment to a new environment is requested. Each time a ticket is opened that ticket must be notated in the pull request.
 
@@ -92,12 +92,18 @@ A new Salesforce project has just been established. The project has team members
 **Lead Developer**
 
 1. Forks the Project Master Repository ( {Project Name}-deploy ) to {Team}/{Project Name}-deploy
-1. Creates a new empty package in their Project Dev sandbox.
+1. Creates a new empty Change Set based on a Release in their Project Dev sandbox.
+1. Creates a new empty Release branch in {Team}/{Project Name}-deploy.
+1. Informs the release manager of the new change set name.
+
+**Release Manager**
+1. Creates the release specific branch in ( {Project Name}-deploy ) Project Master Repository.
+1. Creates the retrieve-commit and deploy Jenkins jobs for that specific release.
 
 **Developers (for each individual developer sandbox)**
 
-1. Creates a fork for their individual specific sandbox. e.g., {developer name}/{Project Name}-deploy. This is the double forked repository we mentioned earlier.
-1. Create new empty package in their respective individual developer sandbox.
+1. Creates a fork for their individual specific sandbox. e.g.,( {developer name}/{Project Name}-deploy ) in their indivdual GitHub account. This is the double forked repository we mentioned earlier.
+1. Create new empty change set in their respective individual developer sandbox. 
 
 
 ####Day 1 Project Step
@@ -108,18 +114,18 @@ Now that all of the initial project initiation steps have been completed, the pr
 1. Creates a new apex class in Eclipse IDE and saves to the Platform Dev sandbox.
 1. Creates a new Visualforce page in the Salesforce UI.
 1. Creates a new custom object in the Salesforce UI. 
-1. Adds the new apex class, Visualforce page, and custom object to the package.
+1. Adds the new apex class, Visualforce page, and custom object to the Change Set.
 
 **Configurator 1 (working on same org as developer)**
 
 1. Creates a new page layout, record type, custom field, etc in the Salesforce UI.
-1. Adds the new page layouts, record types, workflow rules, etc to the package.
+1. Adds the new page layouts, record types, workflow rules, etc to the Change Set.
 
 **Jenkins/Ant {Project Name}-Retrieve and Commit job**
 
-1. Syncs package with git repository hourly and pushes to fork, {Team}/{Project Name}-deploy. All components not currently in the repository that are in the package are added to the repository. Any existing components in the package that also in the repository are updated in the repository. 
+1. Syncs Change Set with git repository hourly and pushes to fork, {Team}/{Project Name}-deploy. All components not currently in the repository that are in the Change Set are added to the repository. Any existing components in the Change Set that are also in the repository are updated in the repository. 
 
-**Note:** Only code and components that are in the package are committed to the repository. 
+**Note:** Only code and components that are in the Change Set are committed to the repository. 
 
 ####Day 1+X Project Step
 This step represents every day after the first day of development. 
@@ -147,7 +153,7 @@ This step represents every day after the first day of development.
 
 **Jenkins/Ant {Project Name}-Retrieve and Commit job**
 
-1. Syncs package with git repository hourly and pushes to fork, {Team}/{Project Name}-deploy. All components not currently in the repository that are in the package are added to the repository. Any existing components in the package that also in the repository are updated in the repository. 
+1. Syncs Change Set with git repository hourly and pushes to fork, {Team}/{Project Name}-deploy. All components not currently in the repository that are in the Change Set are added to the repository. Any existing components in the Change Set that also in the repository are updated in the repository. 
 
 **Note:** Only code and components that are in the package are committed to the repository. 
 
@@ -156,7 +162,7 @@ In this step the project team now has enough code and configuration completed th
 
 **Lead Developer**
 
-1. Verifies package, and updates ```README.md``` in fork, {Team}/{Project Name}-deploy, and captures the manual pre-deploy and post deploy steps.
+1. Verifies Change Set, and updates ```README.md``` in fork, {Team}/{Project Name}-deploy, and captures the manual pre-deploy and post deploy steps.
 
 1. Performs pre-deploy manual steps in Team Build/QA.
 
@@ -174,8 +180,8 @@ In this step the project team has completed the current version of their applica
 
 **Lead Developer**
 
-1. Verifies that the package is tested and ready to deploy to integration. 
-Creates a pull request from fork {Team}/{Project Name}-deploy to {Salesforce}/{Project Name}-deploy. 
+1. Verifies that the Change Set is tested and ready to deploy to integration. 
+Creates a pull request from fork ( {Team}/{Project Name}-deploy ) release branch to ( {Salesforce}/{Project Name}-deploy ) release branch. 
 1. Adds label/version in pull request. e.g., v2.5.09 … v2.5.10.
 1. Creates a new ticket in RemedyForce for the deployment. Includes link to pull request in the ticket.
 1. Creates a comment in the pull request, requesting to deploy to integration and references the case number in the pull request.
@@ -186,11 +192,13 @@ Creates a pull request from fork {Team}/{Project Name}-deploy to {Salesforce}/{P
 
 1. Reviews the pull request and RemedyForce ticket. Verifies that the appropriate approval have been given in the ticket. 
 1. Release manager and COE Reviews code and provides comments for any required changes in the pull request. 
-1. Once all comments have been addressed, the release manager accepts the pull request and merges into the {Salesforce}/{Project Name}-Deploy repository.
+1. Once all comments have been addressed, the release manager accepts the pull request and merges into the {Salesforce}/{Project Name}-Deploy repository release branch.
+1. Tag a release in GitHub for future reference purposes and deploying a specific release to upstream environments.
 1. Executes any pre-deployment steps specified from the ```README.md```.
-1. Executes Jenkins job “{Project Name}-Deploy to Integration” to deploy the package from the {Salesforce}/{Project Name}-Deploy repository to the Integration Sandbox.
+1. Executes Jenkins job “{Project Name}-Deploy to Integration” to deploy the release tag from the {Salesforce}/{Project Name}-Deploy repository to the Integration Sandbox.
 1. Executes any post deployment steps specified from the ```README.md```.
-1. Comments on the pull request that the deployment is complete or failed accordingly.
+1. This process of pull request could iterate a couple of time in order to fix defects found during the integreation tests. Please note that for each integration fix cycle, a pull request has to be generated and a new release tag with an incremental number will to be generated.
+1. Comments on the pull request that the deployment is complete or failed accordingly. 
 1. Closes the ticket in RemedyForce once deployment is complete, regardless if the deployment was successful or failed. If the deployment failed the project team must fix any issues and create a new RemedyForce ticket. 
 
 
@@ -206,7 +214,7 @@ In this step the project team has successfully completed all system testing in t
 
 1. Reviews pull request and RemedyForce ticket. Verifies that the appropriate approvals have been given in the ticket. 
 1. Performs any pre-deployment steps as outlined in the ```README.md``` file. 
-1. Executes Jenkins job “{Project Name}-Deploy to UAT” to deploy the package from repository {Project Name}-Deploy to the UAT sandbox.
+1. Executes Jenkins job “{Project Name}-Deploy to UAT” to deploy the latest release tag from repository {Project Name}-Deploy to the UAT sandbox.
 1. Performs any post deployment steps as outlined in the ```README.md``` file.
 1. Comments on the pull request that the deployment is complete or failed accordingly.
 1. Closes the ticket in RemedyForce once deployment is complete, regardless if the deployment was successful or failed. If the deployment failed the project team must fix any issues and then open a new remedyForce ticket to deploy to integration again. Once tests pass in integration they can then request deployment to UAT again. 
@@ -228,7 +236,7 @@ This is an optional step that can be used if the project team wishes to deploy t
 
 1. Reviews the pull request and RemedyForce ticket. Verifies that the appropriate approval have been given in the ticket. 
 1. Performs any pre-deployment steps as outlined in the ```README.md``` file. 
-1. Executes Jenkins job “{Project Name}-Deploy to X Platform Sandbox” to deploy package from repository {Project Name}-Deploy to “X Platform Sandbox”.
+1. Executes Jenkins job “{Project Name}-Deploy to X Platform Sandbox” to deploy the latest release tag from repository {Project Name}-Deploy to “X Platform Sandbox”.
 1. Performs any post deployment steps as outlined in the ```README.md``` file.
 Comments on the pull request that the deployment is complete or failed accordingly.
 1. Closes the ticket in RemedyForce once deployment is complete, regardless if the deployment was successful or not. Just as with failures when deploying to UAT, if any failures occur they must open a new RemedyForce ticket to deploy to integration first and then they can deploy again to this environment if they make any changes to their code or configuration. 
@@ -245,7 +253,7 @@ Once all testing has been completed in UAT and signed off, the release manager w
 
 1. Approves request for deployment to production and schedules deployment to production.
 1. Performs any pre-deployment steps as outlined in the ```README.md``` file. 
-1. Executes Jenkins job “{Project Name}-Deploy to Staging”. 
+1. Executes Jenkins job “{Project Name}-Deploy to Staging” a specific release tag. 
 1. Performs any post-deployment steps as outlined in the ```README.md``` file. 
 If the deployment failed, removes the deployment from the schedule and closes the ticket in RemedyForce. As with previous steps the project team must fix any issues in code and configuration. Once fix they the issues they can open a ticket in RemedyForce to deploy to integration again. 
 
@@ -262,7 +270,7 @@ This is the final step in the release management process.
 
 1. The day before the scheduled deployment date, uses Jenkins to perform a full backup of the production environment and commits into the Salesforce master repository with a new version/label for the backup.
 1. On the scheduled deployment date performs any pre-deployment steps as outlined in the ```README.md```.
-1. Executes Jenkins job “{Project Name}-Deploy to Production”. 
+1. Executes Jenkins job “{Project Name}-Deploy to Production” a specific release tag. 
 1. Performs any post deployment steps as outlined in the ```README.md```.
 1. If the deployment failed, works with the project team to remedy the failure. If the failure cannot be easily remedied, the release is rolled back. 
 1. Uses Jenkins to perform a full post deployment backup of the production environment and commits into the master Salesforce repository.
