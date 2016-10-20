@@ -18,7 +18,7 @@ The really nice thing about Change Set is that once it is deployed to a target e
 
 This is the basis of the deployment process outlined in this document. Below you will find a sample of what a Change Set in Salesforce looks like.
 
-![Package](/img/package.png)
+![Package](/img/Outbound_Change_Set.png)
 
 ####Deploying between Salesforce Environments 
 
