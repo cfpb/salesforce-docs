@@ -123,7 +123,7 @@ Now that all of the initial project initiation steps have been completed, the pr
 
 **Jenkins/Ant {Project Name}-Retrieve and Commit job**
 
-1. Syncs Change Set with git repository hourly and pushes to cloned, {Team}/{Project Name}-deploy. All components not currently in the repository that are in the Change Set are added to the repository. Any existing components in the Change Set that are also in the repository are updated in the repository. 
+1. Syncs Change Set with git repository hourly and pushes to fork, {Team}/{Project Name}-deploy. All components not currently in the repository that are in the Change Set are added to the repository. Any existing components in the Change Set that are also in the repository are updated in the repository. 
 
 **Note:** Only code and components that are in the Change Set are committed to the repository. 
 
