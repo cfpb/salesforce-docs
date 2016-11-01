@@ -15,9 +15,11 @@ The following principles apply to unit testing Apex code
 
 1. Cover as many lines of code as possible
 
-* You must have at least 75% of your Apex scripts covered by unit tests to deploy your scripts to production environments. In addition, all triggers should have some test coverage.
+* Salesforce requires that you have at least 75% of your Apex scripts covered by unit tests to deploy your scripts to production environments. In addition, all triggers should have some test coverage.
 
 * Salesforce recommends that you have 100% of your scripts covered by unit tests, where possible.
+
+* In order for a project team to deploy to production at CFPB, it is required that ALL classes and triggers have at least 90% covered by unit tests in order to deploy to production through the release management process.
 
 2. In the case of conditional logic (including ternary operators), execute each branch of code logic.
 

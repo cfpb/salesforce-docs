@@ -97,6 +97,7 @@ A new Salesforce project has just been established. The project has team members
 1. Informs the release manager of the new change set name.
 
 **Release Manager**
+
 1. Creates the release specific branch in ( {Project Name}-deploy ) Project Master Repository.
 1. Creates the retrieve-commit and deploy Jenkins jobs for that specific release.
 
