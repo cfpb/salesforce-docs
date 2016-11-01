@@ -324,11 +324,19 @@ Widely used and commonly understood acronyms and abbreviations can be used inste
 #### Demonstrative Example
 
 The following are examples of Apex batch, scheduleable, and queueable class naming that should not be used 
+
 Class Name | Reason 
 -----------|:------
 GrtBgClass | Whole words should be used in place of shortened versions GreatBigClass and the appropriate suffix should be used. 
 contactbatch | Class does not begin with an uppercase letter and an underscore should always precede the suffix. 
-Address_Update_Batch | Underscores should be avoided other than for the suffix The following are examples of the naming convention that will be used Class Name Reason RoleExpiry_Batch Multiple words concatenated with subsequent words capitalized. Suffixed with _Batch denoting that this is a batch apex class. RoleExpiry_Schedule Multiple words concatenated with subsequent words capitalized. Suffixed with _Schedule denoting that this is a scheduleable apex class. RoleExpiry_Queueable Multiple words concatenated with subsequent words capitalized. Suffixed with _Queueable denoting that this is a queueable apex class.
+Address_Update_Batch | Underscores should be avoided other than for the suffix 
+
+The following are examples of the naming convention that will be used 
+
+Class Name | Reason
+-----------|:------
+RoleExpiry_Batch | Multiple words concatenated with subsequent words capitalized. Suffixed with _Batch denoting that this is a batch apex class. RoleExpiry_Schedule | Multiple words concatenated with subsequent words capitalized. Suffixed with _Schedule denoting that this is a scheduleable apex class. 
+RoleExpiry_Queueable | Multiple words concatenated with subsequent words capitalized. Suffixed with _Queueable denoting that this is a queueable apex class.
 
 ____
 
@@ -343,7 +351,18 @@ None
 
 #### Demonstrative Example
 
-The following are examples of trigger naming naming that should not be used Validation Rule Name Reason UpdateAccountAddresses The object name should always be before the operation in the name. AccountUpdateContacts Is specific to a business function and would allow for other update triggers to be created for the same object. The following are examples of the naming convention that will be used Trigger Name Reason AccountUpdateTrigger Generic trigger that performs only update operations. AccountInsertTrigger Generic trigger that performs only insert operations AccountTrigger Generic trigger that performs insert,update, and delete operations. This would be the only trigger for the account object.
+The following are examples of trigger naming naming that should not be used 
+
+Validation Rule Name | Reason 
+-----------|:------
+UpdateAccountAddresses | The object name should always be before the operation in the name. 
+AccountUpdateContacts | Is specific to a business function and would allow for other update triggers to be created for the same object. 
+
+The following are examples of the naming convention that will be used 
+
+Trigger Name | Reason 
+-----------|:------
+AccountUpdateTrigger | Generic trigger that performs only update operations. AccountInsertTrigger | Generic trigger that performs only insert operations AccountTrigger | Generic trigger that performs insert,update, and delete operations. This would be the only trigger for the account object.
 
 ____
 
@@ -359,7 +378,11 @@ Widely used and commonly understood acronyms and abbreviations can be used inste
 
 #### Demonstrative Example
 
-The following are examples of Apex class naming that should not be used Class Name Reason TESTCustomerManagement Test classes should not have "TEST" in the prefix, but rather have “Test” in the suffix. The following are examples of the naming convention that will be used Class Name Reason CustomerManagementTest Test class for the CustomerManagement Apex class. Will be listed alphabetically under the class being tested.
+The following are examples of Apex class naming that should not be used Class Name Reason TESTCustomerManagement Test classes should not have "TEST" in the prefix, but rather have “Test” in the suffix. The following are examples of the naming convention that will be used 
+
+Class Name | Reason 
+-----------|:------
+CustomerManagementTest | Test class for the CustomerManagement Apex class. Will be listed alphabetically under the class being tested.
 
 ____
 
@@ -374,7 +397,21 @@ Methods should be verbs, in mixed case with the first letter lowercase, with the
 Widely used and commonly understood acronyms and abbreviations can be used instead of the long form. For example HTTP or URL or ACMA.
 
 #### Demonstrative Example
-The following are examples of Apex method naming that should not be used Method Name Reason handleCalculation() What is being handled?! performServices() Perform what services? dealWithInput() How exactly is the input being dealt with? NTInQ1() Cannot determine from the name what the function does The following are examples of the naming convention that will be used Method Name Reason ammortizationCalculation() Describes what calculation is performed repaginateDocument() Describes the service being performed getEmployeeDetail() Describes what is being done numberOfTransactionsInQ1() Longer names are better if they are needed for clarity
+The following are examples of Apex method naming that should not be used 
+
+Method Name | Reason 
+-----------|:------
+handleCalculation() | What is being handled?! 
+performServices() | Perform what services? 
+dealWithInput() | How exactly is the input being dealt with? 
+NTInQ1() | Cannot determine from the name what the function does 
+
+The following are examples of the naming convention that will be used 
+
+Method Name | Reason 
+-----------|:------
+ammortizationCalculation() | Describes what calculation is performed repaginateDocument() | Describes the service being performed getEmployeeDetail() | Describes what is being done 
+numberOfTransactionsInQ1() | Longer names are better if they are needed for clarity
 
 ____
 
@@ -388,7 +425,17 @@ None
 
 #### Demonstrative Example
 
-The following are examples of Apex variable naming that should not be used Variable Name Reason x = x – y Variable names are ambiguous The following are examples of the naming convention that will be used Variable Name Reason currentBalance = lastBalance - lastPayment Unambiguous names that have a clear meaning
+The following are examples of Apex variable naming that should not be used 
+
+Variable Name | Reason
+-----------|:------
+ x = x – y | Variable names are ambiguous 
+
+ The following are examples of the naming convention that will be used 
+
+ Variable Name | Reason 
+ -----------|:------
+currentBalance = lastBalance - lastPayment | Unambiguous names that have a clear meaning
 
 
 ____
@@ -403,7 +450,17 @@ None
 
 #### Demonstrative Example
 
-The following are examples of Apex constant naming that should not be used Class Name Reason maxCharacters Indistinguishable from a variable name The following are examples of the naming convention that will be used Class Name Reason MAX_CHARACTERS Uppercase letters help the reviewer determine that it is a constant
+The following are examples of Apex constant naming that should not be used 
+
+Class Name | Reason 
+-----------|:------
+maxCharacters | Indistinguishable from a variable name 
+
+The following are examples of the naming convention that will be used 
+
+Class Name | Reason 
+-----------|:------
+MAX_CHARACTERS | Uppercase letters help the reviewer determine that it is a constant
 
 ____
 
@@ -418,7 +475,18 @@ None
 
 #### Demonstrative Example
 
-The following are examples of Apex type naming that should not be used Type Name Reason map Contacts "map", “id”, and “string” do not start with an uppercase letter. String Contact “string” does not start with an uppercase letter. The following are examples of the naming convention that will be used Type Name Reason Map Contacts Starts with an uppercase letter String Contact Starts with an uppercase letter
+The following are examples of Apex type naming that should not be used 
+
+Type Name | Reason 
+-----------|:------
+map Contacts | "map", “id”, and “string” do not start with an uppercase letter. 
+String Contact | “string” does not start with an uppercase letter. 
+
+The following are examples of the naming convention that will be used 
+
+Type Name | Reason 
+-----------|:------
+Map Contacts | Starts with an uppercase letter String Contact Starts with an uppercase letter
 
 ____
 
