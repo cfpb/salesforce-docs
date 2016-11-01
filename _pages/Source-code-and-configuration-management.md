@@ -36,8 +36,9 @@ public with sharing class ACCT_Accounts_TDTM extends TDTM_Runnable {
 
 Located in the lines above a property. The special tokens are all optional.
 
-token description
-@description  one or more lines that describe the property
+|token | description|
+|-------------|:--------|
+|@description | one or more lines that describe the property|
 
 Example
 
@@ -53,11 +54,12 @@ Example
 
 In order for ApexDoc to identify class methods, the method line must contain an explicit scope (global, public, private, testMethod, webService). The comment block is located in the lines above a method. The special tokens are all optional.
 
-token description
-@description  one or more lines that provide an overview of the method
-@param param name a description of what the parameter does
-@return a description of the return value from the method
-@example  Example code usage. This will be wrapped in  tags to preserve whitespace
+|token | description|
+|-------------|:--------|
+|@description | one or more lines that provide an overview of the method|
+|@param | param name a description of what the parameter does|
+|@return | a description of the return value from the method|
+|@example | Example code usage. This will be wrapped in  tags to preserve whitespace|
 
 Example
 
