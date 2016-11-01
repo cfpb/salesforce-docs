@@ -295,13 +295,9 @@ The following are examples of Apex class naming that should not be used :
      
 Class Name | Reason   
 -----------|:------  
-
 FHACustomer | Using acronyms should be avoided as they are not mnemonic    
-
 GrtBgClass | Whole words should be used in place of shortened versions  GreatBigClass      
-
 addresshandler | Class does not begin with an uppercase letter     
-
 Address_Handler | Underscores should be avoided   
 
 The following are examples of the naming convention that will be used:
