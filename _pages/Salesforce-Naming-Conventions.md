@@ -65,7 +65,9 @@ Validation rule names should be unique, beginning with an uppercase letter. Whol
 
 &lt;FIELD&gt;  &lt;RULE&gt;  &lt;OPTIONAL DEPENDENCY&gt;  
 
-```Postal Code Required (Suburb)``` The above example shows that Postal Code is required dependent on values in the Suburb field. The exact rule definition is in the detail but keeping this format helps keeps the naming as intuitive as possible without being too restrictive.
+```Postal Code Required (Suburb)``` 
+
+The above example shows that Postal Code is required dependent on values in the Suburb field. The exact rule definition is in the detail but keeping this format helps keeps the naming as intuitive as possible without being too restrictive.
 
 #### Exceptions
 
