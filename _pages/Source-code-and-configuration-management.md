@@ -18,7 +18,8 @@ Located in the lines above the class declaration. The special tokens are all opt
 
 Example
 
-```/**
+```
+/**
 * @author Salesforce.com Foundation
 * @date 2014
 *
@@ -42,7 +43,8 @@ Located in the lines above a property. The special tokens are all optional.
 
 Example
 
-```    /*******************************************************************************************************
+```    
+/*******************************************************************************************************
     * @description specifies whether state and country picklists are enabled in this org.
     * returns true if enabled.
     */
