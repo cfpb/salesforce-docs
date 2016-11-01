@@ -59,7 +59,7 @@ In order for ApexDoc to identify class methods, the method line must contain an 
 |token | description|
 |-------------|:--------|
 |@description | one or more lines that provide an overview of the method|
-|@param | param name a description of what the parameter does|
+|@param _param name_ | a description of what the parameter does|
 |@return | a description of the return value from the method|
 |@example | Example code usage. This will be wrapped in  tags to preserve whitespace|
 
