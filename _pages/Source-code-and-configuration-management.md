@@ -20,16 +20,16 @@ Example
 
 ```
 /**
-* @author Salesforce.com Foundation
-* @date 2014
-*
-* @group Accounts
-* @group-content ../../ApexDocContent/Accounts.htm
-*
-* @description Trigger Handler on Accounts that handles ensuring the correct system flags are set on
-* our special accounts (Household, One-to-One), and also detects changes on Household Account that requires
-* name updating.
-*/
+ * @author Salesforce.com Foundation
+ * @date 2014
+ *
+ * @group Accounts
+ * @group-content ../../ApexDocContent/Accounts.htm
+ *
+ * @description Trigger Handler on Accounts that handles ensuring the correct system flags are set on
+ * our special accounts (Household, One-to-One), and also detects changes on Household Account that requires
+ * name updating.
+ */
 public with sharing class ACCT_Accounts_TDTM extends TDTM_Runnable {
 ```
 
@@ -44,10 +44,10 @@ Located in the lines above a property. The special tokens are all optional.
 Example
 
 ```    
-    /*******************************************************************************************************
-    * @description specifies whether state and country picklists are enabled in this org.
-    * returns true if enabled.
-    */
+    /************************************************************************** *****************************
+     * @description specifies whether state and country picklists are enabled in this org.
+     * returns true if enabled.
+     */
     public static Boolean isStateCountryPicklistsEnabled {
         get {
 ```
@@ -66,14 +66,14 @@ In order for ApexDoc to identify class methods, the method line must contain an 
 Example
 
 ```
-    /*******************************************************************************************************
-    * @description Returns field describe data
-    * @param objectName the name of the object to look up
-    * @param fieldName the name of the field to look up
-    * @return the describe field result for the given field
-    * @example
-    * Account a = new Account();
-    */
+    /************************************************************************** *****************************
+     * @description Returns field describe data
+     * @param objectName the name of the object to look up
+     * @param fieldName the name of the field to look up
+     * @return the describe field result for the given field
+     * @example
+     * Account a = new Account();
+     */
     public static Schema.DescribeFieldResult getFieldDescribe(String objectName, String fieldName) {
 ```
 
