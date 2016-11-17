@@ -65,7 +65,9 @@ Validation rule names should be unique, beginning with an uppercase letter. Whol
 
 &lt;FIELD&gt;  &lt;RULE&gt;  &lt;OPTIONAL DEPENDENCY&gt;  
 
-```Postal Code Required (Suburb)``` The above example shows that Postal Code is required dependent on values in the Suburb field. The exact rule definition is in the detail but keeping this format helps keeps the naming as intuitive as possible without being too restrictive.
+```Postal Code Required (Suburb)``` 
+
+The above example shows that Postal Code is required dependent on values in the Suburb field. The exact rule definition is in the detail but keeping this format helps keeps the naming as intuitive as possible without being too restrictive.
 
 #### Exceptions
 
@@ -90,7 +92,7 @@ The following are examples of the naming convention that will be used:
 
 ____
 
-### 3. Workflow Rules
+### 4. Workflow Rules
 
 #### Rules for Naming
 
@@ -122,7 +124,7 @@ The following are examples of workflow rule naming that should not be used:
 
 ____
 
-### 4. Field Updates
+### 5. Field Updates
 
 #### Rules for Naming
 
@@ -154,7 +156,7 @@ The following are examples of the naming convention that will be used :
 | Description | Updates the inactive flag on the customer record which will be used by batch apex for processing | Briefly describes interdependencies that may rely on this action being performed |
 
 
-### 5. Email Alerts
+### 6. Email Alerts
 
 #### Rules for Naming
 
@@ -184,7 +186,7 @@ Email Alert Description  |Email Deceased Customer Team – New Deceased Customer
 
 ____
 
-### 6. Approval Processes
+### 7. Approval Processes
 
 #### Rules for Naming
 
@@ -216,9 +218,9 @@ Approval Process Name | Reason
 
 ____
 
-### 7. Approval Process Steps
+### 8. Approval Process Steps
 
-##### Rules for Naming
+#### Rules for Naming
 
 Approval process step names will follow the following convention: 
 
@@ -251,7 +253,7 @@ Approval – Sent to Legal | The approval step becomes self documenting showing 
 
 ____
 
-### 8. Visualforce Pages
+### 9. Visualforce Pages
 
 #### Rules for Naming
 
@@ -279,7 +281,7 @@ MailFaxRequest | Clearly defined and succinct name
 
 ____
 
-### 9. Apex Classes
+### 10. Apex Classes
 
 #### Rules for Naming
 
@@ -295,13 +297,9 @@ The following are examples of Apex class naming that should not be used :
      
 Class Name | Reason   
 -----------|:------  
-
 FHACustomer | Using acronyms should be avoided as they are not mnemonic    
-
 GrtBgClass | Whole words should be used in place of shortened versions  GreatBigClass      
-
 addresshandler | Class does not begin with an uppercase letter     
-
 Address_Handler | Underscores should be avoided   
 
 The following are examples of the naming convention that will be used:
@@ -315,9 +313,9 @@ CustomerController | Customer controller for the customer object
 
 ____
 
-#### 10. Apex Batch, Schedulable, and Queueable Classes
+### 11. Apex Batch, Schedulable, and Queueable Classes
 
-### Rules for Naming
+#### Rules for Naming
 
 Class names should be unique, beginning with an uppercase letter. It should not contain underscores or spaces. The words should be concatenated with Initial uppercase and subsequent internal words capitalized. Whole words should be used and use of acronyms and abbreviations should be limited. Apex classes that are batch classes should be suffixed with _Batch Apex classes that are Scheduleable classes should be suffixed with _Schedule Apex classes that are Queuable classes should be suffixed with _Queueable
 
@@ -328,15 +326,23 @@ Widely used and commonly understood acronyms and abbreviations can be used inste
 #### Demonstrative Example
 
 The following are examples of Apex batch, scheduleable, and queueable class naming that should not be used 
+
 Class Name | Reason 
 -----------|:------
 GrtBgClass | Whole words should be used in place of shortened versions GreatBigClass and the appropriate suffix should be used. 
 contactbatch | Class does not begin with an uppercase letter and an underscore should always precede the suffix. 
-Address_Update_Batch | Underscores should be avoided other than for the suffix The following are examples of the naming convention that will be used Class Name Reason RoleExpiry_Batch Multiple words concatenated with subsequent words capitalized. Suffixed with _Batch denoting that this is a batch apex class. RoleExpiry_Schedule Multiple words concatenated with subsequent words capitalized. Suffixed with _Schedule denoting that this is a scheduleable apex class. RoleExpiry_Queueable Multiple words concatenated with subsequent words capitalized. Suffixed with _Queueable denoting that this is a queueable apex class.
+Address_Update_Batch | Underscores should be avoided other than for the suffix 
+
+The following are examples of the naming convention that will be used 
+
+Class Name | Reason
+-----------|:------
+RoleExpiry_Batch | Multiple words concatenated with subsequent words capitalized. Suffixed with _Batch denoting that this is a batch apex class. RoleExpiry_Schedule | Multiple words concatenated with subsequent words capitalized. Suffixed with _Schedule denoting that this is a scheduleable apex class. 
+RoleExpiry_Queueable | Multiple words concatenated with subsequent words capitalized. Suffixed with _Queueable denoting that this is a queueable apex class.
 
 ____
 
-#### 11. Apex Triggers
+### 12. Apex Triggers
 
 #### Rules for Naming
 Triggers should always be named using the format [object Name][Operation]Trigger OR [Object Name]Trigger for triggers that include all operations for that object. For example: AccountInsertTrigger, AccountUpdateTrigger, OrderInsertTrigger. There should only be one trigger per operation per object. It is strongly recommended to include only a single trigger with all operations inside that trigger per object.
@@ -347,11 +353,22 @@ None
 
 #### Demonstrative Example
 
-The following are examples of trigger naming naming that should not be used Validation Rule Name Reason UpdateAccountAddresses The object name should always be before the operation in the name. AccountUpdateContacts Is specific to a business function and would allow for other update triggers to be created for the same object. The following are examples of the naming convention that will be used Trigger Name Reason AccountUpdateTrigger Generic trigger that performs only update operations. AccountInsertTrigger Generic trigger that performs only insert operations AccountTrigger Generic trigger that performs insert,update, and delete operations. This would be the only trigger for the account object.
+The following are examples of trigger naming naming that should not be used 
+
+Validation Rule Name | Reason 
+-----------|:------
+UpdateAccountAddresses | The object name should always be before the operation in the name. 
+AccountUpdateContacts | Is specific to a business function and would allow for other update triggers to be created for the same object. 
+
+The following are examples of the naming convention that will be used 
+
+Trigger Name | Reason 
+-----------|:------
+AccountUpdateTrigger | Generic trigger that performs only update operations. AccountInsertTrigger | Generic trigger that performs only insert operations AccountTrigger | Generic trigger that performs insert,update, and delete operations. This would be the only trigger for the account object.
 
 ____
 
-### 12. Apex Test Classes
+### 13. Apex Test Classes
 
 #### Rules for Naming
 
@@ -363,11 +380,15 @@ Widely used and commonly understood acronyms and abbreviations can be used inste
 
 #### Demonstrative Example
 
-The following are examples of Apex class naming that should not be used Class Name Reason TESTCustomerManagement Test classes should not have "TEST" in the prefix, but rather have “Test” in the suffix. The following are examples of the naming convention that will be used Class Name Reason CustomerManagementTest Test class for the CustomerManagement Apex class. Will be listed alphabetically under the class being tested.
+The following are examples of Apex class naming that should not be used Class Name Reason TESTCustomerManagement Test classes should not have "TEST" in the prefix, but rather have “Test” in the suffix. The following are examples of the naming convention that will be used 
+
+Class Name | Reason 
+-----------|:------
+CustomerManagementTest | Test class for the CustomerManagement Apex class. Will be listed alphabetically under the class being tested.
 
 ____
 
-### 13. Apex Methods
+### 14. Apex Methods
 
 #### Rules for Naming
 
@@ -377,14 +398,28 @@ Methods should be verbs, in mixed case with the first letter lowercase, with the
 
 Widely used and commonly understood acronyms and abbreviations can be used instead of the long form. For example HTTP or URL or ACMA.
 
-##### Demonstrative Example
-The following are examples of Apex method naming that should not be used Method Name Reason handleCalculation() What is being handled?! performServices() Perform what services? dealWithInput() How exactly is the input being dealt with? NTInQ1() Cannot determine from the name what the function does The following are examples of the naming convention that will be used Method Name Reason ammortizationCalculation() Describes what calculation is performed repaginateDocument() Describes the service being performed getEmployeeDetail() Describes what is being done numberOfTransactionsInQ1() Longer names are better if they are needed for clarity
+#### Demonstrative Example
+The following are examples of Apex method naming that should not be used 
+
+Method Name | Reason 
+-----------|:------
+handleCalculation() | What is being handled?! 
+performServices() | Perform what services? 
+dealWithInput() | How exactly is the input being dealt with? 
+NTInQ1() | Cannot determine from the name what the function does 
+
+The following are examples of the naming convention that will be used 
+
+Method Name | Reason 
+-----------|:------
+ammortizationCalculation() | Describes what calculation is performed repaginateDocument() | Describes the service being performed getEmployeeDetail() | Describes what is being done 
+numberOfTransactionsInQ1() | Longer names are better if they are needed for clarity
 
 ____
 
-#### 14. Apex Variables
+### 15. Apex Variables
 
-##### Rules for Naming
+#### Rules for Naming
 Variables should be in mixed case with a lowercase first letter. Internal words start with capital letters. Variable names should be short yet meaningful. The choice of a variable name should be mnemonic— that is, designed to indicate to the casual observer the intent of its use. One-character variable names should be avoided except for temporary "throwaway" variables. Common names for temporary variables are i, j, k,m, and n for integers; c, d, and e for characters.
 
 #### Exceptions
@@ -392,12 +427,22 @@ None
 
 #### Demonstrative Example
 
-The following are examples of Apex variable naming that should not be used Variable Name Reason x = x – y Variable names are ambiguous The following are examples of the naming convention that will be used Variable Name Reason currentBalance = lastBalance - lastPayment Unambiguous names that have a clear meaning
+The following are examples of Apex variable naming that should not be used 
+
+Variable Name | Reason
+-----------|:------
+ x = x – y | Variable names are ambiguous 
+
+ The following are examples of the naming convention that will be used 
+
+ Variable Name | Reason 
+ -----------|:------
+currentBalance = lastBalance - lastPayment | Unambiguous names that have a clear meaning
 
 
 ____
 
-### 15. Apex Constants
+### 16. Apex Constants
 
 #### Rules for Naming
 The names of variables declared class constants should be all uppercase with words separated by underscores ("_"). Common constants used across the application should be declared in the GlobalConstants class (see section 7.6) Constant scope should be kept to the minimal required. Private class attributes are preferred to publicly defined constants.
@@ -407,11 +452,21 @@ None
 
 #### Demonstrative Example
 
-The following are examples of Apex constant naming that should not be used Class Name Reason maxCharacters Indistinguishable from a variable name The following are examples of the naming convention that will be used Class Name Reason MAX_CHARACTERS Uppercase letters help the reviewer determine that it is a constant
+The following are examples of Apex constant naming that should not be used 
+
+Class Name | Reason 
+-----------|:------
+maxCharacters | Indistinguishable from a variable name 
+
+The following are examples of the naming convention that will be used 
+
+Class Name | Reason 
+-----------|:------
+MAX_CHARACTERS | Uppercase letters help the reviewer determine that it is a constant
 
 ____
 
-### 16. Apex Type Names
+### 17. Apex Type Names
 
 #### Rules for Naming
 
@@ -422,4 +477,76 @@ None
 
 #### Demonstrative Example
 
-The following are examples of Apex type naming that should not be used Type Name Reason map Contacts "map", “id”, and “string” do not start with an uppercase letter. String Contact “string” does not start with an uppercase letter. The following are examples of the naming convention that will be used Type Name Reason Map Contacts Starts with an uppercase letter String Contact Starts with an uppercase letter
+The following are examples of Apex type naming that should not be used 
+
+Type Name | Reason 
+-----------|:------
+map Contacts | "map", “id”, and “string” do not start with an uppercase letter. 
+String Contact | “string” does not start with an uppercase letter. 
+
+The following are examples of the naming convention that will be used 
+
+Type Name | Reason 
+-----------|:------
+Map Contacts | Starts with an uppercase letter String Contact Starts with an uppercase letter
+
+____
+
+### 18. Public Groups
+
+Public Groups and Queues are very similar in how they are used within Salesforce and as such should follow the same naming conventions.
+
+_What is a Public Group?_
+Public groups in Salesforce are a security mechanism in Salesforce that allows you to “group” users together that need common access to something in Salesforce.
+
+Instead of manually assigned users to the “thing” you want them to have access, you just add or remove the user from the group. When you want to remove access from all users in the group to the “thing”, you just remove the group from having access.
+
+_Examples of Types of Access_
+- Granting access to a listview on an object to a group of users
+- Using criteria based sharing to grant access to a set of users who are in a group
+- Sharing access to a record to a set of users who are in a group
+
+#### Rules for Naming
+
+Business users will view public group labels while viewing the users and groups a record is shared with. Group labels will need to make sense to business users pertaining to their business process. Administrators will need to be able to easily sort public groups when adding/removing users from groups. Group name will need to make sense to administrators pertaining to specific applications.
+
+- Always prefix the group name with the application. ie: “Mosaic_Complaints”. This will allow easy sorting of the groups by the administrator by application.
+- Give the label of the group the same postfix name as what was given to the name. ie: “Complaints”.  This allows for business users to easily associate the group with a business process, but also makes it easy for a system administrator to match a group name to the label in the application. 
+
+#### Exceptions
+None
+
+#### Demonstrative Example
+
+![Create a new Group](/img/group_naming_example.png)
+
+![Public Groups](/img/group_naming_example_1.png)
+____
+
+### 19. Queues
+
+Public Groups and Queues are very similar in how they are used within Salesforce and as such should follow the same naming conventions.
+
+_What is a Queue?_
+Queues are similar to public groups in that they allow you to assign one or more users as members of the queue. Where queues differ is that when you setup a queue, you also associate one or more Salesforce objects with the queue. Once you associate a Salesforce object with a queue, you can then set the queue as the owner of a record of an associated object. 
+
+
+_Examples of Types of Access_
+-Queue granted as owner of a record grants all users read access to the record 
+-Using criteria based sharing to grant access to a set of users who are in a queue
+
+#### Rules for Naming
+
+Business users will view queue labels while working with list views and viewing record owners. Queue labels will need to make sense to business users pertaining to their business process. Administrators will need to be able to easily sort queues when adding/removing users from the queues. Queue names will need to make sense to administrators pertaining to specific applications.
+
+-Always prefix the queue with the application. ie: “Mosaic_Complaints”. This will allow easy sorting of the queues by the administrator by application.
+-Give the label of the queue the same postfix name as what was given to the name. ie: “Complaints”.  This allows for business users to easily associate the queue with a business process, but also makes it easy for a system administrator to match a queue name to the label in the application. 
+
+#### Exceptions
+None
+
+#### Demonstrative Example
+
+![Create a new Group](/img/group_naming_example.png)
+
+![Public Groups](/img/group_naming_example_1.png)
