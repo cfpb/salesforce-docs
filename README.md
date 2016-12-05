@@ -37,6 +37,7 @@ and the various Product Teams building application solutions on the Salesforce p
 1. Maintain confidence in the deployment process and a high degree of availability for the CFPB salesforce org
 1. Establish efficient developer workflows and share knowledge and practices across product development teams
 1. Minimize operational burden for the Salesforce Platform Admin Team and the CFPB at large
+1. Provide pertinent information to partners and vendors
 
 
 ### Salesforce Governance
