@@ -1,6 +1,6 @@
 ###Source Code and Configuration Management
 
-####Commenting
+[Source code Comment standards for this project](_pages/Comment-standards.md)
 
 All methods should begin with a brief comment describing the functional characteristics of the method (what it does). This description should not describe the implementation details (how it does it) because these often change over time, resulting in unnecessary comment maintenance work, or worse yet erroneous comments. The code itself and any necessary inline or local comments will follow the standards as defined by the [SalesforceFoundation](https://github.com/SalesforceFoundation/ApexDoc#documenting-class-files):
 
