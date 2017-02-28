@@ -77,6 +77,8 @@ Example
     public static Schema.DescribeFieldResult getFieldDescribe(String objectName, String fieldName) {
 ```
 
+#### Release Management 
+
 ####Versioning & Deploying Code and Configuration Between Environments
 
 Versioning of code and configuration has always been a rather large pain point for project teams and developers. Salesforce itself does not support versioning of the code and configuration within an org. Project teams cannot use standard development practices to check-in both your code and configuration. 
