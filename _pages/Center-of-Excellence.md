@@ -23,7 +23,7 @@ This document establishes the authority, membership, roles, and administrative p
 
 ###Responsibilities
 
-The COE is responsible for making project-level tactical decisions for applications deployed to the Bureau’s Salesforce and Box platforms that support the strategic direction established by the Chief Information Officer in line with the Bureau’s Strategic Plan. 
+The COE is responsible for making project-level tactical decisions for applications deployed to the Bureau’s Salesforce platform that support the strategic direction established by the Chief Information Officer in line with the Bureau’s Strategic Plan. 
 
 The COE shall be responsible for the following activities, organized by primary function:
 
@@ -40,7 +40,7 @@ The COE shall be responsible for the following activities, organized by primary 
     - Escalate issues as needed to the CIO, Business Executive Sponsors, and higher level governance bodies
 
 - New Solution Review:
-    - Review and approve every application concept and initiative considered for an enterprise platform within CFPB (e.g., Salesforce, Box, etc.), prior to T&I Project Gate 0
+    - Review and approve every application concept and initiative considered for an enterprise platform within CFPB (e.g., Salesforce etc.), prior to T&I Project Gate 0
     - Authorize, categorize and prioritize development initiatives which use EP resources or will be hosted on an EP-controlled technology
     - Act as governance liaison to the Technology Committee and the CIO for all EP-related activities 
     - Ensure alignment of priorities with enterprise initiatives, Enterprise Architecture (EA) and direction from higher level governance
