@@ -25,6 +25,8 @@ Project team environments consist of the the following environments:
 1. **Project UAT/Build**  - The project UAT/Build environment is the environment where the project team will deploy their code on a routine basis from the project dev environment to test and demo their application to end users. No development should occur in the Project UAT/Build environment.
 
 1. **Individual Developer Environments** - If a project team is using the distributed development model, then they will have individual developer sandboxes dedicated to each developer. When a developer is done with a particular feature, then that feature is deployed to the Project Dev environment. 
+
+1. **Project Data** - If a project team is conducting a data migration they may request an additional sandbox in which to practice their data migration.  The type of sandbox may vary based on the number of records being loaded.
         
 **NOTE:** Individual developer environments can also be used in either model for proof of concepts. Project teams should avoid creating proof of concepts in their Project Dev org if at all possible.
 
