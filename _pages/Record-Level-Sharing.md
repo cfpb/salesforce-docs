@@ -4,7 +4,7 @@ There are many different mechanisms in which access to Salesforce is controlled.
 
 1. **Object Level Access** – Object level access controls the access various Salesforce standard and custom objects such as Account, Contact, Opportunity, or custom objects you create. Object level access defines if a user has access to Read, Create, Update, or delete records within that object. Additionally object level access also controls which fields users are allowed to view or update on those objects. All object level access within Salesforce is controlled by Profiles and Permission Sets. 
 
-1. **Record Level Access** – Once a user has access to a specific object, users can then be limited to view or edit only specific records within that object. This is what we refer to as "Record Level" sharing within Salesforce. Sharing of records is controlled by Salesforce Organization-wide defaults, Criteria Based Sharing, Roles, and manual sharing.  
+1. **Record Level Access** – Once a user has access to a specific object, users can then be limited to view or edit only specific records within that object. This is what we refer to as "Record Level" sharing within Salesforce. Sharing of records is controlled by Salesforce Organization-wide defaults, Criteria Based Sharing, Roles, manual sharing, and Apex Sharing.  
 
 1. **System & Application Level Access** – System and application level access is access users are granted to perform specific actions across the Salesforce application. There are many different actions a user can perform that can be controlled such as user creation, ability to export data, ability to modify setup objects, etc. These permissions are controlled by Profiles and Permission Sets. 
 
@@ -61,7 +61,7 @@ Public Read Only is the second most restrictive organization-wide default and is
 Private is the most restrictive organization-wide default and is available for most standard and all custom objects. This setting restricts every user from viewing or editing records within the objects that are set to “Private” unless they are granted “view” or “edit” access through other sharing settings.  
  
 ###Criteria Based Sharing (Sharing Rules)    
-Criteria based sharing is rule or owner based sharing that grants read or read/write access for a set of records to specific groups of users. Criteria Based Sharing is next level of sharing controls below organization wide defaults. 
+Criteria based sharing is rule or owner based sharing that grants read or read/write access for a set of records to specific groups of users. Criteria Based Sharing is the next level of sharing controls below organization wide defaults. 
  
 There are two types of rules that can be created. 
  
@@ -93,30 +93,15 @@ Manual sharing allows the owner of a record to manually grant (share) read or re
  
 Manual shares can also be created programmatically using apex or apex triggers. Use caution while programmatically creating manual shares via apex as you can easily cause performance degradation if you are adding a large number of shares to a single object.  
  
-###Territory Based Sharing (Territory Management)  
-Territory Management is a larger functionality in Salesforce that allows for creating territory groupings. Users and Accounts can then be assigned as members of a territory. Once a user has been added to a territory the user then is granted access to that account. You have the ability to specify for each territory is the users should gain read or read/write access to the account records. 
- 
-Additionally you can also choose is the users granted access to the accounts are granted access to related opportunities and/or cases to those accounts. 
- 
-For more information about territory management see: 
- 
-[Territory Management Decision Guide](https://developer.salesforce.com/page/Territory_Management_Decision_Guide)
- 
-[Territory Management Data Model](https://developer.salesforce.com/docs/atlas.en-us.api.meta/api/sforce_api_erd_territory2.htm)
- 
-[Territory Management Developers Guide](https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/Territory2.htm)  
- 
- 
- 
 ###Special Permissions That Affect Sharing  
 There are special permissions that can be set via profiles and permission sets that can override the Salesforce sharing settings.  
  
 These permission exist in two types: 
  
 ***System / Administrative***   
-Under the system permissions you will find the permissions “view all data” and “modify all data”. If a user has these permissions set, the user will be able to view and/or edit all records for all objects regardless of the sharing settings set.  
+Under the system permissions you will find the permissions “view all data” and “modify all data”. If a user has these permissions, the user will be able to view and/or edit all records for all objects regardless of the sharing settings set.  
  
-Be very careful when setting this permission, as this permission will open up access to all of your data to a single user. Even if a field is set as read-only on the object profile permissions, the user will still have full access to the object as well.  
+Be very careful when setting these permissions, as these permissions will open up access to all of your data to a single user. Even if a field is set as read-only on the object profile permissions, the user will still have full access to the object as well.  
  
 ***Object Level***   
-In addition to the ability to grant global read or edit access to all records across all objects, you also can set read or edit access for all records for only a single object. At the object level if you set the permissions “view all” or “modify all” then all users in the profile or permission set will be able to view and/or edit all records within that object regardless of the sharing settings. 
+In addition to the ability to grant global read or edit access to all records across all objects, you can set read or edit access for all records for only a single object. At the object level if you set the permissions “view all” or “modify all” then all users in the profile or permission set will be able to view and/or edit all records within that object regardless of the sharing settings. 
