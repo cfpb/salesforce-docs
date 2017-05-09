@@ -57,9 +57,9 @@ Unlike traditional languages such as Java, C++, and C#, Apex and Visualforce can
 
 Instead of having the ability to set breakpoints and halt execution of the code, you must instead use logging to capture the flow of events to help you troubleshoot the code.
 
-Salesforce a debug log that allows you to output string or even deserialize objects to help you understand what the value of specific complex variables were at specific times during runtime. 
+Salesforce provides a debug log that allows you to output string or even deserialize objects to help you understand what the value of specific complex variables were at specific times during runtime. 
 
-Take a look at the example below. Take note of the line highlighted in yellow. This statement when executed will write a log entry to the Salesforce debug log that you can later view by going to the developer’s console.
+Take a look at the example below. Take note of the System.Debug statement. This statement when executed will write a log entry to the Salesforce debug log that you can later view by going to the developer’s console.
 
 ```java
 public with sharing class SampleClass
