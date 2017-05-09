@@ -25,9 +25,9 @@ Lightning is a framework that Salesforce has built to allow for a new look and f
 
 There are three 3 main parts to lightning:
 
-1.  **Lightning Experience** – The lightning experience is a completely new look and feel to Salesforce that takes into account modern user interface design practices that is commonly used throughout the web today. This is based on responsive design patterns such that the format of what you can see on the screen is based on screen size that you are viewing the content. Instead create a single web application, each page is made up of various components that can be easily changed out or rearranged.
+1.  **Lightning Experience** – The lightning experience is a completely new look and feel to Salesforce that takes into account modern user interface design practices that are commonly used throughout the web today. This is based on responsive design patterns such that the format of what you can see on the screen is based on the screen size on which you are viewing the content. Each page is made up of various components that can be easily changed out or rearranged.
 1.  **Lightning Design System** – The design system is a new UI framework built off of angular that helps developers easily recreate the same look and feel of the Lightning Experience in their custom applications. This framework can be used in Visualforce, Lightning Components, or even in custom external based web applications. For more information on the design system visit http://www.lightningdesignsystem.com 
-1.  **Lightning Components** – Lightning components is a new development infrastructure that Salesforce has developed to quickly create high performing web applications based on a component model. A lightning component can be a web page or even a piece of a web page. Lightning components turns HTML, JavaScript, and CSS into an object-oriented language. Everything is a first class component in this framework. What this means is that instead of having to traverse the DOM you use getters and setters to access various elements of your application. For example the following are “objects” or “components” in the framework: “div”, “form”, “input”, “head”, “body”, “span”, JavaScript events such as “onclick”, etc. 
+1.  **Lightning Components** – Lightning components is a new development infrastructure that Salesforce has developed to quickly create high performing web applications based on a component model. A lightning component can be a web page or even a piece of a web page. Lightning components turn HTML, JavaScript, and CSS into an object-oriented language. Everything is a first class component in this framework. What this means is that instead of having to traverse the DOM you use getters and setters to access various elements of your application. For example the following are “objects” or “components” in the framework: “div”, “form”, “input”, “head”, “body”, “span”, JavaScript events such as “onclick”, etc. 
 The real power of lightning is that you can pass components between each other to build reusable pieces of an application. You can even pass a JavaScript event that fires from one component to another! 
 
 The Salesforce Lightning Experience is even built using Lightning Components. That means you can develop your own custom components using the same technology that Salesforce uses internally. Combining that with the Lightning Design System you can completely replicate any out of the box component in the Lightning Experience.
@@ -47,10 +47,10 @@ The question many people ask is “Will Visualforce be going away?” Think of l
 
 * Since most everything runs client-side, and all server-side calls to Salesforce are performed asynchronously, it is very fast.
 * Allows you to easily make applications with the same look and feel of the lightning experience. 
-* Since everything is component based you can separate the development out to several different developers without risking the developers to walk over each other.
+* Since everything is component based you can separate the development out to several different developers without risking the developers stepping on each other.
 * Since even the styling is broken out you can have your UI designer work independently of your Salesforce developers on various components.
 * Allows you to quickly change, add, or remove pieces of a page without having to think about refactoring the entire page. 
-* Ideal when you have the need to create a more component-based application made up of multiple “mini application”, rather than a single page application.
+* Ideal when you have the need to create a more component-based application made up of multiple “mini applications”, rather than a single page application.
 * Ideal for creating lightweight, responsive mobile applications.
 
 **Visualforce Cons**  
