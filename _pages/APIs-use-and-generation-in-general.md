@@ -4,13 +4,13 @@ There are many different APIs that Salesforce has to offer within its toolkit. J
 
 #### Inbound Requests
 
-Salesforce offers two primary types of APIs based on industry standards. The first is a SOAP based API, and the second is a REST based API. The REST API is very lightweight, has no WSDL definition file that is needed to install, and performs very well. The SOAP API is much heavier and slower than the REST API, but offer many more features and can handle many more records than the REST API.
+Salesforce offers two primary types of APIs based on industry standards. The first is a SOAP based API, and the second is a REST based API. The REST API is very lightweight, has no WSDL definition file that is needed to install, and performs very well. The SOAP API is much heavier and slower than the REST API, but offers many more features and can handle many more records than the REST API.
 
 **SOAP API**
 
 The SOAP API was the very first API that Salesforce offered and as such is the most complete API available today. There are two flavors of this API available based on the type of user you are, and application that you are developing. The first is the enterprise API and the second is the partner API. Don’t be fooled by the names of the APIs. Just because you are not a partner, doesn’t mean that you can’t use the partner API. 
 
-The SOAP API supports database operations such as query, insert, update, delete, as well as support many other meta-data related requests related to users or understanding understanding the Salesforce data model. For a complete reference to the functionality of the SOAP API you may view the developers guide at:
+The SOAP API supports database operations such as query, insert, update, delete, as well as supports many other meta-data related requests related to users or understanding the Salesforce data model. For a complete reference to the functionality of the SOAP API you may view the developers guide at:
 
 [http://developer.salesforce.com/docs/atlas.en-us.api.meta/api/](http://developer.salesforce.com/docs/atlas.en-us.api.meta/api/) 
 
@@ -30,9 +30,9 @@ The SOAP API supports database operations such as query, insert, update, delete,
 
 The REST API is an API that has similar functionality to that of the SOAP API, but is based on REST standards. That means there is no WSDL to download and maintain, and all requests are HTTP based using common Verbs such as Post, Get, Put, Patch, and Delete. The rest API takes requests and returns responses in either XML or JSON.
 
-The REST API is a good API to just when you need to make lightweight operations with a quick response, such as on mobile devices. 
+The REST API is a good API to use when you need to make lightweight operations with a quick response, such as on mobile devices. 
 
-Just like the SOAP API, the REST API supports database operations such as query, insert, update, and delete except that since the REST API is a newer API it is isn’t as complete as the SOAP API. 
+Just like the SOAP API, the REST API supports database operations such as query, insert, update, and delete except that since the REST API is a newer API it is not as complete as the SOAP API. 
 
 Aside from the actual functionality differences between the two APIs it is good to understand in general the differences between REST and SOAP. For more information on REST and SOAP visit the following sites below.
 
@@ -44,7 +44,7 @@ Aside from the actual functionality differences between the two APIs it is good 
 
 The REST and SOAP APIs are great tools for general transactional real-time applications, but tend to fall apart when you need to work with large volumes of data. When working with data volumes of above 50,000 records you should look to using the BULK API.
 
-The BULK API is a REST based asynchronous API designed to handle inserting, updating, and deleting of large amounts of data. Generally speaking the BULK API can act on up to 50 million records in a rolling 24-hour period according to the official documentation. If you need to work with a larger amount of data than 50 million records per day, you can contact Salesforce support to have your limits increased with proper justification. 
+The BULK API is a REST based asynchronous API designed to handle inserting, updating, and deleting large amounts of data. Generally speaking the BULK API can act on up to 50 million records in a rolling 24-hour period according to the official documentation. If you need to work with a larger amount of data than 50 million records per day, you can contact Salesforce support to have your limits increased with proper justification. 
 
 For more information on the developing with the BULK API and limits of the BULK API visit the following sites below.
 
@@ -54,7 +54,7 @@ For more information on the developing with the BULK API and limits of the BULK 
 
 **BEWARE OF YOUR DAILY API LIMITS**
 
-Every time you make a call to the SOAP or REST API you use an API call that is allotted to your organization on a rolling 24 hour period. If you use up all of your API calls on at 24 hour period then you will be no longer allowed to make calls to the SOAP or REST API until you rolling 24 hour usage has dropped below the limit. 
+Every time you make a call to the SOAP or REST API you use an API call that is allotted to your organization on a rolling 24 hour period. If you use up all of your API calls on at 24 hour period then you will be no longer allowed to make calls to the SOAP or REST API until your rolling 24 hour usage has dropped below the limit. 
 
 This is one of the main reasons why it is recommended that if you need to process more than 50,000 records, you use the BULK API, as the BULK API does not take up your daily API limits. For example, if you need to process 1 million records and use the SOAP API processing 200 records at a time, you will use up 5,000 of your API calls. Not only does this take a long time to process you are will endanger your organization of breaching this limit. This is especially true as you add more services to your organization that are using the SOAP or REST APIs. 
 
@@ -74,7 +74,7 @@ If you find that your methods are taking too long to complete you may want to th
 
 **Outbound Requests**
 
-In addition to exposing APIs to external systems, Salesforce also has a few mechanisms for making calls out to external systems as well. 
+In addition to exposing APIs to external systems, Salesforce also has a few mechanisms for making calls out to external systems. 
 
 1. **HTTP call-outs using Apex**
 

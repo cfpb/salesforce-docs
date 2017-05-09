@@ -102,6 +102,8 @@ As an additional incentive, this best practice of separating unit tests and clas
 
 ### Putting it all together
 Here's the complete unit test for the trigger, which it's put in UpdateParentAccountWithOpportunityName_Test.cls.
+
+```java
     @isTest
     private class UpdateParentAccountWithOpptyName_Test{
         static testMethod void testUpdateParentAccount() {
@@ -132,5 +134,5 @@ Here's the complete unit test for the trigger, which it's put in UpdateParentAcc
             System.assertEquals(sOpportunityName, oAccount.Most_Recently_Created_Opportunity_Name__c);
         }
     }  
-
+```
 Note the use of the @isTest annotation, as well as the general structure of the test - first the setup, then the action, and finally the verification.

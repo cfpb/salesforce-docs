@@ -51,18 +51,24 @@ When developing triggers, it is best to think of each trigger as the driver for 
 
 Within the trigger you should create a fork for each trigger operation for before/after, and insert, update, and delete. Once you have identified the trigger operation, such as before update, you would then fire the helper method for before update in a separate class. This makes it easier to understand what the trigger is doing.  
 
-Take a look at the code sample below that executes a trigger for before insert and update.
+Take a look at the code sample below that executes a trigger for before insert and update as well as after update.
 
 ```java
-Public with sharing class Helper AccountInsertUpdateTrigger on Account (before insert, before update)
-    {
-        if( triggerHelper.IsEnabled() & trigger.IsBefore() && trigger.IsUpdate())
-        {
-            AccountTriggerHelper.BeforeUpdate();
-         }
-        else if( triggerHelper.IsEnabled() & trigger.IsBefore() && trigger.IsInsert())
-        {
-            AccountTriggerHelper.BeforeInsert();
+Public with sharing class Helper AccountTrigger on Account (before insert, before update, after update){
+        if( triggerHelper.IsEnabled()){
+            if( trigger.IsBefore()){
+               if( trigger.IsInsert(){ 
+                  AccountTriggerHelper.BeforeInsert();
+               }          
+               else if( trigger.IsUpdate()){        
+                  AccountTriggerHelper.BeforeUpdate();
+               }
+            }
+            else if ( trigger.IsAfter()){
+               if( trigger.IsUpdate()){
+                  AccountTriggerHelper.AfterUpdate();
+               }
+            }
         }
     }
 ```
@@ -94,8 +100,9 @@ Now, to properly handle the dynamic nature of the record type IDs, the following
      
     //Create a map between the Record Type Name and Id for easy retrieval
     Map<String,String> accountRecordTypes = new Map<String,String>{};
-    for(RecordType rt: rtypes)
+    for(RecordType rt: rtypes){
         accountRecordTypes.put(rt.Name,rt.Id);
+        }
      
     for(Account a: Trigger.new){
         //Use the Map collection to dynamically retrieve the Record Type Id
