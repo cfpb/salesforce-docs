@@ -8,7 +8,7 @@ To provide  oversight and governance for the Bureau’s standard enterprise plat
 
 - **COE Chair** – Presides over the Platform Center of Excellence
 - **Platform Program Management** – Participants from Enterprise Platforms execution and operational arms support strategic roadmap and prioritization discussions and decisions
-- **Architects** – Principal Platform Arch, Solution Arch, Tech Arch, Salesforce Program Arch  - Advise on strategic, technical, and solution architecture; make decisions on application designs and platform release readiness 
+- **Architects** – Principal Platform Architect, Solution Architect, Tech Architect, Data Architect  - Advise on strategic, technical, and solution architecture; make decisions on application designs and platform release readiness 
 - **T&I Teams Representatives** – Participants from other T&I teams, such as Data, engage in the COE to ensure collaboration and streamlined downstream integration
 - **Business Line Representatives** – Participants from various business divisions, such as CR and SEFL, engage in the COE to ensure platform goals are in alignment with CFPB’s business / mission goals; support decisions that impact individual applications 
 - **COE Facilitator** – Facilitates COE and SwAG meetings, maintains technical guidelines documents, and COE Templates 
