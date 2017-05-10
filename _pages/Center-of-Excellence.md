@@ -14,7 +14,7 @@ This document includes the authority and responsibilities of the COE and its mem
 
 ###Purpose
 
-This document establishes the authority, membership, roles, and administrative procedures for the Center of Excellence (COE).  The COE is a decision-making body that provides oversight and management of CFPB’s enterprise platforms. The COE is the official mechanism for controlling the strategic direction of CFPB’s enterprise cloud, web-enabled and/or on-premise platforms and tools, such as Salesforce.com and Box.com.  The COE serves the following primary functions:
+This document establishes the authority, membership, roles, and administrative procedures for the Center of Excellence (COE).  The COE is a decision-making body that provides oversight and management of CFPB’s enterprise platforms. The COE is the official mechanism for controlling the strategic direction of CFPB’s enterprise cloud, web-enabled and/or on-premise platforms and tools, such as Salesforce.com.  The COE serves the following primary functions:
 - **Strategic Platform Roadmap and Standards** - for driving the technical direction and standards of the Bureau’s platforms in support of enabling business and process automation
 - **New Solution Review** - for new applications, initiatives, concepts, and high-level requirements provided by internal customers to determine enterprise applicability, collaboration opportunities, and platform destination 
 - **Design Review** - for initial system designs prior to entering a development sprint
@@ -287,13 +287,18 @@ T&I  - Technology & Innovation
     <td>Govt</td>
 </tr>
 <tr>
-    <td>Paul Pick-Aluas</td>
+    <td>Jo Deng</td>
     <td>COE Solution Architect</td>
     <td>Ctr</td>
 </tr>
 <tr>
-    <td>Matt Meyers, Joe Grefenstette</td>
+    <td>Joe Grefenstette</td>
     <td>COE Technical Architect</td>
+    <td>Ctr</td>
+</tr>
+<tr>
+    <td>Rincy Issacs / Bryan Roundtree</td>
+    <td>COE Data Architect</td>
     <td>Ctr</td>
 </tr>
 <tr>
@@ -302,7 +307,7 @@ T&I  - Technology & Innovation
     <td>Govt</td>
 </tr>
 <tr>
-    <td>Vanessa Pierce</td>
+    <td>Alexis Wu</td>
     <td>COE Facilitator</td>
     <td>Ctr</td>
 </tr>
