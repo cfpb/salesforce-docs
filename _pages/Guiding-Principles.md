@@ -1,4 +1,4 @@
-###Guiding Principles
+# Guiding Principles
 
 Enterprise Platforms has established a set of guiding principles to inspire our day-to-day activities and drive the behaviors that will help us truly achieve our mission and vision
 
