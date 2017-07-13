@@ -111,3 +111,10 @@ public with sharing class OrderController
 ```
 
 If you find that you need to create exceptions that are multiple levels deep, then it may be a good time to start thinking about creating a custom exception class so that your exceptions are more easily traceable when trying to debug. 
+
+### Set Recipients of Email Notifications for Unhandled Apex Exceptions
+
+Configure email addresses that receive emails when your Apex code encounters unhandled exceptions. Previously, these emails were sent only to the developer who’d last modified a failing class or trigger. From Winter 2016 Salesforce release you can also notify users of your Salesforce org and arbitrary email addresses.
+
+Unhandled exception emails are sent by default to the developer specified in the LastModifiedBy field on the failing class or trigger. In addition, you can have emails sent to users of your Salesforce org and to arbitrary email addresses. To set up these email notifications, from Setup, enter Apex Exception Email in the Quick Find box, then select Apex Exception Email. You can also configure Apex exception emails using the Tooling API object ApexEmailNotification.
+
