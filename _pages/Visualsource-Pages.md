@@ -1,4 +1,4 @@
-##Visualforce Page Best Practices
+# Visualforce Page Best Practices
 Just because you can, doesn’t mean you should! Before going down the customization route make sure you properly evaluate the pros and cons of creating custom pages. This is especially true when creating custom pages to override standard functionality.  When overriding standard functionality you lose the advantage gained of new features in future releases.
 If you do go down the customization route you must make sure you optimize the Visualforce pages you create for better performance in order to have a positive user experience. 
 
