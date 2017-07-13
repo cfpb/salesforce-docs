@@ -1,10 +1,10 @@
-###Center of Excellence
+# Center of Excellence
 
-###Overview
+## Overview
 
 This document is the charter for the Consumer Financial Protection Bureau (CFPB) Office of the Chief Information Officer (OCIO) Enterprise Platforms (EP) Center of Excellence (COE) (hereafter referred to as “COE”), and as such formalizes the responsibilities, process, and authority of this body.
 
-###Authority
+## Authority
 
 This document includes the authority and responsibilities of the COE and its members who will abide by the practices set forth in this charter.  This charter authorizes the COE to perform the following:
 - Review, approve, disapprove, and prioritize development initiatives within T&I’s enterprise platforms and commit resources to the development of approved initiatives
@@ -12,7 +12,7 @@ This document includes the authority and responsibilities of the COE and its mem
 - Manage T&I’s enterprise platforms application development, operations and maintenance processes 
 - Ensure the technical quality of all software deployed to T&I’s enterprise platforms and of services integrated with these platforms
 
-###Purpose
+## Purpose
 
 This document establishes the authority, membership, roles, and administrative procedures for the Center of Excellence (COE).  The COE is a decision-making body that provides oversight and management of CFPB’s enterprise platforms. The COE is the official mechanism for controlling the strategic direction of CFPB’s enterprise cloud, web-enabled and/or on-premise platforms and tools, such as Salesforce.com and Box.com.  The COE serves the following primary functions:
 - **Strategic Platform Roadmap and Standards** - for driving the technical direction and standards of the Bureau’s platforms in support of enabling business and process automation
@@ -21,7 +21,7 @@ This document establishes the authority, membership, roles, and administrative p
 - **Go Live Review** - for completed systems and releases prior to production deployment
 - **Change Request (CR) Review** - for changes to production applications / features or approved plans / processes
 
-###Responsibilities
+## Responsibilities
 
 The COE is responsible for making project-level tactical decisions for applications deployed to the Bureau’s Salesforce and Box platforms that support the strategic direction established by the Chief Information Officer in line with the Bureau’s Strategic Plan. 
 
@@ -185,7 +185,7 @@ Membership of the COE consists of the following voting and non-voting member rol
 
 *Note: Only government employees may be voting members.  In the event that a role above is being filled by a contractor, the voting check mark in the table above is instead a recommendation for those roles which are considered to have especially appropriate input to the type of vote indicated.
 
-###COE Administration
+## COE Administration
 
 Normal COE meetings will be held on a weekly basis. If there are no items for review, COE meetings will be canceled at the discretion of the COE Chair.  Additional meetings may also be scheduled at the Chair’s discretion to handle a high volume of agenda items.  
 
@@ -193,7 +193,7 @@ The COE Facilitator is responsible for maintaining calendar invites, reserving r
 
 Links to the COE agendas and meeting minutes can be accessed through the T&I Enterprise Platforms team Google Documents collection.
 
-###Decisions
+## Decisions
 
 - **New Solution Review** 
     New solution concepts will be introduced at COE meetings by Platform Business Analysts (BA) who will be expected to present high-level requirements and the analysis conducted (Project Detail, Fit Gap Analysis) to make a platform decision to the COE. After each new solution concept is discussed, a vote will be taken to **approve, defer, or disapprove** the proposed item.  The EP Program team will work with the business line(s) involved and T&I PMO to review scheduling, resources, and budget for the new solution request. 
@@ -230,7 +230,7 @@ Links to the COE agendas and meeting minutes can be accessed through the T&I Ent
 ###Changes to the Charter
 Any proposed changes to this COE Charter may be reviewed and approved as a standard CR.  This charter will be reviewed annually or as required.  Any necessary revisions will be made and tracked via the charter revision history.
 
-###Appendix A
+## Appendix A
 
 **Acronym List**
 
@@ -241,7 +241,7 @@ CR   - Change Request<br>
 SwAG - Software Advisory Group - The SwAG is composed of a diversified team of architects (technical, solution, product-specific) with expertise in technologies the Bureau supports 		
 T&I  - Technology & Innovation
 
-###Appendix B
+## Appendix B
 
 **COE Membership**
 
