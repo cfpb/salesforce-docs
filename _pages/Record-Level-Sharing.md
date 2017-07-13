@@ -1,4 +1,4 @@
-###Sharing & Security
+# Sharing & Security
 
 There are many different mechanisms in which access to Salesforce is controlled. It is easiest to think of security in Salesforce broken up into the following 3 different categories: 
 
@@ -8,7 +8,7 @@ There are many different mechanisms in which access to Salesforce is controlled.
 
 1. **System & Application Level Access** – System and application level access is access users are granted to perform specific actions across the Salesforce application. There are many different actions a user can perform that can be controlled such as user creation, ability to export data, ability to modify setup objects, etc. These permissions are controlled by Profiles and Permission Sets. 
 
-###Profiles & Permission Sets
+## Profiles & Permission Sets
 
 As mentioned above Profiles & Permission Sets control the object level access and System & Application level access for users. You can pretty much do the same thing with Profiles and Permission Sets except for that a user can only have one profile where you can assign multiple permission sets to a user or profile.  
 
@@ -35,7 +35,7 @@ The permission sets would be assigned on a user-by-user basis based on the appli
 
 
 
-###Salesforce Sharing
+## Salesforce Sharing
 
 Salesforce sharing controls what records users have access to view and edit. Keep in mind that since the profile and permission sets control object level access, if a user doesn’t have access to a particular object, then even if sharing allows them to view or edit records within that object, they will not have access to those records since they don’t have access to the entire object through profiles or permission sets. 
  
@@ -43,7 +43,7 @@ When working with Salesforce sharing it is always best to use the most global sh
  
 The following are the Salesforce sharing controls available. 
  
-###Organization-Wide Defaults  
+## Organization-Wide Defaults  
 Organization-Wide defaults are the highest level and most restrictive sharing controls available on the platform. These settings control the visibility of records on a global scale for objects. These settings are set on an object by object basis. 
  
 The following are the available options: 
@@ -60,7 +60,7 @@ Public Read Only is the second most restrictive organization-wide default and is
 ***Private***   
 Private is the most restrictive organization-wide default and is available for most standard and all custom objects. This setting restricts every user from viewing or editing records within the objects that are set to “Private” unless they are granted “view” or “edit” access through other sharing settings.  
  
-###Criteria Based Sharing (Sharing Rules)    
+## Criteria Based Sharing (Sharing Rules)    
 Criteria based sharing is rule or owner based sharing that grants read or read/write access for a set of records to specific groups of users. Criteria Based Sharing is next level of sharing controls below organization wide defaults. 
  
 There are two types of rules that can be created. 
@@ -71,7 +71,7 @@ Rules based on record owner grant access to users in specific roles or groups to
 ***Based On Criteria***  
 Criteria based rules grant access to users in specific roles or groups to records that match specific criteria on the records within the object. 
  
-###Role Based Sharing  
+## Role Based Sharing  
 Roles are hierarchal groupings of users within a Salesforce org. Role based sharing propagates the access to records that users have to users up the role hierarchy.  
  
 For example: If the following role hierarchy exists: 
@@ -86,14 +86,14 @@ Then anyone that is a member of the “Sales VP” role will inherit the access 
  
  
  
-###Manual Sharing    
+## Manual Sharing    
 Manual sharing is the most granular and least performing of all sharing mechanisms within Salesforce.  Care must be taken when using manual sharing as too many manual sharing rules on any single object can cause a delay in response time when viewing records on that object.  
  
 Manual sharing allows the owner of a record to manually grant (share) read or read/write access to a record to another user, group, or role.  
  
 Manual shares can also be created programmatically using apex or apex triggers. Use caution while programmatically creating manual shares via apex as you can easily cause performance degradation if you are adding a large number of shares to a single object.  
  
-###Territory Based Sharing (Territory Management)  
+## Territory Based Sharing (Territory Management)  
 Territory Management is a larger functionality in Salesforce that allows for creating territory groupings. Users and Accounts can then be assigned as members of a territory. Once a user has been added to a territory the user then is granted access to that account. You have the ability to specify for each territory is the users should gain read or read/write access to the account records. 
  
 Additionally you can also choose is the users granted access to the accounts are granted access to related opportunities and/or cases to those accounts. 
@@ -108,7 +108,7 @@ For more information about territory management see:
  
  
  
-###Special Permissions That Affect Sharing  
+## Special Permissions That Affect Sharing  
 There are special permissions that can be set via profiles and permission sets that can override the Salesforce sharing settings.  
  
 These permission exist in two types: 
