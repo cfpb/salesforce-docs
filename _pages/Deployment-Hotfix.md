@@ -1,6 +1,6 @@
-##Deployment Hotfix
+# Deployment Hotfix
 
-####Process Overview
+## Process Overview
 
 Hotfix Relase: A release to production that includes only business-critical fixes and/or additions to address known bugs. Hotfixes are not considered regular releases.
 
@@ -11,7 +11,7 @@ Product Releases: A scheduled release to production that includes net-new functi
 Hotfix Environment: The hotfix environment is where project teams will deploy changes for the same validation before moving the change to Production. Hotfix Release will use hotfix environment. All validation and testing should be performed in this environment so that platforms team will give the approval to move changes to the production environment. 
 
 
-####Deploying to Production
+## Deploying to Production
 In order to deploy a Hotfix release to production, the project team must first deploy their code and configuration to the Hotfix environment. The reason that the team must first deploy to these lower environment is so that we can verify that your application works as expected, and does not experience any complications during deployment. 
 
 
