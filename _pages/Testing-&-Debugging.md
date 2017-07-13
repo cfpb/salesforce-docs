@@ -1,4 +1,4 @@
-###Effective Testing and Debugging
+# Effective Testing and Debugging
 
 - [Writing good tests](/_pages/Writing-good-tests.md)
 - [Unit testing](/_pages/Unit-testing.md)
@@ -7,7 +7,7 @@
 - 508/WCAG - More to come
 - [Top 10 Best Practices](/_pages/Top-10-Best-Practices.md)
 
-####Testing
+## Testing
 
 (NOTE:  http://www.salesforce.com/us/developer/docs/apexcode/Content/apex_testing_best_practices.htm)
 
@@ -51,7 +51,7 @@ The following principles apply to unit testing Apex code
 
 16. Do not write test classes merely to get code coverage. It is much more effective to write the test code to cover specific business cases. You will find that if you use this method you will cover much more code, much faster than just writing test code to get coverage only. Additionally this will help ensure that you are meeting the business requirements in addition to testing for bugs. 
 
-####Debugging
+## Debugging
 
 Unlike traditional languages such as Java, C++, and C#, Apex and Visualforce can be quite cumbersome and time consuming when trying to debug. You don’t have the luxury of being able to step through the code during runtime. 
 
