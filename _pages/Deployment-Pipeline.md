@@ -1,19 +1,19 @@
-###Deployment Pipeline
+# Deployment Pipeline
 
-####Process Overview
+## Process Overview
 The goal of the release management process is to create a process that defines 
 
 1. The environments necessary to enable multiple project teams to concurrently develop applications on the Salesforce platform 
 1. The mechanism that enables project teams to easily move Salesforce configuration and code from one environment to another 
 1. The process that all Salesforce project teams follow to deploy code and configuration from one environment to another in a repeatable fashion to ensure business continuity while reducing the total time of deployment of applications to production.  
 
-####Development Models
+## Development Models
 There are two different models that a project team can use while developing their applications.
 
 1. **Centralized Development Model** - A centralized development model is a development structure in which all team members configure and develop Salesforce applications in a single environment. This structure is typically used when there are a small number of developers working on separate capabilities that do not conflict with each other.
 1. **Distributed Development Model** - A distributed development model is a development structure in which each developer has their own dedicated Salesforce sandbox where they develop application features. They can perform configuration and code changes in their dedicated environment. When they have completed a specific feature, that feature is then deployed to a master team development environment that is typically controlled by a project lead. This allows many developers to function independently without impacting other team members. This structure is typically used for larger development teams.
 
-####Salesforce Environments
+## Salesforce Environments
 The salesforce environments used for Salesforce releases are broken up into categories:
 
 **Project Environments** - Project environments are Salesforce sandbox environments that are dedicated to a single project team. The project team has full access to the environments and does not share the environments with any other project team. The project team members manage all releases among all of their environments and choose the level of access each member has to each of their environments.
@@ -40,7 +40,7 @@ Platform environments consist of the the following environments:
 
 1. **Production** - This is the live environment where users are actively using the system. 
 
-####Deploying to Production
+## Deploying to Production
 In order to deploy a release to production, the project team must first deploy their code and configuration to the different platform environments described above. The reason that the team must first deploy to these lower environments is so that we can verify that your application works as expected, does not conflict with other teams environments, and does not experience any complications during deployment. 
 
 
