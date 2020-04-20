@@ -1,4 +1,4 @@
-##Salesforce Naming Conventions
+## Salesforce Naming Conventions
 
 Naming conventions make the application easier to read and maintain. The naming standards documented here cover customization and configuration areas of salesforce. Regardless of the context in which names are used, Names should be descriptive, concrete, and specific rather than general. Having a generalized name such as ProductLine can have different semantics depending upon the context. It’s better to use something the business identifies with and that will not create a potential conflict with other applications; e.g., ReverseMortgage.
 
@@ -355,7 +355,7 @@ None
 
 The following are examples of trigger naming naming that should not be used 
 
-Validation Rule Name | Reason 
+Trigger Name | Reason 
 -----------|:------
 UpdateAccountAddresses | The object name should always be before the operation in the name. 
 AccountUpdateContacts | Is specific to a business function and would allow for other update triggers to be created for the same object. 
