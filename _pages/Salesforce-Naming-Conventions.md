@@ -481,14 +481,15 @@ The following are examples of Apex type naming that should not be used
 
 Type Name | Reason 
 -----------|:------
-map Contacts | "map", “id”, and “string” do not start with an uppercase letter. 
-String Contact | “string” does not start with an uppercase letter. 
+map Contacts | "map" does not start with an uppercase letter 
+string Contact | “string” does not start with an uppercase letter 
 
 The following are examples of the naming convention that will be used 
 
 Type Name | Reason 
 -----------|:------
-Map Contacts | Starts with an uppercase letter String Contact Starts with an uppercase letter
+Map Contacts | Starts with an uppercase letter
+String Contact | Starts with an uppercase letter
 
 ____
 
